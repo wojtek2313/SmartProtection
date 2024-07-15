@@ -12,16 +12,21 @@ public struct SPPageView<Content: View>: View {
     
     private let content: () -> Content
     
+    // MARK: - Public Properties
+    
+    @Binding public var selectionIndex: Int
+    
     // MARK: - Initiailizers
     
-    public init(@ViewBuilder content: @escaping () -> Content) {
+    public init(selectionIndex: Binding<Int> = .constant(0), @ViewBuilder content: @escaping () -> Content) {
+        self._selectionIndex = selectionIndex
         self.content = content
     }
     
     // MARK: - UI
     
     public var body: some View {
-        TabView {
+        TabView(selection: $selectionIndex) {
             content()
                 .padding()
         }
@@ -36,5 +41,6 @@ public struct SPPageView<Content: View>: View {
         .cornerRadius(6.0, antialiased: false)
         .shadow(color: .black, radius: 4, x: 0, y: 2)
         .padding()
+        
     }
 }

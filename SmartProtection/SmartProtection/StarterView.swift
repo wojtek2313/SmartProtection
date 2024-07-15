@@ -12,13 +12,13 @@ struct StarterView: View {
     // MARK: - Private Properties
     
     @State private var type: StarterViewType = .register(type: .personalData)
+    @State private var selectionIndex = 0
 
     // MARK: - UI
     
     var body: some View {
         container
     }
-    
     
     private var container: AnyView {
         switch type {
@@ -32,7 +32,7 @@ struct StarterView: View {
         VStack {
             SPHeaderIcon(type: .login)
             Spacer()
-            SPPageView { createSpViewContent(with: type) }
+            SPPageView { createSpViewContent(with: type).tag(0) }
             Spacer()
             Spacer()
         }
@@ -42,10 +42,10 @@ struct StarterView: View {
         VStack {
             SPHeaderIcon(type: .register)
             Spacer()
-            SPPageView {
-                createSpViewContent(with: .register(type: .personalData))
-                createSpViewContent(with: .register(type: .companyData))
-                createSpViewContent(with: .register(type: .password))
+            SPPageView(selectionIndex: $selectionIndex) {
+                createSpViewContent(with: .register(type: .personalData)).tag(0)
+                createSpViewContent(with: .register(type: .companyData)).tag(1)
+                createSpViewContent(with: .register(type: .password)).tag(2)
             }
             Spacer()
             Spacer()
@@ -56,7 +56,7 @@ struct StarterView: View {
         VStack {
             SPHeaderIcon(type: .chagePassword)
             Spacer()
-            SPPageView { createSpViewContent(with: type) }
+            SPPageView { createSpViewContent(with: type).tag(0) }
             Spacer()
             Spacer()
         }
@@ -66,7 +66,12 @@ struct StarterView: View {
         VStack {
             createInputLayout(type: type)
             SPButton(type: type.spButtonType) {
-                
+                switch type {
+                case .login, .forgotPassword(_):
+                    break
+                case .register(let type):
+                    toggleRegisterInputLayout(type)
+                }
             }
         }
     }
@@ -79,7 +84,7 @@ struct StarterView: View {
                 SPTextField(type: bottomTextFieldType)
             }
             Button {
-                
+                presentForgotPassword()
             } label: {
                 Text("REGISTRATION_VIEW_FORGOT_PASSWORD".localized)
                     .foregroundColor(.spBlue)
@@ -87,6 +92,23 @@ struct StarterView: View {
                     .padding([.trailing])
             }
             .opacity(type == .login ? 1 : 0)
+        }
+    }
+    
+    // MARK: - Private Methods
+    
+    private func toggleRegisterInputLayout(_ type: RegistrationViewType) {
+        withAnimation(.easeInOut) {
+            switch type {
+            case .personalData, .companyData: selectionIndex += 1
+            case .password: break
+            }
+        }
+    }
+    
+    private func presentForgotPassword() {
+        withAnimation(.easeInOut) {
+            self.type = .forgotPassword(type: .login)
         }
     }
     
