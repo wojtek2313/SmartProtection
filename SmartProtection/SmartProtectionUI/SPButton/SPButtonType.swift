@@ -22,9 +22,9 @@ public enum SPButtonType {
         case .next:
             return "SP_BUTTON_NEXT".localized
         case .reset:
-            return "SP_BUTTON_REGISTER".localized
-        case .register:
             return "SP_BUTTON_RESET_PASSWORD".localized
+        case .register:
+            return "SP_BUTTON_REGISTER".localized
         case .newPassword:
             return "SP_BUTTON_SET_NEW_PASSWORD".localized
         }

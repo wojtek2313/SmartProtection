@@ -6,9 +6,11 @@
   
 */
 
+/// Components
+
 /// SPTextField
 "SP_TEXT_FIELD_LOGIN" = "Login";
-"SP_TEXT_FIELD_LOGIN_PLACEHOLDER" = "Wpisz login(e-mail)";
+"SP_TEXT_FIELD_LOGIN_PLACEHOLDER" = "Wpisz login (e-mail)";
 "SP_TEXT_FIELD_PASSWORD" = "Hasło";
 "SP_TEXT_FIELD_PASSWORD_PLACEHOLDER" = "Wpisz hasło";
 "SP_TEXT_FIELD_NAME" = "Imię";
@@ -19,6 +21,8 @@
 "SP_TEXT_FIELD_COMPANY_PLACEHOLDER" = "Wpisz firmę dla której pracujesz";
 "SP_TEXT_FIELD_MOBILE" = "Telefon";
 "SP_TEXT_FIELD_MOBILE_PLACEHOLDER" = "Wpisz swój firmowy numer telefonu";
+"SP_TEXT_FIELD_NEW_PASSWORD" = "Nowe hasło";
+"SP_TEXT_FIELD_NEW_PASSWORD_PLACEHOLDER" = "Ustaw nowe hasło";
 
 /// SPButton
 "SP_BUTTON_LOG_IN" = "Zaloguj";
@@ -26,3 +30,14 @@
 "SP_BUTTON_REGISTER" = "Zarejestruj";
 "SP_BUTTON_RESET_PASSWORD" = "Zresetuj hasło";
 "SP_BUTTON_SET_NEW_PASSWORD" = "Ustaw nowe hasło";
+
+/// SPHeaderIcon
+"SP_HEADER_ICON_TITLE" = "SmartProtection";
+"SP_HEADER_ICON_LOG_IN" = "Zaloguj się";
+"SP_HEADER_ICON_REGISTER" = "Zarejestruj się";
+"SP_HEADER_ICON_CHANGE_PASSWORD" = "Zmień hasło";
+
+/// Views
+
+// Regsitration View
+"REGISTRATION_VIEW_FORGOT_PASSWORD" = "Nie pamiętam hasła";

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */; };
-		C21F7B122C44240E00881083 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B112C44240E00881083 /* ContentView.swift */; };
+		C21F7B122C44240E00881083 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B112C44240E00881083 /* StarterView.swift */; };
 		C21F7B142C44241000881083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21F7B132C44241000881083 /* Assets.xcassets */; };
 		C21F7B172C44241100881083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21F7B162C44241100881083 /* Preview Assets.xcassets */; };
 		C21F7B192C44241100881083 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B182C44241100881083 /* Persistence.swift */; };
@@ -24,6 +24,10 @@
 		C21F7B492C44639A00881083 /* SPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B482C44639A00881083 /* SPButton.swift */; };
 		C21F7B4B2C4463C000881083 /* SPButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B4A2C4463C000881083 /* SPButtonType.swift */; };
 		C21F7B4E2C4465F000881083 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B4D2C4465F000881083 /* Color+Ext.swift */; };
+		C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5222C45175600FD3BCF /* SPPageView.swift */; };
+		C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */; };
+		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
+		C2C4A52A2C453D1900FD3BCF /* StarterViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5292C453D1900FD3BCF /* StarterViewType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +57,7 @@
 /* Begin PBXFileReference section */
 		C21F7B0C2C44240E00881083 /* SmartProtection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartProtection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProtectionApp.swift; sourceTree = "<group>"; };
-		C21F7B112C44240E00881083 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C21F7B112C44240E00881083 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		C21F7B132C44241000881083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C21F7B162C44241100881083 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C21F7B182C44241100881083 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -68,6 +72,10 @@
 		C21F7B482C44639A00881083 /* SPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButton.swift; sourceTree = "<group>"; };
 		C21F7B4A2C4463C000881083 /* SPButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonType.swift; sourceTree = "<group>"; };
 		C21F7B4D2C4465F000881083 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		C2C4A5222C45175600FD3BCF /* SPPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPageView.swift; sourceTree = "<group>"; };
+		C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconType.swift; sourceTree = "<group>"; };
+		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
+		C2C4A5292C453D1900FD3BCF /* StarterViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +120,8 @@
 			children = (
 				C21F7B3E2C44287100881083 /* Localizable.strings */,
 				C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */,
-				C21F7B112C44240E00881083 /* ContentView.swift */,
+				C21F7B112C44240E00881083 /* StarterView.swift */,
+				C2C4A5292C453D1900FD3BCF /* StarterViewType.swift */,
 				C21F7B132C44241000881083 /* Assets.xcassets */,
 				C21F7B182C44241100881083 /* Persistence.swift */,
 				C21F7B1A2C44241100881083 /* SmartProtection.xcdatamodeld */,
@@ -135,6 +144,8 @@
 				C21F7B402C442C5F00881083 /* Extensions */,
 				C21F7B372C44273500881083 /* SPTextField */,
 				C21F7B472C44638200881083 /* SPButton */,
+				C2C4A51F2C45149400FD3BCF /* SPPageView */,
+				C2C4A5242C452D9600FD3BCF /* SPHeaderIcon */,
 				C21F7B292C44270100881083 /* SmartProtectionUI.h */,
 				C21F7B2A2C44270100881083 /* SmartProtectionUI.docc */,
 			);
@@ -166,6 +177,23 @@
 				C21F7B4A2C4463C000881083 /* SPButtonType.swift */,
 			);
 			path = SPButton;
+			sourceTree = "<group>";
+		};
+		C2C4A51F2C45149400FD3BCF /* SPPageView */ = {
+			isa = PBXGroup;
+			children = (
+				C2C4A5222C45175600FD3BCF /* SPPageView.swift */,
+			);
+			path = SPPageView;
+			sourceTree = "<group>";
+		};
+		C2C4A5242C452D9600FD3BCF /* SPHeaderIcon */ = {
+			isa = PBXGroup;
+			children = (
+				C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */,
+				C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */,
+			);
+			path = SPHeaderIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C21F7B192C44241100881083 /* Persistence.swift in Sources */,
-				C21F7B122C44240E00881083 /* ContentView.swift in Sources */,
+				C21F7B122C44240E00881083 /* StarterView.swift in Sources */,
+				C2C4A52A2C453D1900FD3BCF /* StarterViewType.swift in Sources */,
 				C21F7B1C2C44241100881083 /* SmartProtection.xcdatamodeld in Sources */,
 				C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */,
 			);
@@ -294,11 +323,14 @@
 			files = (
 				C21F7B392C44276600881083 /* SPTextFieldType.swift in Sources */,
 				C21F7B4E2C4465F000881083 /* Color+Ext.swift in Sources */,
+				C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */,
 				C21F7B362C44272C00881083 /* SPTextField.swift in Sources */,
 				C21F7B422C442C7300881083 /* String+Ext.swift in Sources */,
 				C21F7B492C44639A00881083 /* SPButton.swift in Sources */,
 				C21F7B4B2C4463C000881083 /* SPButtonType.swift in Sources */,
+				C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */,
 				C21F7B2B2C44270100881083 /* SmartProtectionUI.docc in Sources */,
+				C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,11 @@ import SwiftUI
 public struct SPTextField: View {
     // MARK: - Public Properties
     
-    public let type: SPTextFieldType
     @State public var inputText: String = ""
     
     // MARK: - Private Properties
     
+    private let type: SPTextFieldType
     @State private var isInputHidden: Bool
     
     // MARK: - Initializers

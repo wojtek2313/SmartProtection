@@ -40,6 +40,12 @@ public struct SPButton: View {
             .overlay {
                 title
             }
+            .shadow(
+                color: .black,
+                radius: Constants.Shadow.radius,
+                x: Constants.Shadow.xPosition,
+                y: Constants.Shadow.yPosition
+            )
     }
     
     // MARK: - Constants
@@ -48,9 +54,17 @@ public struct SPButton: View {
         static let cornerRadius = 5.0
         static let height = 30.0
         
+        /// Fonts
         struct Font {
             static let font = "Avenir Next Bolt"
             static let size = 10.0
+        }
+        
+        /// Shadow
+        struct Shadow {
+            static let radius = 3.0
+            static let xPosition = 0.0
+            static let yPosition = 1.0
         }
     }
 }

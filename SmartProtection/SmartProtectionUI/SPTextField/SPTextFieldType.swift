@@ -14,6 +14,7 @@ public enum SPTextFieldType {
     case surname
     case company
     case mobile
+    case newPassword
     
     var title: String {
         switch self {
@@ -29,6 +30,8 @@ public enum SPTextFieldType {
             return "SP_TEXT_FIELD_COMPANY".localized
         case .mobile:
             return "SP_TEXT_FIELD_MOBILE".localized
+        case .newPassword:
+            return "SP_TEXT_FIELD_NEW_PASSWORD".localized
         }
     }
     
@@ -46,8 +49,10 @@ public enum SPTextFieldType {
             return "SP_TEXT_FIELD_COMPANY_PLACEHOLDER".localized
         case .mobile:
             return "SP_TEXT_FIELD_MOBILE_PLACEHOLDER".localized
+        case .newPassword:
+            return "SP_TEXT_FIELD_NEW_PASSWORD_PLACEHOLDER".localized
         }
     }
     
-    var inputHideable: Bool { self == .password }
+    var inputHideable: Bool { self == .password || self == .newPassword }
 }

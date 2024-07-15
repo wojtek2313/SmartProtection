@@ -13,7 +13,7 @@ struct SmartProtectionApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StarterView()
         }
     }
 }

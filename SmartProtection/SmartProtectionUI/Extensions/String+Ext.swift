@@ -7,6 +7,6 @@
 
 import Foundation
 
-internal extension String {
-    var localized: String { return NSLocalizedString(self, comment: "") }
+public extension String {
+    public var localized: String { return NSLocalizedString(self, comment: "") }
 }
