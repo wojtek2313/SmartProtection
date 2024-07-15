@@ -32,7 +32,7 @@ struct StarterView: View {
         VStack {
             SPHeaderIcon(type: .login)
             Spacer()
-            SPPageView { createSpViewContent(with: type).tag(0) }
+            SPPageView { createSpViewContent(with: type).tag(StarterViewType.login.tag) }
             Spacer()
             Spacer()
         }
@@ -43,9 +43,9 @@ struct StarterView: View {
             SPHeaderIcon(type: .register)
             Spacer()
             SPPageView(selectionIndex: $selectionIndex) {
-                createSpViewContent(with: .register(type: .personalData)).tag(0)
-                createSpViewContent(with: .register(type: .companyData)).tag(1)
-                createSpViewContent(with: .register(type: .password)).tag(2)
+                createSpViewContent(with: .register(type: .personalData)).tag(RegistrationViewType.personalData.tag)
+                createSpViewContent(with: .register(type: .companyData)).tag(RegistrationViewType.companyData.tag)
+                createSpViewContent(with: .register(type: .password)).tag(RegistrationViewType.password.tag)
             }
             Spacer()
             Spacer()
@@ -56,7 +56,7 @@ struct StarterView: View {
         VStack {
             SPHeaderIcon(type: .chagePassword)
             Spacer()
-            SPPageView { createSpViewContent(with: type).tag(0) }
+            SPPageView { createSpViewContent(with: type).tag(ForgotPasswordViewType.password) }
             Spacer()
             Spacer()
         }

@@ -28,6 +28,14 @@ enum RegistrationViewType {
         case .password: return .register
         }
     }
+    
+    var tag: Int {
+        switch self {
+        case .personalData: return 0
+        case .companyData: return 1
+        case .password: return 2
+        }
+    }
 }
 
 enum ForgotPasswordViewType {
@@ -47,6 +55,13 @@ enum ForgotPasswordViewType {
             return .reset
         case .password:
             return .newPassword
+        }
+    }
+    
+    var tag: Int {
+        switch self {
+        case .login: return 0
+        case .password: return 1
         }
     }
 }
@@ -77,6 +92,14 @@ enum StarterViewType: Equatable {
         case .login: return .login
         case .register(_): return .register
         case .forgotPassword(_): return .chagePassword
+        }
+    }
+    
+    var tag: Int {
+        switch self {
+        case .login: return 0
+        case .register(let type): return type.tag
+        case .forgotPassword(let type): return type.tag
         }
     }
 }
