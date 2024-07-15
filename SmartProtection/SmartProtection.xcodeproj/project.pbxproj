@@ -28,6 +28,7 @@
 		C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */; };
 		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
 		C2C4A52A2C453D1900FD3BCF /* StarterViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5292C453D1900FD3BCF /* StarterViewType.swift */; };
+		C2C4A5312C4569FB00FD3BCF /* StarterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5302C4569FB00FD3BCF /* StarterLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconType.swift; sourceTree = "<group>"; };
 		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
 		C2C4A5292C453D1900FD3BCF /* StarterViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewType.swift; sourceTree = "<group>"; };
+		C2C4A5302C4569FB00FD3BCF /* StarterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		C2C4A52E2C4567B600FD3BCF /* StarterView */ = {
 			isa = PBXGroup;
 			children = (
+				C2C4A5302C4569FB00FD3BCF /* StarterLogic.swift */,
 				C21F7B112C44240E00881083 /* StarterView.swift */,
 				C2C4A5292C453D1900FD3BCF /* StarterViewType.swift */,
 			);
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C4A5312C4569FB00FD3BCF /* StarterLogic.swift in Sources */,
 				C21F7B192C44241100881083 /* Persistence.swift in Sources */,
 				C21F7B122C44240E00881083 /* StarterView.swift in Sources */,
 				C2C4A52A2C453D1900FD3BCF /* StarterViewType.swift in Sources */,

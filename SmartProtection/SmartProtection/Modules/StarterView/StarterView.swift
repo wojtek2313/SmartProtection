@@ -11,8 +11,13 @@ import SmartProtectionUI
 struct StarterView: View {
     // MARK: - Private Properties
     
-    @State private var type: StarterViewType = .register(type: .personalData)
-    @State private var selectionIndex = 0
+    @ObservedObject private var logic: StarterLogic
+    
+    // MARK: - Initializers
+    
+    init(logic: StarterLogic) {
+        self.logic = logic
+    }
 
     // MARK: - UI
     
@@ -21,20 +26,10 @@ struct StarterView: View {
     }
     
     private var container: AnyView {
-        switch type {
-        case .login: return AnyView(loginBody)
+        switch logic.type {
+        case .login: return AnyView(createBody(for: .login))
         case .register(_): return AnyView(registerBody)
-        case .forgotPassword(_): return AnyView(resetPasswordBody)
-        }
-    }
-    
-    private var loginBody: some View {
-        VStack {
-            SPHeaderIcon(type: .login)
-            Spacer()
-            SPPageView { createSpViewContent(with: type).tag(StarterViewType.login.tag) }
-            Spacer()
-            Spacer()
+        case .forgotPassword(_): return AnyView(createBody(for: .register(type: .password)))
         }
     }
     
@@ -42,7 +37,7 @@ struct StarterView: View {
         VStack {
             SPHeaderIcon(type: .register)
             Spacer()
-            SPPageView(selectionIndex: $selectionIndex) {
+            SPPageView(selectionIndex: $logic.selectionIndex) {
                 createSpViewContent(with: .register(type: .personalData)).tag(RegistrationViewType.personalData.tag)
                 createSpViewContent(with: .register(type: .companyData)).tag(RegistrationViewType.companyData.tag)
                 createSpViewContent(with: .register(type: .password)).tag(RegistrationViewType.password.tag)
@@ -52,9 +47,9 @@ struct StarterView: View {
         }
     }
     
-    private var resetPasswordBody: some View {
+    private func createBody(for type: StarterViewType) -> some View {
         VStack {
-            SPHeaderIcon(type: .chagePassword)
+            SPHeaderIcon(type: type.spHeaderIconType)
             Spacer()
             SPPageView { createSpViewContent(with: type).tag(ForgotPasswordViewType.password) }
             Spacer()
@@ -70,7 +65,7 @@ struct StarterView: View {
                 case .login, .forgotPassword(_):
                     break
                 case .register(let type):
-                    toggleRegisterInputLayout(type)
+                    logic.toggleRegisterInputLayout(type)
                 }
             }
         }
@@ -84,7 +79,7 @@ struct StarterView: View {
                 SPTextField(type: bottomTextFieldType)
             }
             Button {
-                presentForgotPassword()
+                logic.presentForgotPassword()
             } label: {
                 Text("REGISTRATION_VIEW_FORGOT_PASSWORD".localized)
                     .foregroundColor(.spBlue)
@@ -92,23 +87,6 @@ struct StarterView: View {
                     .padding([.trailing])
             }
             .opacity(type == .login ? 1 : 0)
-        }
-    }
-    
-    // MARK: - Private Methods
-    
-    private func toggleRegisterInputLayout(_ type: RegistrationViewType) {
-        withAnimation(.easeInOut) {
-            switch type {
-            case .personalData, .companyData: selectionIndex += 1
-            case .password: break
-            }
-        }
-    }
-    
-    private func presentForgotPassword() {
-        withAnimation(.easeInOut) {
-            self.type = .forgotPassword(type: .login)
         }
     }
     
