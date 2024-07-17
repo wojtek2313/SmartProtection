@@ -1,5 +1,5 @@
 //
-//  StarterView.swift
+//  WelcomeView.swift
 //  SmartProtection
 //
 //  Created by Wojciech Kulas on 14/07/2024.
@@ -8,15 +8,15 @@
 import SwiftUI
 import SmartProtectionUI
 
-struct StarterView: View {
+struct WelcomeView: View {
     // MARK: - Private Properties
     
-    @ObservedObject private var logic: StarterLogic
+    @ObservedObject private var welcomeLogic: WelcomeLogic
     
     // MARK: - Initializers
     
-    init(logic: StarterLogic) {
-        self.logic = logic
+    init(welcome: WelcomeLogic) {
+        self.welcomeLogic = welcome
     }
 
     // MARK: - UI
@@ -26,7 +26,7 @@ struct StarterView: View {
     }
     
     private var container: AnyView {
-        switch logic.type {
+        switch welcomeLogic.currentWelcomeViewType {
         case .login: return AnyView(createBody(for: .login))
         case .register(_): return AnyView(registerBody)
         case .forgotPassword(_): return AnyView(createBody(for: .register(type: .password)))
@@ -37,7 +37,7 @@ struct StarterView: View {
         VStack {
             SPHeaderIcon(type: .register)
             Spacer()
-            SPPageView(selectionIndex: $logic.selectionIndex) {
+            SPPageView(selectionIndex: welcomeLogic.indexOfCurrentlySelectedView) {
                 createSpViewContent(with: .register(type: .personalData)).tag(RegistrationViewType.personalData.tag)
                 createSpViewContent(with: .register(type: .companyData)).tag(RegistrationViewType.companyData.tag)
                 createSpViewContent(with: .register(type: .password)).tag(RegistrationViewType.password.tag)
@@ -47,39 +47,39 @@ struct StarterView: View {
         }
     }
     
-    private func createBody(for type: StarterViewType) -> some View {
+    private func createBody(for type: WelcomeViewType) -> some View {
         VStack {
             SPHeaderIcon(type: type.spHeaderIconType)
             Spacer()
-            SPPageView { createSpViewContent(with: type).tag(ForgotPasswordViewType.password) }
+            SPPageView(selectionIndex: welcomeLogic.indexOfCurrentlySelectedView) { createSpViewContent(with: type).tag(ForgotPasswordViewType.password) }
             Spacer()
             Spacer()
         }
     }
     
-    private func createSpViewContent(with type: StarterViewType) -> some View {
+    private func createSpViewContent(with type: WelcomeViewType) -> some View {
         VStack {
             createInputLayout(type: type)
-            SPButton(type: type.spButtonType) {
+            SPButton(type: type.spButtonType, enabled: welcomeLogic.areCurrentViewDataValid) {
                 switch type {
                 case .login, .forgotPassword(_):
                     break
-                case .register(let type):
-                    logic.toggleRegisterInputLayout(type)
+                case .register(_):
+                    withAnimation(.easeInOut) { welcomeLogic.presentNextViewAtTheHierarchy(currentViewType: type) }
                 }
             }
         }
     }
     
     @ViewBuilder
-    private func createInputLayout(type: StarterViewType) -> some View {
+    private func createInputLayout(type: WelcomeViewType) -> some View {
         VStack(alignment: .trailing) {
-            SPTextField(type: type.textfieldTypes.upperTextFieldType)
+            createTextField(of: type.textfieldTypes.upperTextFieldType)
             if let bottomTextFieldType = type.textfieldTypes.bottomTextFieldType {
-                SPTextField(type: bottomTextFieldType)
+                createTextField(of: bottomTextFieldType)
             }
             Button {
-                logic.presentForgotPassword()
+                welcomeLogic.presentView(at: .forgotPassword(type: .login))
             } label: {
                 Text("REGISTRATION_VIEW_FORGOT_PASSWORD".localized)
                     .foregroundColor(.spBlue)
@@ -88,6 +88,13 @@ struct StarterView: View {
             }
             .opacity(type == .login ? 1 : 0)
         }
+    }
+    
+    private func createTextField(
+        of type: SPTextFieldType,
+        isTextFieldRequired isRequired: Bool = true
+    ) -> some View {
+        SPTextField(type: type, isRequired: isRequired) { welcomeLogic.insertUserData(with: $0, fromTextFieldWithType: type) }
     }
     
     // MARK: - Constants

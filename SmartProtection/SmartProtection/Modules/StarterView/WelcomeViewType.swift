@@ -17,7 +17,7 @@ enum RegistrationViewType {
         switch self {
         case .personalData: return (.name, .surname)
         case .companyData: return (.company, .mobile)
-        case .password: return (.password, nil)
+        case .password: return (.newLogin, .newPassword)
         }
     }
     
@@ -66,7 +66,7 @@ enum ForgotPasswordViewType {
     }
 }
 
-enum StarterViewType: Equatable {
+enum WelcomeViewType: Equatable {
     case login
     case register(type: RegistrationViewType)
     case forgotPassword(type: ForgotPasswordViewType)

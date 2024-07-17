@@ -23,6 +23,8 @@
 "SP_TEXT_FIELD_MOBILE_PLACEHOLDER" = "Wpisz swój firmowy numer telefonu";
 "SP_TEXT_FIELD_NEW_PASSWORD" = "Nowe hasło";
 "SP_TEXT_FIELD_NEW_PASSWORD_PLACEHOLDER" = "Ustaw nowe hasło";
+"SP_TEXT_FIELD_NEW_LOGIN" = "Nowy login";
+"SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER" = "Ustaw nowy login (e-mail)";
 
 /// SPButton
 "SP_BUTTON_LOG_IN" = "Zaloguj";

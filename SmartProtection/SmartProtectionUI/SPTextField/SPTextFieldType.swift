@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum SPTextFieldType {
+public enum SPTextFieldType: String {
     case login
     case password
     case name
@@ -15,6 +15,7 @@ public enum SPTextFieldType {
     case company
     case mobile
     case newPassword
+    case newLogin
     
     var title: String {
         switch self {
@@ -32,6 +33,8 @@ public enum SPTextFieldType {
             return "SP_TEXT_FIELD_MOBILE".localized
         case .newPassword:
             return "SP_TEXT_FIELD_NEW_PASSWORD".localized
+        case .newLogin:
+            return "SP_TEXT_FIELD_NEW_LOGIN".localized
         }
     }
     
@@ -51,6 +54,8 @@ public enum SPTextFieldType {
             return "SP_TEXT_FIELD_MOBILE_PLACEHOLDER".localized
         case .newPassword:
             return "SP_TEXT_FIELD_NEW_PASSWORD_PLACEHOLDER".localized
+        case .newLogin:
+            return "SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER".localized
         }
     }
     

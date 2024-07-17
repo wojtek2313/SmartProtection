@@ -11,22 +11,22 @@ public struct SPPageView<Content: View>: View {
     // MARK: - Private Properties
     
     private let content: () -> Content
-    
-    // MARK: - Public Properties
-    
-    @Binding public var selectionIndex: Int
+    private let selectionIndex: Int
     
     // MARK: - Initiailizers
     
-    public init(selectionIndex: Binding<Int> = .constant(0), @ViewBuilder content: @escaping () -> Content) {
-        self._selectionIndex = selectionIndex
+    public init(
+        selectionIndex: Int,
+        @ViewBuilder content: @escaping () -> Content
+    ) {
+        self.selectionIndex = selectionIndex
         self.content = content
     }
     
     // MARK: - UI
     
     public var body: some View {
-        TabView(selection: $selectionIndex) {
+        TabView(selection: .constant(selectionIndex)) {
             content()
                 .padding()
         }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 public extension Color {
-    public static let spBlue = Color(hex: "4632A8")
+    static let spBlue = Color(hex: "4632A8")
     
     init(hex: String) {
         let scanner = Scanner(string: hex)

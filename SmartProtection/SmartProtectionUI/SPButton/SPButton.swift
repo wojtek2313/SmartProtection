@@ -11,12 +11,14 @@ public struct SPButton: View {
     // MARK: - Private Properties
     
     private let type: SPButtonType
+    private let enabled: Bool
     private let action: () -> Void
     
     // MARK: - Initializers
     
-    public init(type: SPButtonType, action: @escaping () -> Void) {
+    public init(type: SPButtonType, enabled: Bool, action: @escaping () -> Void) {
         self.type = type
+        self.enabled = enabled
         self.action = action
     }
     
@@ -25,6 +27,7 @@ public struct SPButton: View {
     public var body: some View {
         Button(action: action) { buttonContent }
             .padding()
+            .disabled(!enabled)
     }
     
     private var title: some View {
@@ -35,7 +38,7 @@ public struct SPButton: View {
     
     private var buttonContent: some View {
         RoundedRectangle(cornerRadius: Constants.cornerRadius)
-            .foregroundColor(type.color)
+            .foregroundColor(enabled ? type.color : .gray)
             .frame(height: Constants.height)
             .overlay {
                 title
