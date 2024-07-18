@@ -41,6 +41,6 @@ public struct SPPageView<Content: View>: View {
         .cornerRadius(6.0, antialiased: false)
         .shadow(color: .black, radius: 4, x: 0, y: 2)
         .padding()
-        
+        .onAppear { UIScrollView.appearance().isScrollEnabled = false }
     }
 }
