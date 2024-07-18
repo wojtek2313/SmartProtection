@@ -25,6 +25,8 @@
 		C21F7B4B2C4463C000881083 /* SPButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B4A2C4463C000881083 /* SPButtonType.swift */; };
 		C21F7B4E2C4465F000881083 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B4D2C4465F000881083 /* Color+Ext.swift */; };
 		C22E5F922C47CDB800C892A4 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22E5F912C47CDB800C892A4 /* Welcome.swift */; };
+		C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8A2C494B92009E67CA /* WelcomeTests.swift */; };
+		C28907802C4905E4007D0F0F /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289077F2C4905E4007D0F0F /* UserDto.swift */; };
 		C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5222C45175600FD3BCF /* SPPageView.swift */; };
 		C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */; };
 		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
@@ -39,6 +41,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C21F7B262C44270000881083;
 			remoteInfo = SmartProtectionUI;
+		};
+		C242CB852C494AD0009E67CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C21F7B042C44240E00881083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C21F7B0B2C44240E00881083;
+			remoteInfo = SmartProtection;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,6 +84,9 @@
 		C21F7B4A2C4463C000881083 /* SPButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonType.swift; sourceTree = "<group>"; };
 		C21F7B4D2C4465F000881083 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		C22E5F912C47CDB800C892A4 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		C242CB812C494AD0009E67CA /* SmartProtectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartProtectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C242CB8A2C494B92009E67CA /* WelcomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTests.swift; sourceTree = "<group>"; };
+		C289077F2C4905E4007D0F0F /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
 		C2C4A5222C45175600FD3BCF /* SPPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPageView.swift; sourceTree = "<group>"; };
 		C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconType.swift; sourceTree = "<group>"; };
 		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
@@ -98,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C242CB7E2C494AD0009E67CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +125,7 @@
 			children = (
 				C21F7B0E2C44240E00881083 /* SmartProtection */,
 				C21F7B282C44270100881083 /* SmartProtectionUI */,
+				C242CB822C494AD0009E67CA /* SmartProtectionTests */,
 				C21F7B0D2C44240E00881083 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +135,7 @@
 			children = (
 				C21F7B0C2C44240E00881083 /* SmartProtection.app */,
 				C21F7B272C44270100881083 /* SmartProtectionUI.framework */,
+				C242CB812C494AD0009E67CA /* SmartProtectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +143,7 @@
 		C21F7B0E2C44240E00881083 /* SmartProtection */ = {
 			isa = PBXGroup;
 			children = (
+				C289077E2C4905D4007D0F0F /* Models */,
 				C2C4A52B2C45675500FD3BCF /* Resources */,
 				C2C4A52C2C45678400FD3BCF /* Modules */,
 				C2C4A52F2C4567CE00FD3BCF /* Persistence */,
@@ -178,6 +200,30 @@
 				C21F7B4A2C4463C000881083 /* SPButtonType.swift */,
 			);
 			path = SPButton;
+			sourceTree = "<group>";
+		};
+		C242CB822C494AD0009E67CA /* SmartProtectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				C242CB8C2C4953BE009E67CA /* Welcome */,
+			);
+			path = SmartProtectionTests;
+			sourceTree = "<group>";
+		};
+		C242CB8C2C4953BE009E67CA /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				C242CB8A2C494B92009E67CA /* WelcomeTests.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		C289077E2C4905D4007D0F0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C289077F2C4905E4007D0F0F /* UserDto.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C2C4A51F2C45149400FD3BCF /* SPPageView */ = {
@@ -293,6 +339,24 @@
 			productReference = C21F7B272C44270100881083 /* SmartProtectionUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C242CB802C494AD0009E67CA /* SmartProtectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C242CB872C494AD0009E67CA /* Build configuration list for PBXNativeTarget "SmartProtectionTests" */;
+			buildPhases = (
+				C242CB7D2C494AD0009E67CA /* Sources */,
+				C242CB7E2C494AD0009E67CA /* Frameworks */,
+				C242CB7F2C494AD0009E67CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C242CB862C494AD0009E67CA /* PBXTargetDependency */,
+			);
+			name = SmartProtectionTests;
+			productName = SmartProtectionTests;
+			productReference = C242CB812C494AD0009E67CA /* SmartProtectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -300,7 +364,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					C21F7B0B2C44240E00881083 = {
@@ -308,6 +372,10 @@
 					};
 					C21F7B262C44270000881083 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					C242CB802C494AD0009E67CA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C21F7B0B2C44240E00881083;
 					};
 				};
 			};
@@ -326,6 +394,7 @@
 			targets = (
 				C21F7B0B2C44240E00881083 /* SmartProtection */,
 				C21F7B262C44270000881083 /* SmartProtectionUI */,
+				C242CB802C494AD0009E67CA /* SmartProtectionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,6 +417,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C242CB7F2C494AD0009E67CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -361,6 +437,7 @@
 				C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */,
 				C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */,
 				C21F7B1C2C44241100881083 /* SmartProtection.xcdatamodeld in Sources */,
+				C28907802C4905E4007D0F0F /* UserDto.swift in Sources */,
 				C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +459,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C242CB7D2C494AD0009E67CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -389,6 +474,11 @@
 			isa = PBXTargetDependency;
 			target = C21F7B262C44270000881083 /* SmartProtectionUI */;
 			targetProxy = C21F7B2D2C44270100881083 /* PBXContainerItemProxy */;
+		};
+		C242CB862C494AD0009E67CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C21F7B0B2C44240E00881083 /* SmartProtection */;
+			targetProxy = C242CB852C494AD0009E67CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -454,13 +544,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -508,12 +599,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -642,6 +734,44 @@
 			};
 			name = Release;
 		};
+		C242CB882C494AD0009E67CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4563W7S2E;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wojciech.com.SmartProtectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartProtection.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartProtection";
+			};
+			name = Debug;
+		};
+		C242CB892C494AD0009E67CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4563W7S2E;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wojciech.com.SmartProtectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartProtection.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartProtection";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -668,6 +798,15 @@
 			buildConfigurations = (
 				C21F7B322C44270100881083 /* Debug */,
 				C21F7B332C44270100881083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C242CB872C494AD0009E67CA /* Build configuration list for PBXNativeTarget "SmartProtectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C242CB882C494AD0009E67CA /* Debug */,
+				C242CB892C494AD0009E67CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

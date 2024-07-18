@@ -35,8 +35,8 @@ class WelcomeLogic: ObservableObject {
     
     // MARK: - Public Methods
     
-    func presentNextViewAtTheHierarchy(currentViewType type: WelcomeViewType) {
-        welcome.presentNextViewAtTheHierarchy(currentViewType: type)
+    func presentNextViewAtTheHierarchy() {
+        welcome.presentNextViewAtTheHierarchy()
     }
     
     func presentView(at type: WelcomeViewType) {
@@ -45,5 +45,11 @@ class WelcomeLogic: ObservableObject {
     
     func insertUserData(with newValue: String, fromTextFieldWithType type: SPTextFieldType) {
         welcome.insertUserData(with: newValue, fromTextFieldWithType: type)
+    }
+    
+    /// Network Layer Communication
+    
+    func buildUserModelDTO() -> UserDto? {
+        return welcome.buildUserModel.toDTO
     }
 }

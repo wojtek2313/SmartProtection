@@ -8,12 +8,12 @@
 import SwiftUI
 import SmartProtectionUI
 
-enum RegistrationViewType {
+public enum RegistrationViewType {
     case personalData
     case companyData
     case password
     
-    var textfieldTypes: (upperTextFieldType: SPTextFieldType, bottomTextFieldType: SPTextFieldType?) {
+    public var textfieldTypes: (upperTextFieldType: SPTextFieldType, bottomTextFieldType: SPTextFieldType?) {
         switch self {
         case .personalData: return (.name, .surname)
         case .companyData: return (.company, .mobile)
@@ -21,7 +21,7 @@ enum RegistrationViewType {
         }
     }
     
-    var spButtonType: SPButtonType {
+    public var spButtonType: SPButtonType {
         switch self {
         case .personalData: return .next
         case .companyData: return .next
@@ -29,7 +29,7 @@ enum RegistrationViewType {
         }
     }
     
-    var tag: Int {
+    public var tag: Int {
         switch self {
         case .personalData: return 0
         case .companyData: return 1
@@ -38,18 +38,18 @@ enum RegistrationViewType {
     }
 }
 
-enum ForgotPasswordViewType {
+public enum ForgotPasswordViewType {
     case login
     case password
     
-    var textfieldTypes: (upperTextFieldType: SPTextFieldType, bottomTextFieldType: SPTextFieldType?) {
+    public var textfieldTypes: (upperTextFieldType: SPTextFieldType, bottomTextFieldType: SPTextFieldType?) {
         switch self {
         case .login: return (.login, nil)
         case .password: return (.newPassword, nil)
         }
     }
     
-    var spButtonType: SPButtonType {
+    public var spButtonType: SPButtonType {
         switch self {
         case .login:
             return .reset
@@ -58,7 +58,7 @@ enum ForgotPasswordViewType {
         }
     }
     
-    var tag: Int {
+    public var tag: Int {
         switch self {
         case .login: return 0
         case .password: return 1
@@ -66,12 +66,12 @@ enum ForgotPasswordViewType {
     }
 }
 
-enum WelcomeViewType: Equatable {
+public enum WelcomeViewType: Equatable {
     case login
     case register(type: RegistrationViewType)
     case forgotPassword(type: ForgotPasswordViewType)
     
-    var textfieldTypes: (upperTextFieldType: SPTextFieldType, bottomTextFieldType: SPTextFieldType?) {
+    public var textfieldTypes: (upperTextFieldType: SPTextFieldType, bottomTextFieldType: SPTextFieldType?) {
         switch self {
         case .login: return (.login, .password)
         case .register(let type): return type.textfieldTypes
@@ -79,7 +79,7 @@ enum WelcomeViewType: Equatable {
         }
     }
     
-    var spButtonType: SPButtonType {
+    public var spButtonType: SPButtonType {
         switch self {
         case .login: return .login
         case .register(let type): return type.spButtonType
@@ -87,7 +87,7 @@ enum WelcomeViewType: Equatable {
         }
     }
     
-    var spHeaderIconType: SPHeaderIconType {
+    public var spHeaderIconType: SPHeaderIconType {
         switch self {
         case .login: return .login
         case .register(_): return .register
@@ -95,7 +95,7 @@ enum WelcomeViewType: Equatable {
         }
     }
     
-    var tag: Int {
+    public var tag: Int {
         switch self {
         case .login: return 0
         case .register(let type): return type.tag

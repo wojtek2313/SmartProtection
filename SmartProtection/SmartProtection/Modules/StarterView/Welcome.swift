@@ -8,15 +8,15 @@
 import Foundation
 import SmartProtectionUI
 
-struct Welcome {
+public struct Welcome {
     // MARK: - Public Properties
     
     private var user: User
-    private(set) var currentView: WelcomeViewType
+    public private(set) var currentView: WelcomeViewType
     
-    var indexOfCurrentlySelectedView: Int { currentView.tag }
+    public var indexOfCurrentlySelectedView: Int { currentView.tag }
     
-    var areCurrentViewDataValid: Bool {
+    public var areCurrentViewDataValid: Bool {
         switch currentView {
         case .login: return validateLoginData()
         case .register(let type): return validateRegistrationData(at: type)
@@ -24,7 +24,9 @@ struct Welcome {
         }
     }
     
-    init(currentView: WelcomeViewType) {
+    public var buildUserModel: User { user }
+    
+    public init(currentView: WelcomeViewType) {
         user = User()
         self.currentView = currentView
     }
@@ -44,8 +46,8 @@ struct Welcome {
         }
     }
     
-    public mutating func presentNextViewAtTheHierarchy(currentViewType type: WelcomeViewType) {
-        switch type {
+    public mutating func presentNextViewAtTheHierarchy() {
+        switch currentView {
         case .login, .forgotPassword(type: _): break
         case .register(let type):
             switch type {
@@ -83,12 +85,32 @@ struct Welcome {
     
     // MARK: - Model
     
-    struct User {
-        var name: String?
-        var surname: String?
-        var company: String?
-        var mobile: String?
-        var mail: String?
-        var password: String?
+    public struct User: Equatable {
+        // MARK: - Public Properties
+        
+        public var name: String?
+        public var surname: String?
+        public var company: String?
+        public var mobile: String?
+        public var mail: String?
+        public var password: String?
+        
+        // MARK: - Initializers
+        
+        public init(
+            name: String? = nil,
+            surname: String? = nil,
+            company: String? = nil,
+            mobile: String? = nil,
+            mail: String? = nil,
+            password: String? = nil
+        ) {
+            self.name = name
+            self.surname = surname
+            self.company = company
+            self.mobile = mobile
+            self.mail = mail
+            self.password = password
+        }
     }
 }

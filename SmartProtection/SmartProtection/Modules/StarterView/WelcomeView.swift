@@ -65,7 +65,7 @@ struct WelcomeView: View {
                 case .login, .forgotPassword(_):
                     break
                 case .register(_):
-                    withAnimation(.easeInOut) { welcomeLogic.presentNextViewAtTheHierarchy(currentViewType: type) }
+                    withAnimation(.easeInOut) { welcomeLogic.presentNextViewAtTheHierarchy() }
                 }
             }
         }
