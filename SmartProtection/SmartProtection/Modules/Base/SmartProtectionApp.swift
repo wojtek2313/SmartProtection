@@ -10,10 +10,11 @@ import SwiftUI
 @main
 struct SmartProtectionApp: App {
     let persistenceController = PersistenceController.shared
+    @StateObject var welcomeLogic = WelcomeLogic(welcome: Welcome(currentView: .register(type: .personalData)))
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView(welcome: welcomeLogic)
         }
     }
 }
