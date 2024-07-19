@@ -8,7 +8,18 @@
 import Foundation
 import SmartProtectionUI
 
-public struct Welcome {
+public protocol WelcomeProtocol {
+    var currentView: WelcomeViewType { get }
+    var indexOfCurrentlySelectedView: Int { get }
+    var areCurrentViewDataValid: Bool { get }
+    var buildUserModel: Welcome.User { get }
+    
+    mutating func insertUserData(with newValue: String, fromTextFieldWithType type: SPTextFieldType)
+    mutating func presentNextViewAtTheHierarchy()
+    mutating func presentView(at type: WelcomeViewType)
+}
+
+public struct Welcome: WelcomeProtocol {
     // MARK: - Public Properties
     
     private var user: User

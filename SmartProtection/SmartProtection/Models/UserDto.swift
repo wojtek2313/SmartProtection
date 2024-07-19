@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct UserDto {
-    var name: String
-    var surname: String
-    var company: String
-    var mobile: String
-    var mail: String
-    var password: String
+public struct UserDto {
+    public var name: String
+    public var surname: String
+    public var company: String
+    public var mobile: String
+    public var mail: String
+    public var password: String
 }
 
 extension Welcome.User {
-    var toDTO: UserDto? {
+    public var toDTO: UserDto? {
         guard let name = name,
               let surname = surname,
               let company = company,

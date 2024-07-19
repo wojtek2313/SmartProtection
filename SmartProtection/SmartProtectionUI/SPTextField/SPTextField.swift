@@ -79,7 +79,7 @@ public struct SPTextField: View {
     
     private var hideInputButton: some View {
         Button { isInputHidden.toggle() } label: {
-            Image(isInputHidden ? Constants.Images.openEyeIconName : Constants.Images.closedEyeIconName)
+            Image(systemName: isInputHidden ? Constants.Images.openEyeIconName : Constants.Images.closedEyeIconName)
                 .resizable()
                 .scaledToFit()
                 .frame(
@@ -119,7 +119,7 @@ public struct SPTextField: View {
         /// Images
         struct Images {
             static let openEyeIconName = "eye"
-            static let closedEyeIconName = "blind"
+            static let closedEyeIconName = "eye.slash"
         }
         
         /// Layout

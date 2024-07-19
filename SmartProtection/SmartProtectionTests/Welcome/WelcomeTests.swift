@@ -17,6 +17,7 @@ final class WelcomeTests: XCTestCase {
     
     override func tearDown() {
         sut = nil
+        super.tearDown()
     }
     
     // MARK: - Tests

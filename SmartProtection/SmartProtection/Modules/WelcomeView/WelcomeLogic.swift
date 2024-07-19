@@ -8,48 +8,48 @@
 import SwiftUI
 import SmartProtectionUI
 
-class WelcomeLogic: ObservableObject {
+public class WelcomeLogic: ObservableObject {
     // MARK: - Private Properties
     
-    @Published private var welcome: Welcome
+    @Published private var welcome: WelcomeProtocol
     
     // MARK: - Public Properties
     
-    var currentWelcomeViewType: WelcomeViewType {
+    public var currentWelcomeViewType: WelcomeViewType {
         welcome.currentView
     }
     
-    var indexOfCurrentlySelectedView: Int {
+    public var indexOfCurrentlySelectedView: Int {
         welcome.indexOfCurrentlySelectedView
     }
     
-    var areCurrentViewDataValid: Bool {
+    public var areCurrentViewDataValid: Bool {
         welcome.areCurrentViewDataValid
     }
     
     // MARK: - Initializers
     
-    init(welcome: Welcome) {
+    public init(welcome: WelcomeProtocol) {
         self.welcome = welcome
     }
     
     // MARK: - Public Methods
     
-    func presentNextViewAtTheHierarchy() {
+    public func presentNextViewAtTheHierarchy() {
         welcome.presentNextViewAtTheHierarchy()
     }
     
-    func presentView(at type: WelcomeViewType) {
+    public func presentView(at type: WelcomeViewType) {
         welcome.presentView(at: type)
     }
     
-    func insertUserData(with newValue: String, fromTextFieldWithType type: SPTextFieldType) {
+    public func insertUserData(with newValue: String, fromTextFieldWithType type: SPTextFieldType) {
         welcome.insertUserData(with: newValue, fromTextFieldWithType: type)
     }
     
     /// Network Layer Communication
     
-    func buildUserModelDTO() -> UserDto? {
+    public func buildUserModelDTO() -> UserDto? {
         return welcome.buildUserModel.toDTO
     }
 }
