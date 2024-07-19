@@ -15,7 +15,7 @@ public enum SPButtonType {
     case register
     case newPassword
     
-    var title: String {
+    public var title: String {
         switch self {
         case .login:
             return "SP_BUTTON_LOG_IN".localized
@@ -30,7 +30,7 @@ public enum SPButtonType {
         }
     }
     
-    var color: Color {
+    public var color: Color {
         .spBlue
     }
 }

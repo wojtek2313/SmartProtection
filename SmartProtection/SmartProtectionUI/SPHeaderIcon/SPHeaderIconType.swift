@@ -13,7 +13,7 @@ public enum SPHeaderIconType {
     case register
     case chagePassword
     
-    var icon: Image {
+    public var icon: Image {
         switch self {
         case .login, .register:
             return Image("log-in-icon")
@@ -22,9 +22,9 @@ public enum SPHeaderIconType {
         }
     }
     
-    var title: String { "SP_HEADER_ICON_TITLE".localized }
+    public var title: String { "SP_HEADER_ICON_TITLE".localized }
     
-    var subtitle: String {
+    public var subtitle: String {
         switch self {
         case .login:
             return "SP_HEADER_ICON_LOG_IN".localized

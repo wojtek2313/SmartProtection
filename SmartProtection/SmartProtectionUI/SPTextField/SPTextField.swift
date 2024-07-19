@@ -91,7 +91,7 @@ public struct SPTextField: View {
         .padding(.trailing, Constants.Layout.medium)
     }
     
-    // MARK: - Public Methods
+    // MARK: - Private Input
     
     private func validate() {
         guard isRequired else { return }

@@ -17,7 +17,7 @@ public enum SPTextFieldType: String {
     case newPassword
     case newLogin
     
-    var title: String {
+    public var title: String {
         switch self {
         case .login:
             return "SP_TEXT_FIELD_LOGIN".localized
@@ -38,7 +38,7 @@ public enum SPTextFieldType: String {
         }
     }
     
-    var placeholder: String {
+    public var placeholder: String {
         switch self {
         case .login:
             return "SP_TEXT_FIELD_LOGIN_PLACEHOLDER".localized
@@ -59,5 +59,5 @@ public enum SPTextFieldType: String {
         }
     }
     
-    var inputHideable: Bool { self == .password || self == .newPassword }
+    public var inputHideable: Bool { self == .password || self == .newPassword }
 }

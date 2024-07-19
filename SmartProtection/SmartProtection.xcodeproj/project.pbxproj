@@ -28,7 +28,15 @@
 		C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8A2C494B92009E67CA /* WelcomeTests.swift */; };
 		C242CB8E2C4A3B71009E67CA /* WelcomeLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */; };
 		C242CB902C4A3CD3009E67CA /* WelcomeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8F2C4A3CD3009E67CA /* WelcomeMock.swift */; };
+		C242CB972C4A693F009E67CA /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C242CB962C4A693F009E67CA /* InlineSnapshotTesting */; };
+		C242CB992C4A693F009E67CA /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C242CB982C4A693F009E67CA /* SnapshotTesting */; };
+		C242CB9C2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB9B2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift */; };
+		C242CB9F2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB9E2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift */; };
 		C28907802C4905E4007D0F0F /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289077F2C4905E4007D0F0F /* UserDto.swift */; };
+		C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE6C2C4A7B8500965B3F /* SPButtonTests.swift */; };
+		C293AE6F2C4A890E00965B3F /* SPButtonTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE6E2C4A890E00965B3F /* SPButtonTypeTests.swift */; };
+		C293AE722C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE712C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift */; };
+		C293AE742C4A98BA00965B3F /* SPTextFieldTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE732C4A98BA00965B3F /* SPTextFieldTypeTests.swift */; };
 		C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5222C45175600FD3BCF /* SPPageView.swift */; };
 		C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */; };
 		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
@@ -90,7 +98,13 @@
 		C242CB8A2C494B92009E67CA /* WelcomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTests.swift; sourceTree = "<group>"; };
 		C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLogicTests.swift; sourceTree = "<group>"; };
 		C242CB8F2C4A3CD3009E67CA /* WelcomeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMock.swift; sourceTree = "<group>"; };
+		C242CB9B2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconSnapshotTests.swift; sourceTree = "<group>"; };
+		C242CB9E2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconTypeTests.swift; sourceTree = "<group>"; };
 		C289077F2C4905E4007D0F0F /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
+		C293AE6C2C4A7B8500965B3F /* SPButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonTests.swift; sourceTree = "<group>"; };
+		C293AE6E2C4A890E00965B3F /* SPButtonTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonTypeTests.swift; sourceTree = "<group>"; };
+		C293AE712C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTextFieldSnapshotTests.swift; sourceTree = "<group>"; };
+		C293AE732C4A98BA00965B3F /* SPTextFieldTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTextFieldTypeTests.swift; sourceTree = "<group>"; };
 		C2C4A5222C45175600FD3BCF /* SPPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPageView.swift; sourceTree = "<group>"; };
 		C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconType.swift; sourceTree = "<group>"; };
 		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
@@ -118,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C242CB972C4A693F009E67CA /* InlineSnapshotTesting in Frameworks */,
+				C242CB992C4A693F009E67CA /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +225,8 @@
 		C242CB822C494AD0009E67CA /* SmartProtectionTests */ = {
 			isa = PBXGroup;
 			children = (
-				C242CB8C2C4953BE009E67CA /* Welcome */,
+				C242CB942C4A6618009E67CA /* SnapShotTests */,
+				C242CB932C4A660B009E67CA /* UnitTests */,
 			);
 			path = SmartProtectionTests;
 			sourceTree = "<group>";
@@ -217,11 +234,62 @@
 		C242CB8C2C4953BE009E67CA /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				C242CB8A2C494B92009E67CA /* WelcomeTests.swift */,
-				C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */,
-				C242CB8F2C4A3CD3009E67CA /* WelcomeMock.swift */,
+				C242CB922C4A6370009E67CA /* Tests */,
+				C242CB912C4A6365009E67CA /* Mocks */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		C242CB912C4A6365009E67CA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C242CB8F2C4A3CD3009E67CA /* WelcomeMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C242CB922C4A6370009E67CA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C242CB8A2C494B92009E67CA /* WelcomeTests.swift */,
+				C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C242CB932C4A660B009E67CA /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C242CB8C2C4953BE009E67CA /* Welcome */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		C242CB942C4A6618009E67CA /* SnapShotTests */ = {
+			isa = PBXGroup;
+			children = (
+				C242CB9A2C4A6A34009E67CA /* Tests */,
+			);
+			path = SnapShotTests;
+			sourceTree = "<group>";
+		};
+		C242CB9A2C4A6A34009E67CA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C293AE702C4A8C4D00965B3F /* SPTextField */,
+				C293AE6B2C4A7B5700965B3F /* SPButton */,
+				C242CB9D2C4A6E77009E67CA /* SPHeaderIcon */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C242CB9D2C4A6E77009E67CA /* SPHeaderIcon */ = {
+			isa = PBXGroup;
+			children = (
+				C242CB9B2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift */,
+				C242CB9E2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift */,
+			);
+			path = SPHeaderIcon;
 			sourceTree = "<group>";
 		};
 		C289077E2C4905D4007D0F0F /* Models */ = {
@@ -230,6 +298,24 @@
 				C289077F2C4905E4007D0F0F /* UserDto.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C293AE6B2C4A7B5700965B3F /* SPButton */ = {
+			isa = PBXGroup;
+			children = (
+				C293AE6C2C4A7B8500965B3F /* SPButtonTests.swift */,
+				C293AE6E2C4A890E00965B3F /* SPButtonTypeTests.swift */,
+			);
+			path = SPButton;
+			sourceTree = "<group>";
+		};
+		C293AE702C4A8C4D00965B3F /* SPTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C293AE712C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift */,
+				C293AE732C4A98BA00965B3F /* SPTextFieldTypeTests.swift */,
+			);
+			path = SPTextField;
 			sourceTree = "<group>";
 		};
 		C2C4A51F2C45149400FD3BCF /* SPPageView */ = {
@@ -359,6 +445,10 @@
 				C242CB862C494AD0009E67CA /* PBXTargetDependency */,
 			);
 			name = SmartProtectionTests;
+			packageProductDependencies = (
+				C242CB962C4A693F009E67CA /* InlineSnapshotTesting */,
+				C242CB982C4A693F009E67CA /* SnapshotTesting */,
+			);
 			productName = SmartProtectionTests;
 			productReference = C242CB812C494AD0009E67CA /* SmartProtectionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -394,6 +484,9 @@
 				Base,
 			);
 			mainGroup = C21F7B032C44240E00881083;
+			packageReferences = (
+				C242CB952C4A693F009E67CA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = C21F7B0D2C44240E00881083 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -469,8 +562,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C293AE722C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift in Sources */,
 				C242CB902C4A3CD3009E67CA /* WelcomeMock.swift in Sources */,
+				C242CB9F2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift in Sources */,
+				C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */,
+				C293AE742C4A98BA00965B3F /* SPTextFieldTypeTests.swift in Sources */,
 				C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */,
+				C242CB9C2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift in Sources */,
+				C293AE6F2C4A890E00965B3F /* SPButtonTypeTests.swift in Sources */,
 				C242CB8E2C4A3B71009E67CA /* WelcomeLogicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -820,6 +919,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C242CB952C4A693F009E67CA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C242CB962C4A693F009E67CA /* InlineSnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C242CB952C4A693F009E67CA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = InlineSnapshotTesting;
+		};
+		C242CB982C4A693F009E67CA /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C242CB952C4A693F009E67CA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C21F7B1A2C44241100881083 /* SmartProtection.xcdatamodeld */ = {
