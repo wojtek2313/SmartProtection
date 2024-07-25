@@ -14,7 +14,8 @@ struct SmartProtectionApp: App {
 
     var body: some Scene {
         WindowGroup {
-            WelcomeView(welcome: welcomeLogic)
+//            WelcomeView(welcome: welcomeLogic)
+            TabBarView(tabBarLogic: TabBarLogic(tabBar: TabBar(selectedViewType: .jobTracker)))
         }
     }
 }

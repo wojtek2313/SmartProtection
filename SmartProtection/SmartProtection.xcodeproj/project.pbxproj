@@ -32,11 +32,19 @@
 		C242CB992C4A693F009E67CA /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C242CB982C4A693F009E67CA /* SnapshotTesting */; };
 		C242CB9C2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB9B2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift */; };
 		C242CB9F2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB9E2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift */; };
+		C254D4952C5163E700335C62 /* JobTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254D4942C5163E700335C62 /* JobTrackerView.swift */; };
+		C254D4982C51648100335C62 /* SPTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254D4972C51648100335C62 /* SPTabView.swift */; };
+		C254D49A2C51670000335C62 /* SPTabViewContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254D4992C51670000335C62 /* SPTabViewContentType.swift */; };
+		C254D49C2C51A41300335C62 /* SPTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254D49B2C51A41300335C62 /* SPTabButton.swift */; };
+		C254D49F2C51A59900335C62 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254D49E2C51A59900335C62 /* TabBarView.swift */; };
 		C28907802C4905E4007D0F0F /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289077F2C4905E4007D0F0F /* UserDto.swift */; };
 		C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE6C2C4A7B8500965B3F /* SPButtonTests.swift */; };
 		C293AE6F2C4A890E00965B3F /* SPButtonTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE6E2C4A890E00965B3F /* SPButtonTypeTests.swift */; };
 		C293AE722C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE712C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift */; };
 		C293AE742C4A98BA00965B3F /* SPTextFieldTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE732C4A98BA00965B3F /* SPTextFieldTypeTests.swift */; };
+		C29703FA2C52B177000959FB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703F92C52B177000959FB /* SettingsView.swift */; };
+		C29703FC2C52B48A000959FB /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703FB2C52B48A000959FB /* TabBar.swift */; };
+		C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703FD2C52B52C000959FB /* TabBarLogic.swift */; };
 		C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5222C45175600FD3BCF /* SPPageView.swift */; };
 		C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */; };
 		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
@@ -100,11 +108,19 @@
 		C242CB8F2C4A3CD3009E67CA /* WelcomeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMock.swift; sourceTree = "<group>"; };
 		C242CB9B2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconSnapshotTests.swift; sourceTree = "<group>"; };
 		C242CB9E2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconTypeTests.swift; sourceTree = "<group>"; };
+		C254D4942C5163E700335C62 /* JobTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTrackerView.swift; sourceTree = "<group>"; };
+		C254D4972C51648100335C62 /* SPTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabView.swift; sourceTree = "<group>"; };
+		C254D4992C51670000335C62 /* SPTabViewContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabViewContentType.swift; sourceTree = "<group>"; };
+		C254D49B2C51A41300335C62 /* SPTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabButton.swift; sourceTree = "<group>"; };
+		C254D49E2C51A59900335C62 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		C289077F2C4905E4007D0F0F /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
 		C293AE6C2C4A7B8500965B3F /* SPButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonTests.swift; sourceTree = "<group>"; };
 		C293AE6E2C4A890E00965B3F /* SPButtonTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonTypeTests.swift; sourceTree = "<group>"; };
 		C293AE712C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTextFieldSnapshotTests.swift; sourceTree = "<group>"; };
 		C293AE732C4A98BA00965B3F /* SPTextFieldTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTextFieldTypeTests.swift; sourceTree = "<group>"; };
+		C29703F92C52B177000959FB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C29703FB2C52B48A000959FB /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		C29703FD2C52B52C000959FB /* TabBarLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLogic.swift; sourceTree = "<group>"; };
 		C2C4A5222C45175600FD3BCF /* SPPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPageView.swift; sourceTree = "<group>"; };
 		C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconType.swift; sourceTree = "<group>"; };
 		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
@@ -185,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				C21F7B402C442C5F00881083 /* Extensions */,
+				C254D4962C51645F00335C62 /* SPTabView */,
 				C21F7B372C44273500881083 /* SPTextField */,
 				C21F7B472C44638200881083 /* SPButton */,
 				C2C4A51F2C45149400FD3BCF /* SPPageView */,
@@ -292,6 +309,34 @@
 			path = SPHeaderIcon;
 			sourceTree = "<group>";
 		};
+		C254D4932C51637400335C62 /* JobTrackerView */ = {
+			isa = PBXGroup;
+			children = (
+				C254D4942C5163E700335C62 /* JobTrackerView.swift */,
+			);
+			path = JobTrackerView;
+			sourceTree = "<group>";
+		};
+		C254D4962C51645F00335C62 /* SPTabView */ = {
+			isa = PBXGroup;
+			children = (
+				C254D4972C51648100335C62 /* SPTabView.swift */,
+				C254D4992C51670000335C62 /* SPTabViewContentType.swift */,
+				C254D49B2C51A41300335C62 /* SPTabButton.swift */,
+			);
+			path = SPTabView;
+			sourceTree = "<group>";
+		};
+		C254D49D2C51A58200335C62 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C254D49E2C51A59900335C62 /* TabBarView.swift */,
+				C29703FD2C52B52C000959FB /* TabBarLogic.swift */,
+				C29703FB2C52B48A000959FB /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		C289077E2C4905D4007D0F0F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +361,14 @@
 				C293AE732C4A98BA00965B3F /* SPTextFieldTypeTests.swift */,
 			);
 			path = SPTextField;
+			sourceTree = "<group>";
+		};
+		C29703F82C529B48000959FB /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				C29703F92C52B177000959FB /* SettingsView.swift */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 		C2C4A51F2C45149400FD3BCF /* SPPageView */ = {
@@ -347,7 +400,10 @@
 		C2C4A52C2C45678400FD3BCF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C254D49D2C51A58200335C62 /* TabBar */,
 				C2C4A52D2C4567A700FD3BCF /* Base */,
+				C29703F82C529B48000959FB /* SettingsView */,
+				C254D4932C51637400335C62 /* JobTrackerView */,
 				C2C4A52E2C4567B600FD3BCF /* WelcomeView */,
 			);
 			path = Modules;
@@ -532,12 +588,17 @@
 			files = (
 				C2C4A5312C4569FB00FD3BCF /* WelcomeLogic.swift in Sources */,
 				C22E5F922C47CDB800C892A4 /* Welcome.swift in Sources */,
+				C254D49F2C51A59900335C62 /* TabBarView.swift in Sources */,
+				C29703FC2C52B48A000959FB /* TabBar.swift in Sources */,
+				C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */,
 				C21F7B192C44241100881083 /* Persistence.swift in Sources */,
 				C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */,
 				C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */,
 				C21F7B1C2C44241100881083 /* SmartProtection.xcdatamodeld in Sources */,
+				C254D4952C5163E700335C62 /* JobTrackerView.swift in Sources */,
 				C28907802C4905E4007D0F0F /* UserDto.swift in Sources */,
 				C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */,
+				C29703FA2C52B177000959FB /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,10 +612,13 @@
 				C21F7B362C44272C00881083 /* SPTextField.swift in Sources */,
 				C21F7B422C442C7300881083 /* String+Ext.swift in Sources */,
 				C21F7B492C44639A00881083 /* SPButton.swift in Sources */,
+				C254D49A2C51670000335C62 /* SPTabViewContentType.swift in Sources */,
 				C21F7B4B2C4463C000881083 /* SPButtonType.swift in Sources */,
 				C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */,
 				C21F7B2B2C44270100881083 /* SmartProtectionUI.docc in Sources */,
 				C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */,
+				C254D4982C51648100335C62 /* SPTabView.swift in Sources */,
+				C254D49C2C51A41300335C62 /* SPTabButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
