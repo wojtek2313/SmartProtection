@@ -45,6 +45,8 @@
 		C29703FA2C52B177000959FB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703F92C52B177000959FB /* SettingsView.swift */; };
 		C29703FC2C52B48A000959FB /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703FB2C52B48A000959FB /* TabBar.swift */; };
 		C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703FD2C52B52C000959FB /* TabBarLogic.swift */; };
+		C2B5EAE02C540D710068AFB0 /* TabBarLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */; };
+		C2B5EAE22C540F3A0068AFB0 /* TabBarMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EAE12C540F3A0068AFB0 /* TabBarMock.swift */; };
 		C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5222C45175600FD3BCF /* SPPageView.swift */; };
 		C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */; };
 		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
@@ -121,6 +123,8 @@
 		C29703F92C52B177000959FB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C29703FB2C52B48A000959FB /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C29703FD2C52B52C000959FB /* TabBarLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLogic.swift; sourceTree = "<group>"; };
+		C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLogicTests.swift; sourceTree = "<group>"; };
+		C2B5EAE12C540F3A0068AFB0 /* TabBarMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMock.swift; sourceTree = "<group>"; };
 		C2C4A5222C45175600FD3BCF /* SPPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPageView.swift; sourceTree = "<group>"; };
 		C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconType.swift; sourceTree = "<group>"; };
 		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
@@ -261,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				C242CB8F2C4A3CD3009E67CA /* WelcomeMock.swift */,
+				C2B5EAE12C540F3A0068AFB0 /* TabBarMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 		C242CB922C4A6370009E67CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */,
 				C242CB8A2C494B92009E67CA /* WelcomeTests.swift */,
 				C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */,
 			);
@@ -634,6 +640,8 @@
 				C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */,
 				C242CB9C2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift in Sources */,
 				C293AE6F2C4A890E00965B3F /* SPButtonTypeTests.swift in Sources */,
+				C2B5EAE22C540F3A0068AFB0 /* TabBarMock.swift in Sources */,
+				C2B5EAE02C540D710068AFB0 /* TabBarLogicTests.swift in Sources */,
 				C242CB8E2C4A3B71009E67CA /* WelcomeLogicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

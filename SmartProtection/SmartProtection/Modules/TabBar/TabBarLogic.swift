@@ -14,7 +14,7 @@ public class TabBarLogic: ObservableObject {
     
     // MARK: - Public Properties
     
-    var selectedViewType: TabBar.SelectedViewType {
+    public var selectedViewType: TabBar.SelectedViewType {
         tabBar.selectedViewType
     }
     
