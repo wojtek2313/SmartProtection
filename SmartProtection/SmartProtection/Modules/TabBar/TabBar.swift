@@ -31,7 +31,7 @@ public struct TabBar: TabBarProtocol {
     
     // MARK: - Initializers
     
-    init(selectedViewType: SelectedViewType) {
+    public init(selectedViewType: SelectedViewType) {
         self._selectedViewType = selectedViewType
     }
     

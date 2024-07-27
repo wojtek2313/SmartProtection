@@ -47,6 +47,9 @@
 		C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703FD2C52B52C000959FB /* TabBarLogic.swift */; };
 		C2B5EAE02C540D710068AFB0 /* TabBarLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */; };
 		C2B5EAE22C540F3A0068AFB0 /* TabBarMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EAE12C540F3A0068AFB0 /* TabBarMock.swift */; };
+		C2B5EAE42C54AAB10068AFB0 /* TabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EAE32C54AAB10068AFB0 /* TabBarTests.swift */; };
+		C2B5EAE72C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EAE62C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift */; };
+		C2B5EAE92C54B77C0068AFB0 /* SPTabViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EAE82C54B77B0068AFB0 /* SPTabViewSnapshotTests.swift */; };
 		C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5222C45175600FD3BCF /* SPPageView.swift */; };
 		C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */; };
 		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
@@ -125,6 +128,9 @@
 		C29703FD2C52B52C000959FB /* TabBarLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLogic.swift; sourceTree = "<group>"; };
 		C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLogicTests.swift; sourceTree = "<group>"; };
 		C2B5EAE12C540F3A0068AFB0 /* TabBarMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMock.swift; sourceTree = "<group>"; };
+		C2B5EAE32C54AAB10068AFB0 /* TabBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarTests.swift; sourceTree = "<group>"; };
+		C2B5EAE62C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabViewContentTypeTests.swift; sourceTree = "<group>"; };
+		C2B5EAE82C54B77B0068AFB0 /* SPTabViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabViewSnapshotTests.swift; sourceTree = "<group>"; };
 		C2C4A5222C45175600FD3BCF /* SPPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPageView.swift; sourceTree = "<group>"; };
 		C2C4A5252C452EA700FD3BCF /* SPHeaderIconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIconType.swift; sourceTree = "<group>"; };
 		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
@@ -273,6 +279,7 @@
 		C242CB922C4A6370009E67CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C2B5EAE32C54AAB10068AFB0 /* TabBarTests.swift */,
 				C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */,
 				C242CB8A2C494B92009E67CA /* WelcomeTests.swift */,
 				C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */,
@@ -299,6 +306,7 @@
 		C242CB9A2C4A6A34009E67CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C2B5EAE52C54B34D0068AFB0 /* SPTabView */,
 				C293AE702C4A8C4D00965B3F /* SPTextField */,
 				C293AE6B2C4A7B5700965B3F /* SPButton */,
 				C242CB9D2C4A6E77009E67CA /* SPHeaderIcon */,
@@ -375,6 +383,15 @@
 				C29703F92C52B177000959FB /* SettingsView.swift */,
 			);
 			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		C2B5EAE52C54B34D0068AFB0 /* SPTabView */ = {
+			isa = PBXGroup;
+			children = (
+				C2B5EAE62C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift */,
+				C2B5EAE82C54B77B0068AFB0 /* SPTabViewSnapshotTests.swift */,
+			);
+			path = SPTabView;
 			sourceTree = "<group>";
 		};
 		C2C4A51F2C45149400FD3BCF /* SPPageView */ = {
@@ -633,8 +650,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C293AE722C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift in Sources */,
+				C2B5EAE92C54B77C0068AFB0 /* SPTabViewSnapshotTests.swift in Sources */,
 				C242CB902C4A3CD3009E67CA /* WelcomeMock.swift in Sources */,
 				C242CB9F2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift in Sources */,
+				C2B5EAE72C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift in Sources */,
+				C2B5EAE42C54AAB10068AFB0 /* TabBarTests.swift in Sources */,
 				C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */,
 				C293AE742C4A98BA00965B3F /* SPTextFieldTypeTests.swift in Sources */,
 				C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */,
