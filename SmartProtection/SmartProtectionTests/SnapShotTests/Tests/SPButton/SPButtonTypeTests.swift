@@ -41,4 +41,10 @@ final class SPButtonTypeTests: XCTestCase {
         XCTAssertEqual(type.title, "SP_BUTTON_SET_NEW_PASSWORD".localized)
         XCTAssertEqual(type.color, .spBlue)
     }
+    
+    func testSPButtonTypeWhenSetToDocuments() {
+        let type = SPButtonType.documents
+        XCTAssertEqual(type.title, "SP_BUTTON_DOCUMENTS".localized)
+        XCTAssertEqual(type.color, .spBlue)
+    }
 }

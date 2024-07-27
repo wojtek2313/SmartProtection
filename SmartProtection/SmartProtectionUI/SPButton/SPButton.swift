@@ -13,12 +13,22 @@ public struct SPButton: View {
     private let type: SPButtonType
     private let enabled: Bool
     private let action: () -> Void
+    private var height: CGFloat?
+    private var titleFont: Font?
     
     // MARK: - Initializers
     
-    public init(type: SPButtonType, enabled: Bool, action: @escaping () -> Void) {
+    public init(
+        type: SPButtonType,
+        enabled: Bool = true,
+        height: CGFloat? = nil,
+        titleFont: Font? = nil,
+        action: @escaping () -> Void
+    ) {
         self.type = type
         self.enabled = enabled
+        self.height = height
+        self.titleFont = titleFont
         self.action = action
     }
     
@@ -33,13 +43,13 @@ public struct SPButton: View {
     private var title: some View {
         Text(type.title)
             .foregroundColor(.white)
-            .font(.custom(Constants.Font.font, fixedSize: Constants.Font.size))
+            .font(titleFont ?? .custom(Constants.Font.font, fixedSize: Constants.Font.size))
     }
     
     private var buttonContent: some View {
         RoundedRectangle(cornerRadius: Constants.cornerRadius)
             .foregroundColor(enabled ? type.color : .gray)
-            .frame(height: Constants.height)
+            .frame(height: height ?? Constants.height)
             .overlay {
                 title
             }

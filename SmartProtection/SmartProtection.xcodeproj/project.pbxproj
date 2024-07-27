@@ -56,6 +56,8 @@
 		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
 		C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5292C453D1900FD3BCF /* WelcomeViewType.swift */; };
 		C2C4A5312C4569FB00FD3BCF /* WelcomeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5302C4569FB00FD3BCF /* WelcomeLogic.swift */; };
+		C2E46A8E2C555FC300895AF3 /* SPCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A8D2C555FC300895AF3 /* SPCardView.swift */; };
+		C2E46A912C5582C300895AF3 /* SPCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
 		C2C4A5292C453D1900FD3BCF /* WelcomeViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewType.swift; sourceTree = "<group>"; };
 		C2C4A5302C4569FB00FD3BCF /* WelcomeLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLogic.swift; sourceTree = "<group>"; };
+		C2E46A8D2C555FC300895AF3 /* SPCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCardView.swift; sourceTree = "<group>"; };
+		C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCardViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				C21F7B402C442C5F00881083 /* Extensions */,
+				C2E46A8C2C555F9600895AF3 /* SPCardView */,
 				C254D4962C51645F00335C62 /* SPTabView */,
 				C21F7B372C44273500881083 /* SPTextField */,
 				C21F7B472C44638200881083 /* SPButton */,
@@ -308,6 +313,7 @@
 		C242CB9A2C4A6A34009E67CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C2E46A8F2C55828900895AF3 /* SPCardView */,
 				C2B5EAE52C54B34D0068AFB0 /* SPTabView */,
 				C293AE702C4A8C4D00965B3F /* SPTextField */,
 				C293AE6B2C4A7B5700965B3F /* SPButton */,
@@ -391,8 +397,8 @@
 		C2B5EAE52C54B34D0068AFB0 /* SPTabView */ = {
 			isa = PBXGroup;
 			children = (
-				C2B5EAE62C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift */,
 				C2B5EAE82C54B77B0068AFB0 /* SPTabViewSnapshotTests.swift */,
+				C2B5EAE62C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift */,
 			);
 			path = SPTabView;
 			sourceTree = "<group>";
@@ -460,6 +466,22 @@
 				C21F7B182C44241100881083 /* Persistence.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		C2E46A8C2C555F9600895AF3 /* SPCardView */ = {
+			isa = PBXGroup;
+			children = (
+				C2E46A8D2C555FC300895AF3 /* SPCardView.swift */,
+			);
+			path = SPCardView;
+			sourceTree = "<group>";
+		};
+		C2E46A8F2C55828900895AF3 /* SPCardView */ = {
+			isa = PBXGroup;
+			children = (
+				C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */,
+			);
+			path = SPCardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,6 +668,7 @@
 				C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */,
 				C254D4982C51648100335C62 /* SPTabView.swift in Sources */,
 				C254D49C2C51A41300335C62 /* SPTabButton.swift in Sources */,
+				C2E46A8E2C555FC300895AF3 /* SPCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +685,7 @@
 				C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */,
 				C293AE742C4A98BA00965B3F /* SPTextFieldTypeTests.swift in Sources */,
 				C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */,
+				C2E46A912C5582C300895AF3 /* SPCardViewTests.swift in Sources */,
 				C242CB9C2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift in Sources */,
 				C293AE6F2C4A890E00965B3F /* SPButtonTypeTests.swift in Sources */,
 				C2B5EAE22C540F3A0068AFB0 /* TabBarMock.swift in Sources */,

@@ -9,7 +9,15 @@ import SwiftUI
 import SmartProtectionUI
 
 struct JobTrackerView: View {
+    // MARK: - Public Properties
+    
     @State var constructionName: String = "Motława"
+    
+    // MARK: - Initializers
+    
+    init() {}
+    
+    // MARK: - UI
     
     var body: some View {
         ScrollView {
@@ -18,11 +26,20 @@ struct JobTrackerView: View {
             bhpSection
             documentsSection
         }
+        .scrollIndicators(.hidden)
     }
     
     private var idCardSection: some View {
         Section {
-            Text("CARD")
+            // TODO: - PASS MODEL TO VIEW
+            
+            SPCardView(
+                cardId: "ACE1234",
+                name: "Wojtek",
+                surname: "Kulas",
+                company: "NAZWA"
+            )
+            .padding(.horizontal)
         } header: {
             createHeader(at: .constructionCard)
         }
@@ -46,7 +63,11 @@ struct JobTrackerView: View {
     
     private var documentsSection: some View {
         Section {
-            Text("DOCUMENTS")
+            SPButton(type: .documents, height: Constants.height, titleFont: .headline) {
+                // TODO: - ACTION GOES HERE
+            }
+            .padding()
+            .padding(.bottom, Constants.padding)
         } header: {
             createHeader(at: .documents)
         }
@@ -68,10 +89,11 @@ struct JobTrackerView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
     }
-}
-
-struct JobTrackerView_Previews: PreviewProvider {
-    static var previews: some View {
-        JobTrackerView()
+    
+    // MARK: - Constants
+    
+    private struct Constants {
+        static let padding: CGFloat = 150
+        static let height: CGFloat = 45
     }
 }

@@ -32,12 +32,17 @@
 "SP_BUTTON_REGISTER" = "Zarejestruj";
 "SP_BUTTON_RESET_PASSWORD" = "Zresetuj hasło";
 "SP_BUTTON_SET_NEW_PASSWORD" = "Ustaw nowe hasło";
+"SP_BUTTON_DOCUMENTS" = "Dokumenty";
 
 /// SPHeaderIcon
 "SP_HEADER_ICON_TITLE" = "SmartProtection";
 "SP_HEADER_ICON_LOG_IN" = "Zaloguj się";
 "SP_HEADER_ICON_REGISTER" = "Zarejestruj się";
 "SP_HEADER_ICON_CHANGE_PASSWORD" = "Zmień hasło";
+
+// SPCardView
+"SP_CARD_VIEW_ID" = "ID:";
+"SP_CARD_VIEW_COMPANY" = "FIRMA:";
 
 /// Views
 
