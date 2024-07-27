@@ -48,6 +48,7 @@ struct TabBarView: View {
                 settingsActionHandler: tabBarLogic.settingsActionHandler,
                 proxy: proxy
             )
+            .background(.white)
         }
     }
     

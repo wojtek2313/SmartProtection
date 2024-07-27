@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2185DD52C54D94400B072A5 /* JobTrackerHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */; };
 		C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */; };
 		C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B112C44240E00881083 /* WelcomeView.swift */; };
 		C21F7B142C44241000881083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21F7B132C44241000881083 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTrackerHeaderType.swift; sourceTree = "<group>"; };
 		C21F7B0C2C44240E00881083 /* SmartProtection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartProtection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProtectionApp.swift; sourceTree = "<group>"; };
 		C21F7B112C44240E00881083 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				C254D4942C5163E700335C62 /* JobTrackerView.swift */,
+				C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */,
 			);
 			path = JobTrackerView;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				C254D49F2C51A59900335C62 /* TabBarView.swift in Sources */,
 				C29703FC2C52B48A000959FB /* TabBar.swift in Sources */,
 				C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */,
+				C2185DD52C54D94400B072A5 /* JobTrackerHeaderType.swift in Sources */,
 				C21F7B192C44241100881083 /* Persistence.swift in Sources */,
 				C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */,
 				C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */,

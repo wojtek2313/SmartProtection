@@ -43,3 +43,11 @@
 
 // Regsitration View
 "REGISTRATION_VIEW_FORGOT_PASSWORD" = "Nie pamiętam hasła";
+
+// Job Tracker View
+"JOB_TRACKER_CONSTRUCTION_ID" = "ID Budowy: ";
+"JOB_TRACKER_TIME_OF_WORK" = "Czas pracy:";
+"JOB_TRACKER_BHP" = "Ekwipunek BHP:";
+"JOB_TRACKER_DOCUMENTS" = "Dokumenty:";
+"JOB_TRACEKR_CONSTRUCTION_ID_SUBTITLE" = "Naciśnij i przytrzymaj by zanonimizować kartę.";
+"JOB_TRACKER_DOCUMENTS_SUBTITLE" = "Sprawdź oraz podpisz listę wymaganych dokumentów na tą budowę:";
