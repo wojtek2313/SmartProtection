@@ -58,6 +58,7 @@
 		C2C4A5312C4569FB00FD3BCF /* WelcomeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5302C4569FB00FD3BCF /* WelcomeLogic.swift */; };
 		C2E46A8E2C555FC300895AF3 /* SPCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A8D2C555FC300895AF3 /* SPCardView.swift */; };
 		C2E46A912C5582C300895AF3 /* SPCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */; };
+		C2E46A942C56268A00895AF3 /* SPProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A932C56268A00895AF3 /* SPProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		C2C4A5302C4569FB00FD3BCF /* WelcomeLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLogic.swift; sourceTree = "<group>"; };
 		C2E46A8D2C555FC300895AF3 /* SPCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCardView.swift; sourceTree = "<group>"; };
 		C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCardViewTests.swift; sourceTree = "<group>"; };
+		C2E46A932C56268A00895AF3 /* SPProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				C21F7B402C442C5F00881083 /* Extensions */,
+				C2E46A922C56264E00895AF3 /* SPProgressView */,
 				C2E46A8C2C555F9600895AF3 /* SPCardView */,
 				C254D4962C51645F00335C62 /* SPTabView */,
 				C21F7B372C44273500881083 /* SPTextField */,
@@ -484,6 +487,14 @@
 			path = SPCardView;
 			sourceTree = "<group>";
 		};
+		C2E46A922C56264E00895AF3 /* SPProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				C2E46A932C56268A00895AF3 /* SPProgressView.swift */,
+			);
+			path = SPProgressView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -664,6 +675,7 @@
 				C254D49A2C51670000335C62 /* SPTabViewContentType.swift in Sources */,
 				C21F7B4B2C4463C000881083 /* SPButtonType.swift in Sources */,
 				C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */,
+				C2E46A942C56268A00895AF3 /* SPProgressView.swift in Sources */,
 				C21F7B2B2C44270100881083 /* SmartProtectionUI.docc in Sources */,
 				C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */,
 				C254D4982C51648100335C62 /* SPTabView.swift in Sources */,

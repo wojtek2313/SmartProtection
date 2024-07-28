@@ -23,11 +23,14 @@ struct TabBarView: View {
     // MARK: - UI
     
     var body: some View {
-        GeometryReader { proxy in
-            ZStack {
-                contentView
-                navigationBar(proxy: proxy)
+        NavigationStack {
+            GeometryReader { proxy in
+                ZStack {
+                    contentView
+                    navigationBar(proxy: proxy)
+                }
             }
+            .navigationTitle("NAVIGATION_STACK_MAIN".localized)
         }
     }
     
