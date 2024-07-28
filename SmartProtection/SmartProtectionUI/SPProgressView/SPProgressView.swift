@@ -10,12 +10,14 @@ import SwiftUI
 public struct SPProgressView: View {
     // MARK: - Private Properties
     
-    @Binding private var progress: CGFloat
+    @State private var progress: CGFloat = 0.0
+    
+    private var logic: SPProgressLogic
     
     // MARK: - Initializers
     
-    public init(progress: Binding<CGFloat>) {
-        self._progress = progress
+    public init(logic: SPProgressLogic) {
+        self.logic = logic
     }
     
     // MARK: - UI
@@ -61,8 +63,11 @@ public struct SPProgressView: View {
                 .rotationEffect(Angle(degrees: Constants.Circle.degrees))
                 .animation(.easeInOut, value: progress)
             
-            Text("\(progress)")
+            Text("\(logic.time)")
                 .font(.headline)
+        }
+        .onReceive(logic.timer) { _ in
+            self.progress = CGFloat(logic.progress)
         }
     }
     

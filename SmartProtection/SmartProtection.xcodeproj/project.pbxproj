@@ -46,6 +46,8 @@
 		C29703FA2C52B177000959FB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703F92C52B177000959FB /* SettingsView.swift */; };
 		C29703FC2C52B48A000959FB /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703FB2C52B48A000959FB /* TabBar.swift */; };
 		C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29703FD2C52B52C000959FB /* TabBarLogic.swift */; };
+		C2B32F822C5652FE00DF0D81 /* SPProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B32F812C5652FE00DF0D81 /* SPProgress.swift */; };
+		C2B32F842C56598000DF0D81 /* SPProgressLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B32F832C56598000DF0D81 /* SPProgressLogic.swift */; };
 		C2B5EAE02C540D710068AFB0 /* TabBarLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */; };
 		C2B5EAE22C540F3A0068AFB0 /* TabBarMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EAE12C540F3A0068AFB0 /* TabBarMock.swift */; };
 		C2B5EAE42C54AAB10068AFB0 /* TabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5EAE32C54AAB10068AFB0 /* TabBarTests.swift */; };
@@ -131,6 +133,8 @@
 		C29703F92C52B177000959FB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C29703FB2C52B48A000959FB /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C29703FD2C52B52C000959FB /* TabBarLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLogic.swift; sourceTree = "<group>"; };
+		C2B32F812C5652FE00DF0D81 /* SPProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgress.swift; sourceTree = "<group>"; };
+		C2B32F832C56598000DF0D81 /* SPProgressLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressLogic.swift; sourceTree = "<group>"; };
 		C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLogicTests.swift; sourceTree = "<group>"; };
 		C2B5EAE12C540F3A0068AFB0 /* TabBarMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMock.swift; sourceTree = "<group>"; };
 		C2B5EAE32C54AAB10068AFB0 /* TabBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarTests.swift; sourceTree = "<group>"; };
@@ -491,6 +495,8 @@
 			isa = PBXGroup;
 			children = (
 				C2E46A932C56268A00895AF3 /* SPProgressView.swift */,
+				C2B32F832C56598000DF0D81 /* SPProgressLogic.swift */,
+				C2B32F812C5652FE00DF0D81 /* SPProgress.swift */,
 			);
 			path = SPProgressView;
 			sourceTree = "<group>";
@@ -669,6 +675,8 @@
 				C21F7B392C44276600881083 /* SPTextFieldType.swift in Sources */,
 				C21F7B4E2C4465F000881083 /* Color+Ext.swift in Sources */,
 				C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */,
+				C2B32F842C56598000DF0D81 /* SPProgressLogic.swift in Sources */,
+				C2B32F822C5652FE00DF0D81 /* SPProgress.swift in Sources */,
 				C21F7B362C44272C00881083 /* SPTextField.swift in Sources */,
 				C21F7B422C442C7300881083 /* String+Ext.swift in Sources */,
 				C21F7B492C44639A00881083 /* SPButton.swift in Sources */,

@@ -12,7 +12,6 @@ struct JobTrackerView: View {
     // MARK: - Public Properties
     
     @State var constructionName: String = "Motława"
-    @State var progress: CGFloat = 0.5
     
     // MARK: - Initializers
     
@@ -48,7 +47,7 @@ struct JobTrackerView: View {
     
     private var timerSection: some View {
         Section {
-            SPProgressView(progress: $progress)
+            SPProgressView(logic: SPProgressLogic(progress: SPProgress(numberOfTotalDailyWorkHours: 8, timer: .init(startHour: Date(), numberOfHoursToWork: 8))))
                 .padding()
         } header: {
             createHeader(at: .timer)
