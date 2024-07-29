@@ -16,18 +16,18 @@ final class SPHeaderIconSnapshotTests: XCTestCase {
     func testSPHeaderIconWithRegisterIconType() {
         let headerIcon = SPHeaderIcon(type: .register)
         let view: UIView = UIHostingController(rootView: headerIcon).view
-        assertSnapshot(matching: view, as: .image(size: view.intrinsicContentSize))
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
     }
 
     func testSPHeaderIconWithLoginIconType() {
         let headerIcon = SPHeaderIcon(type: .login)
         let view: UIView = UIHostingController(rootView: headerIcon).view
-        assertSnapshot(matching: view, as: .image(size: view.intrinsicContentSize))
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
     }
     
     func testSPHeaderIconWithForgotPasswordIconType() {
         let headerIcon = SPHeaderIcon(type: .chagePassword)
         let view: UIView = UIHostingController(rootView: headerIcon).view
-        assertSnapshot(matching: view, as: .image(size: view.intrinsicContentSize))
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
     }
 }

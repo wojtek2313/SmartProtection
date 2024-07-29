@@ -14,7 +14,7 @@ final class TabBarTests: XCTestCase {
     private var sut: TabBar?
     private var sosActionHasBeenHappened = false
     
-    // MARK: - Set Up
+    // MARK: - Tear Down
     
     override func tearDown() {
         sut = nil

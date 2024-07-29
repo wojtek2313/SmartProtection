@@ -7,17 +7,17 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
-public class SPProgressLogic {
+public class SPProgressLogic: ObservableObject {
     // MARK: - Private Properties
     
-    private var _progress: SPProgress
+    @Published private var _progress: SPProgress
+    private var cancellables = Set<AnyCancellable>()
     
     // MARK: - Public Properties
     
-    public let timer = Timer.publish(every: 60, on: .main, in: .common).autoconnect()
-    
-    public var progress: Float { _progress.progress }
+    public var progress: CGFloat { CGFloat(_progress.progress) }
     
     public var time: String { _progress.time }
     
@@ -25,5 +25,23 @@ public class SPProgressLogic {
     
     public init(progress: SPProgress) {
         self._progress = progress
+        let cancellable = modulatedPublisher(interval: 1)
+            .sink(receiveValue: { _ in
+                withAnimation {
+                    self.objectWillChange.send()
+                }
+            })
+        cancellable.store(in: &cancellables)
+    }
+    
+    // MARK: - Private Methods
+    
+    private func modulatedPublisher(interval: TimeInterval) -> AnyPublisher<Date, Never> {
+        let timerBuffer = Timer
+            .publish(every: interval, on: .main, in: .common)
+            .autoconnect()
+        
+        return timerBuffer
+            .eraseToAnyPublisher()
     }
 }

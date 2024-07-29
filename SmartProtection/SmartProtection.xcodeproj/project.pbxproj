@@ -61,6 +61,9 @@
 		C2E46A8E2C555FC300895AF3 /* SPCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A8D2C555FC300895AF3 /* SPCardView.swift */; };
 		C2E46A912C5582C300895AF3 /* SPCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */; };
 		C2E46A942C56268A00895AF3 /* SPProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A932C56268A00895AF3 /* SPProgressView.swift */; };
+		C2EE52002C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE51FF2C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift */; };
+		C2EE52022C57C2F600C2C8BC /* SPProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE52012C57C2F600C2C8BC /* SPProgressTests.swift */; };
+		C2EE52042C57CCAC00C2C8BC /* SPProgressLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE52032C57CCAC00C2C8BC /* SPProgressLogicTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +151,9 @@
 		C2E46A8D2C555FC300895AF3 /* SPCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCardView.swift; sourceTree = "<group>"; };
 		C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCardViewTests.swift; sourceTree = "<group>"; };
 		C2E46A932C56268A00895AF3 /* SPProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressView.swift; sourceTree = "<group>"; };
+		C2EE51FF2C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressViewSnapshotTests.swift; sourceTree = "<group>"; };
+		C2EE52012C57C2F600C2C8BC /* SPProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressTests.swift; sourceTree = "<group>"; };
+		C2EE52032C57CCAC00C2C8BC /* SPProgressLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressLogicTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +326,7 @@
 		C242CB9A2C4A6A34009E67CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C2EE51FE2C579A5F00C2C8BC /* SPProgressView */,
 				C2E46A8F2C55828900895AF3 /* SPCardView */,
 				C2B5EAE52C54B34D0068AFB0 /* SPTabView */,
 				C293AE702C4A8C4D00965B3F /* SPTextField */,
@@ -497,6 +504,16 @@
 				C2E46A932C56268A00895AF3 /* SPProgressView.swift */,
 				C2B32F832C56598000DF0D81 /* SPProgressLogic.swift */,
 				C2B32F812C5652FE00DF0D81 /* SPProgress.swift */,
+			);
+			path = SPProgressView;
+			sourceTree = "<group>";
+		};
+		C2EE51FE2C579A5F00C2C8BC /* SPProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				C2EE51FF2C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift */,
+				C2EE52012C57C2F600C2C8BC /* SPProgressTests.swift */,
+				C2EE52032C57CCAC00C2C8BC /* SPProgressLogicTests.swift */,
 			);
 			path = SPProgressView;
 			sourceTree = "<group>";
@@ -698,6 +715,7 @@
 			files = (
 				C293AE722C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift in Sources */,
 				C2B5EAE92C54B77C0068AFB0 /* SPTabViewSnapshotTests.swift in Sources */,
+				C2EE52042C57CCAC00C2C8BC /* SPProgressLogicTests.swift in Sources */,
 				C242CB902C4A3CD3009E67CA /* WelcomeMock.swift in Sources */,
 				C242CB9F2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift in Sources */,
 				C2B5EAE72C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift in Sources */,
@@ -705,7 +723,9 @@
 				C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */,
 				C293AE742C4A98BA00965B3F /* SPTextFieldTypeTests.swift in Sources */,
 				C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */,
+				C2EE52022C57C2F600C2C8BC /* SPProgressTests.swift in Sources */,
 				C2E46A912C5582C300895AF3 /* SPCardViewTests.swift in Sources */,
+				C2EE52002C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift in Sources */,
 				C242CB9C2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift in Sources */,
 				C293AE6F2C4A890E00965B3F /* SPButtonTypeTests.swift in Sources */,
 				C2B5EAE22C540F3A0068AFB0 /* TabBarMock.swift in Sources */,

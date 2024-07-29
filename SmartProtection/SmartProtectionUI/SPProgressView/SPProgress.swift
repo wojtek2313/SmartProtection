@@ -13,18 +13,20 @@ public struct SPProgress {
     private var numberOfTotalDailyWorkHours: Int
     private var timer: Timer
     
+    private var hour: Int {
+        Int(timer.hourDifference) / (60*60) % 60
+    }
+    
+    private var minute: Int {
+        (Int(timer.hourDifference) / 60) % 60
+    }
+    
+    
     // MARK: - Public Properties
     
-    public var progress: Float {
-        Float(timer.hourDifference) / timer.numberOfMinutesToWorkInProgressFormat
-    }
+    public var progress: Float { Float(hour) / Float(numberOfTotalDailyWorkHours) }
     
-    public var time: String {
-        let interval = Int(timer.hourDifference)
-        let hours = (interval / (60*60)) % 60
-        let minutes = (interval / 60) % 60
-        return "\(hours)h : \(minutes)min"
-    }
+    public var time: String { "\(hour)h : \(minute)min" }
     
     // MARK: - Initializers
     
@@ -39,7 +41,6 @@ public struct SPProgress {
         // MARK: - Private Properties
         
         private let startHour: Date
-        private let numberOfHoursToWork: Int
         private let dateFormatter = DateFormatter()
         
         // MARK: - Public Properties
@@ -51,15 +52,10 @@ public struct SPProgress {
             return difference
         }
         
-        var numberOfMinutesToWorkInProgressFormat: Float {
-            Float(numberOfHoursToWork) * Constants.numberOfMinutesInHour * Constants.numberOfDegreesInCircle
-        }
-        
         // MARK: - Initializers
         
-        public init(startHour: Date, numberOfHoursToWork: Int) {
+        public init(startHour: Date) {
             self.startHour = startHour
-            self.numberOfHoursToWork = numberOfHoursToWork
         }
         
         // MARK: - Constants

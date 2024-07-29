@@ -10,9 +10,7 @@ import SwiftUI
 public struct SPProgressView: View {
     // MARK: - Private Properties
     
-    @State private var progress: CGFloat = 0.0
-    
-    private var logic: SPProgressLogic
+    @ObservedObject private var logic: SPProgressLogic
     
     // MARK: - Initializers
     
@@ -57,17 +55,14 @@ public struct SPProgressView: View {
                 .foregroundColor(.white)
             
             Circle()
-                .trim(from: Constants.Circle.startingPointTrim, to: progress)
+                .trim(from: Constants.Circle.startingPointTrim, to: logic.progress)
                 .stroke(style: StrokeStyle(lineWidth: Constants.Circle.lineWidth, lineCap: .round, lineJoin: .round))
                 .foregroundColor(.spBlue)
                 .rotationEffect(Angle(degrees: Constants.Circle.degrees))
-                .animation(.easeInOut, value: progress)
+                .animation(.easeInOut, value: logic.progress)
             
             Text("\(logic.time)")
                 .font(.headline)
-        }
-        .onReceive(logic.timer) { _ in
-            self.progress = CGFloat(logic.progress)
         }
     }
     

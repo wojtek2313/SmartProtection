@@ -47,7 +47,7 @@ struct JobTrackerView: View {
     
     private var timerSection: some View {
         Section {
-            SPProgressView(logic: SPProgressLogic(progress: SPProgress(numberOfTotalDailyWorkHours: 8, timer: .init(startHour: Date(), numberOfHoursToWork: 8))))
+            SPProgressView(logic: SPProgressLogic(progress: SPProgress(numberOfTotalDailyWorkHours: 8, timer: .init(startHour: Date()))))
                 .padding()
         } header: {
             createHeader(at: .timer)
