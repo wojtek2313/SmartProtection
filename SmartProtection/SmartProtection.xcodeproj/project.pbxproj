@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C204E4DD2C58F5220003DD6B /* SPConstructionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4DC2C58F5220003DD6B /* SPConstructionMenu.swift */; };
+		C204E4E12C59003F0003DD6B /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4E02C59003F0003DD6B /* DocumentsView.swift */; };
+		C204E4E32C590AEA0003DD6B /* SPConstructionMenuSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4E22C590AEA0003DD6B /* SPConstructionMenuSnapshotTests.swift */; };
+		C204E4E62C59169A0003DD6B /* SPBHPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4E52C59169A0003DD6B /* SPBHPView.swift */; };
+		C204E4E82C5916EF0003DD6B /* SPBHP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4E72C5916EF0003DD6B /* SPBHP.swift */; };
+		C204E4EA2C591A5E0003DD6B /* SPBHPLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4E92C591A5E0003DD6B /* SPBHPLogic.swift */; };
+		C204E4ED2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4EC2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift */; };
 		C2185DD52C54D94400B072A5 /* JobTrackerHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */; };
 		C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */; };
 		C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B112C44240E00881083 /* WelcomeView.swift */; };
@@ -98,6 +105,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C204E4DC2C58F5220003DD6B /* SPConstructionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPConstructionMenu.swift; sourceTree = "<group>"; };
+		C204E4E02C59003F0003DD6B /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
+		C204E4E22C590AEA0003DD6B /* SPConstructionMenuSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPConstructionMenuSnapshotTests.swift; sourceTree = "<group>"; };
+		C204E4E52C59169A0003DD6B /* SPBHPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBHPView.swift; sourceTree = "<group>"; };
+		C204E4E72C5916EF0003DD6B /* SPBHP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBHP.swift; sourceTree = "<group>"; };
+		C204E4E92C591A5E0003DD6B /* SPBHPLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBHPLogic.swift; sourceTree = "<group>"; };
+		C204E4EC2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBHPViewSnapshotTests.swift; sourceTree = "<group>"; };
 		C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTrackerHeaderType.swift; sourceTree = "<group>"; };
 		C21F7B0C2C44240E00881083 /* SmartProtection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartProtection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProtectionApp.swift; sourceTree = "<group>"; };
@@ -184,6 +198,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C204E4DB2C58F4A80003DD6B /* SPConstructionMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C204E4DC2C58F5220003DD6B /* SPConstructionMenu.swift */,
+			);
+			path = SPConstructionMenu;
+			sourceTree = "<group>";
+		};
+		C204E4DE2C58FEFD0003DD6B /* SPConstructionMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C204E4E22C590AEA0003DD6B /* SPConstructionMenuSnapshotTests.swift */,
+			);
+			path = SPConstructionMenu;
+			sourceTree = "<group>";
+		};
+		C204E4DF2C5900020003DD6B /* DocumentsView */ = {
+			isa = PBXGroup;
+			children = (
+				C204E4E02C59003F0003DD6B /* DocumentsView.swift */,
+			);
+			path = DocumentsView;
+			sourceTree = "<group>";
+		};
+		C204E4E42C5916480003DD6B /* SPBHPView */ = {
+			isa = PBXGroup;
+			children = (
+				C204E4E52C59169A0003DD6B /* SPBHPView.swift */,
+				C204E4E92C591A5E0003DD6B /* SPBHPLogic.swift */,
+				C204E4E72C5916EF0003DD6B /* SPBHP.swift */,
+			);
+			path = SPBHPView;
+			sourceTree = "<group>";
+		};
+		C204E4EB2C5924720003DD6B /* SPBHPView */ = {
+			isa = PBXGroup;
+			children = (
+				C204E4EC2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift */,
+			);
+			path = SPBHPView;
+			sourceTree = "<group>";
+		};
 		C21F7B032C44240E00881083 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +284,8 @@
 		C21F7B282C44270100881083 /* SmartProtectionUI */ = {
 			isa = PBXGroup;
 			children = (
+				C204E4E42C5916480003DD6B /* SPBHPView */,
+				C204E4DB2C58F4A80003DD6B /* SPConstructionMenu */,
 				C21F7B402C442C5F00881083 /* Extensions */,
 				C2E46A922C56264E00895AF3 /* SPProgressView */,
 				C2E46A8C2C555F9600895AF3 /* SPCardView */,
@@ -326,6 +384,8 @@
 		C242CB9A2C4A6A34009E67CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C204E4EB2C5924720003DD6B /* SPBHPView */,
+				C204E4DE2C58FEFD0003DD6B /* SPConstructionMenu */,
 				C2EE51FE2C579A5F00C2C8BC /* SPProgressView */,
 				C2E46A8F2C55828900895AF3 /* SPCardView */,
 				C2B5EAE52C54B34D0068AFB0 /* SPTabView */,
@@ -448,6 +508,7 @@
 			children = (
 				C254D49D2C51A58200335C62 /* TabBar */,
 				C2C4A52D2C4567A700FD3BCF /* Base */,
+				C204E4DF2C5900020003DD6B /* DocumentsView */,
 				C29703F82C529B48000959FB /* SettingsView */,
 				C254D4932C51637400335C62 /* JobTrackerView */,
 				C2C4A52E2C4567B600FD3BCF /* WelcomeView */,
@@ -674,6 +735,7 @@
 				C29703FC2C52B48A000959FB /* TabBar.swift in Sources */,
 				C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */,
 				C2185DD52C54D94400B072A5 /* JobTrackerHeaderType.swift in Sources */,
+				C204E4E12C59003F0003DD6B /* DocumentsView.swift in Sources */,
 				C21F7B192C44241100881083 /* Persistence.swift in Sources */,
 				C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */,
 				C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */,
@@ -692,6 +754,7 @@
 				C21F7B392C44276600881083 /* SPTextFieldType.swift in Sources */,
 				C21F7B4E2C4465F000881083 /* Color+Ext.swift in Sources */,
 				C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */,
+				C204E4E82C5916EF0003DD6B /* SPBHP.swift in Sources */,
 				C2B32F842C56598000DF0D81 /* SPProgressLogic.swift in Sources */,
 				C2B32F822C5652FE00DF0D81 /* SPProgress.swift in Sources */,
 				C21F7B362C44272C00881083 /* SPTextField.swift in Sources */,
@@ -700,10 +763,13 @@
 				C254D49A2C51670000335C62 /* SPTabViewContentType.swift in Sources */,
 				C21F7B4B2C4463C000881083 /* SPButtonType.swift in Sources */,
 				C2C4A5232C45175600FD3BCF /* SPPageView.swift in Sources */,
+				C204E4E62C59169A0003DD6B /* SPBHPView.swift in Sources */,
 				C2E46A942C56268A00895AF3 /* SPProgressView.swift in Sources */,
+				C204E4DD2C58F5220003DD6B /* SPConstructionMenu.swift in Sources */,
 				C21F7B2B2C44270100881083 /* SmartProtectionUI.docc in Sources */,
 				C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */,
 				C254D4982C51648100335C62 /* SPTabView.swift in Sources */,
+				C204E4EA2C591A5E0003DD6B /* SPBHPLogic.swift in Sources */,
 				C254D49C2C51A41300335C62 /* SPTabButton.swift in Sources */,
 				C2E46A8E2C555FC300895AF3 /* SPCardView.swift in Sources */,
 			);
@@ -718,6 +784,7 @@
 				C2EE52042C57CCAC00C2C8BC /* SPProgressLogicTests.swift in Sources */,
 				C242CB902C4A3CD3009E67CA /* WelcomeMock.swift in Sources */,
 				C242CB9F2C4A6F95009E67CA /* SPHeaderIconTypeTests.swift in Sources */,
+				C204E4E32C590AEA0003DD6B /* SPConstructionMenuSnapshotTests.swift in Sources */,
 				C2B5EAE72C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift in Sources */,
 				C2B5EAE42C54AAB10068AFB0 /* TabBarTests.swift in Sources */,
 				C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */,
@@ -726,6 +793,7 @@
 				C2EE52022C57C2F600C2C8BC /* SPProgressTests.swift in Sources */,
 				C2E46A912C5582C300895AF3 /* SPCardViewTests.swift in Sources */,
 				C2EE52002C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift in Sources */,
+				C204E4ED2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift in Sources */,
 				C242CB9C2C4A6A6A009E67CA /* SPHeaderIconSnapshotTests.swift in Sources */,
 				C293AE6F2C4A890E00965B3F /* SPButtonTypeTests.swift in Sources */,
 				C2B5EAE22C540F3A0068AFB0 /* TabBarMock.swift in Sources */,

@@ -47,6 +47,15 @@
 /// SPProgressView
 "SP_PROGRESS_VIEW" = "Od ostatniego odbicia się kartą minęło:";
 
+/// SPConstructionMenu
+"SP_CONSTRUCTION_MENU_TITLE" = "Budowa:";
+
+/// SPBHPView
+"SP_BHP_POSITIVE_TEXT" = "Cześć, widzę że masz na sobie wymagany sprzęt!";
+"SP_BHP_NEGATIVE_TEXT" = "Cześć, widzę że niestety nie masz na sobie wymagany sprzęt";
+"SP_BHP_POSITIVE_SUBTITLE" = "Tak trzymaj!";
+"SP_BHP_NEGATIVE_SUBTITLE" = "Proszę załóż wymagany sprzęt!";
+
 /// Views
 
 /// Regsitration View

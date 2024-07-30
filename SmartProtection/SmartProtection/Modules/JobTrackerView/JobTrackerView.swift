@@ -21,6 +21,7 @@ struct JobTrackerView: View {
     
     var body: some View {
         ScrollView {
+            SPConstructionMenu(constructionName: "Budowa")
             idCardSection
             timerSection
             bhpSection
@@ -56,17 +57,34 @@ struct JobTrackerView: View {
     
     private var bhpSection: some View {
         Section {
-            Text("BHP")
+            SPBHPView(logic: SPBHPLogic(spbhp: SPBHP(items: [SPBHP.Item(name: "kask", isWerable: false)])))
         } header: {
             createHeader(at: .bhp)
         }
     }
     
+    private var documentsButton: some View {
+        NavigationLink(destination: DocumentsView(), label: {
+            RoundedRectangle(cornerRadius: Constants.cornerRadius)
+                .foregroundColor(.spBlue)
+                .frame(height: Constants.height)
+                .overlay {
+                    Text("SP_BUTTON_DOCUMENTS".localized)
+                        .foregroundColor(.white)
+                        .font(.headline)
+                }
+                .shadow(
+                    color: .black,
+                    radius: Constants.Shadow.radius,
+                    x: Constants.Shadow.xPosition,
+                    y: Constants.Shadow.yPosition
+                )
+        })
+    }
+    
     private var documentsSection: some View {
         Section {
-            SPButton(type: .documents, height: Constants.height, titleFont: .headline) {
-                // TODO: - ACTION GOES HERE
-            }
+            documentsButton
             .padding()
             .padding(.bottom, Constants.padding)
         } header: {
@@ -96,5 +114,13 @@ struct JobTrackerView: View {
     private struct Constants {
         static let padding: CGFloat = 150
         static let height: CGFloat = 45
+        static let cornerRadius = 5.0
+        
+        /// Shadow
+        struct Shadow {
+            static let radius = 3.0
+            static let xPosition = 0.0
+            static let yPosition = 1.0
+        }
     }
 }
