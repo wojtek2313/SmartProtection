@@ -32,6 +32,7 @@
 "SP_BUTTON_REGISTER" = "Zarejestruj";
 "SP_BUTTON_RESET_PASSWORD" = "Zresetuj hasło";
 "SP_BUTTON_SET_NEW_PASSWORD" = "Ustaw nowe hasło";
+"SP_BUTTON_DOCUMENTS" = "Dokumenty";
 
 /// SPHeaderIcon
 "SP_HEADER_ICON_TITLE" = "SmartProtection";
@@ -39,7 +40,34 @@
 "SP_HEADER_ICON_REGISTER" = "Zarejestruj się";
 "SP_HEADER_ICON_CHANGE_PASSWORD" = "Zmień hasło";
 
+/// SPCardView
+"SP_CARD_VIEW_ID" = "ID:";
+"SP_CARD_VIEW_COMPANY" = "FIRMA:";
+
+/// SPProgressView
+"SP_PROGRESS_VIEW" = "Od ostatniego odbicia się kartą minęło:";
+
+/// SPConstructionMenu
+"SP_CONSTRUCTION_MENU_TITLE" = "Budowa:";
+
+/// SPBHPView
+"SP_BHP_POSITIVE_TEXT" = "Cześć, widzę że masz na sobie wymagany sprzęt!";
+"SP_BHP_NEGATIVE_TEXT" = "Cześć, widzę że niestety nie masz na sobie wymagany sprzęt";
+"SP_BHP_POSITIVE_SUBTITLE" = "Tak trzymaj!";
+"SP_BHP_NEGATIVE_SUBTITLE" = "Proszę załóż wymagany sprzęt!";
+
 /// Views
 
-// Regsitration View
+/// Regsitration View
 "REGISTRATION_VIEW_FORGOT_PASSWORD" = "Nie pamiętam hasła";
+
+/// Job Tracker View
+"JOB_TRACKER_CONSTRUCTION_ID" = "ID Budowy: ";
+"JOB_TRACKER_TIME_OF_WORK" = "Czas pracy:";
+"JOB_TRACKER_BHP" = "Ekwipunek BHP:";
+"JOB_TRACKER_DOCUMENTS" = "Dokumenty:";
+"JOB_TRACEKR_CONSTRUCTION_ID_SUBTITLE" = "Naciśnij i przytrzymaj by zanonimizować kartę.";
+"JOB_TRACKER_DOCUMENTS_SUBTITLE" = "Sprawdź oraz podpisz listę wymaganych dokumentów na tą budowę:";
+
+/// NAVIGATION STACK
+"NAVIGATION_STACK_MAIN" = "SmartProtection";

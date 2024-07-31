@@ -92,4 +92,16 @@ final class SPButtonTests: XCTestCase {
         enabled = false
         assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
     }
+    
+    func testSPButtonWhenEnabledAndOnDocumentsType() {
+        type = .documents
+        enabled = true
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
+    }
+    
+    func testSPButtonWhenDisabledAndOnDocumentsType() {
+        type = .documents
+        enabled = false
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
+    }
 }

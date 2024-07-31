@@ -10,7 +10,11 @@ import SmartProtection
 import SmartProtectionUI
 
 struct WelcomeMock: WelcomeProtocol {
+    // MARK: - Private Properties
+    
     private var user: SmartProtection.Welcome.User
+    
+    // MARK: - Public Properties
     
     var currentView: SmartProtection.WelcomeViewType
     
@@ -30,10 +34,14 @@ struct WelcomeMock: WelcomeProtocol {
         return user
     }
     
+    // MARK: - Initializers
+    
     init(currentView: SmartProtection.WelcomeViewType) {
         user = .init()
         self.currentView = currentView
     }
+    
+    // MARK: - Public Methods
     
     mutating func insertUserData(with newValue: String, fromTextFieldWithType type: SmartProtectionUI.SPTextFieldType) {
         switch type {

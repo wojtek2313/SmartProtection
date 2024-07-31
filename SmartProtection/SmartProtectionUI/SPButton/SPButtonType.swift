@@ -14,6 +14,7 @@ public enum SPButtonType {
     case reset
     case register
     case newPassword
+    case documents
     
     public var title: String {
         switch self {
@@ -27,6 +28,8 @@ public enum SPButtonType {
             return "SP_BUTTON_REGISTER".localized
         case .newPassword:
             return "SP_BUTTON_SET_NEW_PASSWORD".localized
+        case .documents:
+            return "SP_BUTTON_DOCUMENTS".localized
         }
     }
     
