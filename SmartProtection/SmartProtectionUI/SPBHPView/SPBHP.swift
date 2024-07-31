@@ -10,13 +10,15 @@ import Foundation
 public struct SPBHP {
     // MARK: - Private Properties
     
-    private var items: [Item]
+    private var _items: [Item]
     
     // MARK: - Public Properties
     
+    public var items: [Item] { _items }
+    
     public var areItemsWerable: Bool {
         var isVerable = true
-        items.forEach {
+        _items.forEach {
             if !$0.isWerable {
                 isVerable = false
             }
@@ -27,13 +29,13 @@ public struct SPBHP {
     // MARK: - Initializers
     
     public init(items: [Item]) {
-        self.items = items
+        self._items = items
     }
     
     // MARK: - Public Methods
     
     public mutating func addItem(_ item: Item) {
-        items.append(item)
+        _items.append(item)
     }
     
     // MARK: - Model
