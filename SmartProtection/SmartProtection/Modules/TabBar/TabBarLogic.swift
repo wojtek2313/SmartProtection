@@ -7,7 +7,16 @@
 
 import SwiftUI
 
-public class TabBarLogic: ObservableObject {
+public protocol TabBarLogicProtocol: ObservableObject {
+    var selectedViewType: TabBar.SelectedViewType { get }
+    
+    func injectSOSAction(onSOSItemPressed: @escaping () -> Void)
+    func jobTrackerActionHandler()
+    func sosActionHandler()
+    func settingsActionHandler()
+}
+
+public class TabBarLogic: TabBarLogicProtocol {
     // MARK: - Private Properties
     
     @Published private var tabBar: TabBarProtocol

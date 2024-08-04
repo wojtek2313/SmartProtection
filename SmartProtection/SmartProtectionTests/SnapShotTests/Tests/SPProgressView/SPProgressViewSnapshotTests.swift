@@ -20,7 +20,7 @@ final class SPProgressViewSnapshotTests: XCTestCase {
         }
     }
         
-    private var spProgressView: SPProgressView?
+    private var spProgressView: SPProgressView<SPProgressLogic>?
     
     private var view: UIView {
         guard let spProgressView = spProgressView else {
@@ -87,7 +87,7 @@ final class SPProgressViewSnapshotTests: XCTestCase {
         assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
     }
     
-    private func createProgressView() -> SPProgressView {
+    private func createProgressView() -> SPProgressView<SPProgressLogic> {
         let timer = SPProgress.Timer(startHour: startHour)
         let progress = SPProgress(numberOfTotalDailyWorkHours: numberOfTotalWorkHours, timer: timer)
         let logic = SPProgressLogic(progress: progress)

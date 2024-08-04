@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-public struct SPProgressView: View {
+public struct SPProgressView<Logic: SPProgressLogicProtocol>: View {
     // MARK: - Private Properties
     
-    @ObservedObject private var logic: SPProgressLogic
+    @ObservedObject private var logic: Logic
     
     // MARK: - Initializers
     
-    public init(logic: SPProgressLogic) {
+    public init(logic: Logic) {
         self.logic = logic
     }
     
@@ -71,23 +71,23 @@ public struct SPProgressView: View {
     private struct Constants {
         /// Circle
         struct Circle {
-            static let lineWidth: CGFloat = 20
-            static let opacity: Double = 0.1
-            static let startingPointTrim: CGFloat = 0.0
-            static let degrees: CGFloat = 270.0
+            static var lineWidth: CGFloat { 20 }
+            static var opacity: Double { 0.1 }
+            static var startingPointTrim: CGFloat { 0.0 }
+            static var degrees: CGFloat { 270.0 }
         }
         
         /// Rounded Rectangle
         struct RoundedRectangle {
-            static let cornerRadius: CGFloat = 38.0
-            static let foregroundColor: Color = .init(hex: "EBEBEB")
+            static var cornerRadius: CGFloat { 38.0 }
+            static var foregroundColor: Color { .init(hex: "EBEBEB") }
         }
         
         /// Shadow
         struct Shadow {
-            static let radius = 3.0
-            static let xPosition = 0.0
-            static let yPosition = 1.0
+            static var radius: Double { 3.0 }
+            static var xPosition: Double { 0.0 }
+            static var yPosition: Double { 1.0 }
         }
     }
 }

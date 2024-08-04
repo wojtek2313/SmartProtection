@@ -32,6 +32,8 @@
 		C21F7B492C44639A00881083 /* SPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B482C44639A00881083 /* SPButton.swift */; };
 		C21F7B4B2C4463C000881083 /* SPButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B4A2C4463C000881083 /* SPButtonType.swift */; };
 		C21F7B4E2C4465F000881083 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B4D2C4465F000881083 /* Color+Ext.swift */; };
+		C22715C12C5D0B030077DD9B /* DependenciesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22715C02C5D0B030077DD9B /* DependenciesFactory.swift */; };
+		C22715C32C5D10830077DD9B /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22715C22C5D10830077DD9B /* AppFlowCoordinator.swift */; };
 		C22E5F922C47CDB800C892A4 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22E5F912C47CDB800C892A4 /* Welcome.swift */; };
 		C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8A2C494B92009E67CA /* WelcomeTests.swift */; };
 		C242CB8E2C4A3B71009E67CA /* WelcomeLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */; };
@@ -131,6 +133,8 @@
 		C21F7B482C44639A00881083 /* SPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButton.swift; sourceTree = "<group>"; };
 		C21F7B4A2C4463C000881083 /* SPButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonType.swift; sourceTree = "<group>"; };
 		C21F7B4D2C4465F000881083 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		C22715C02C5D0B030077DD9B /* DependenciesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesFactory.swift; sourceTree = "<group>"; };
+		C22715C22C5D10830077DD9B /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 		C22E5F912C47CDB800C892A4 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		C242CB812C494AD0009E67CA /* SmartProtectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartProtectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C242CB8A2C494B92009E67CA /* WelcomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTests.swift; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 		C21F7B0E2C44240E00881083 /* SmartProtection */ = {
 			isa = PBXGroup;
 			children = (
+				C22715BF2C5D0AE50077DD9B /* Coordinators */,
 				C289077E2C4905D4007D0F0F /* Models */,
 				C2C4A52B2C45675500FD3BCF /* Resources */,
 				C2C4A52C2C45678400FD3BCF /* Modules */,
@@ -328,6 +333,15 @@
 				C21F7B4A2C4463C000881083 /* SPButtonType.swift */,
 			);
 			path = SPButton;
+			sourceTree = "<group>";
+		};
+		C22715BF2C5D0AE50077DD9B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C22715C02C5D0B030077DD9B /* DependenciesFactory.swift */,
+				C22715C22C5D10830077DD9B /* AppFlowCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		C242CB822C494AD0009E67CA /* SmartProtectionTests */ = {
@@ -735,12 +749,14 @@
 				C2C4A5312C4569FB00FD3BCF /* WelcomeLogic.swift in Sources */,
 				C22E5F922C47CDB800C892A4 /* Welcome.swift in Sources */,
 				C254D49F2C51A59900335C62 /* TabBarView.swift in Sources */,
+				C22715C12C5D0B030077DD9B /* DependenciesFactory.swift in Sources */,
 				C29703FC2C52B48A000959FB /* TabBar.swift in Sources */,
 				C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */,
 				C2185DD52C54D94400B072A5 /* JobTrackerHeaderType.swift in Sources */,
 				C204E4E12C59003F0003DD6B /* DocumentsView.swift in Sources */,
 				C21F7B192C44241100881083 /* Persistence.swift in Sources */,
 				C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */,
+				C22715C32C5D10830077DD9B /* AppFlowCoordinator.swift in Sources */,
 				C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */,
 				C21F7B1C2C44241100881083 /* SmartProtection.xcdatamodeld in Sources */,
 				C254D4952C5163E700335C62 /* JobTrackerView.swift in Sources */,

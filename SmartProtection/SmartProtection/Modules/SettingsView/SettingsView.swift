@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // MARK: - Private Properties
+    
+    private var dependencyFactory: DependenciesFacotry
+    
+    // MARK: - Initializers
+    
+    init(dependencyFactory: DependenciesFacotry) {
+        self.dependencyFactory = dependencyFactory
+    }
+    
+    // MARK: - UI
+    
     var body: some View {
         List {
             Text("Settings")
         }
-    }
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
     }
 }

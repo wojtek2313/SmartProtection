@@ -8,15 +8,17 @@
 import SwiftUI
 import SmartProtectionUI
 
-struct TabBarView: View {
+struct TabBarView<Logic: TabBarLogicProtocol>: View {
     // MARK: - Private Properties
     
-    @ObservedObject private var tabBarLogic: TabBarLogic
+    @ObservedObject private var tabBarLogic: Logic
+    private var dependencyFactory: DependenciesFacotry
     
     // MARK: - Initializers
     
-    init(tabBarLogic: TabBarLogic) {
+    init(tabBarLogic: Logic, dependencyFactory: DependenciesFacotry = .shared) {
         self.tabBarLogic = tabBarLogic
+        self.dependencyFactory = dependencyFactory
         bindSOSItemButton()
     }
     
@@ -37,8 +39,8 @@ struct TabBarView: View {
     @ViewBuilder
     private var contentView: some View {
         switch tabBarLogic.selectedViewType {
-        case .jobTracker: JobTrackerView()
-        case .settings: SettingsView()
+        case .jobTracker: JobTrackerView(dependencyFactory: dependencyFactory)
+        case .settings: SettingsView(dependencyFactory: dependencyFactory)
         }
     }
     

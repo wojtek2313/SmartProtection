@@ -61,7 +61,8 @@ final class SPProgressLogicTests: XCTestCase {
             XCTFail("Test initialization failed!")
             return
         }
-        sut = .init(progress: .init(numberOfTotalDailyWorkHours: 8, timer: .init(startHour: newDate)))
+        let progress = SPProgress(numberOfTotalDailyWorkHours: 8, timer: .init(startHour: newDate))
+        sut = .init(progress: progress)
         var sut1 = try XCTUnwrap(sut, "Test initialization failed!")
         XCTAssertEqual(sut1.time, "4h : 30min")
     }

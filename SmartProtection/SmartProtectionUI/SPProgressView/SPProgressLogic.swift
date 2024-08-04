@@ -9,10 +9,15 @@ import Foundation
 import SwiftUI
 import Combine
 
-public class SPProgressLogic: ObservableObject {
+public protocol SPProgressLogicProtocol: ObservableObject {
+    var progress: CGFloat { get }
+    var time: String { get }
+}
+
+public class SPProgressLogic: SPProgressLogicProtocol {
     // MARK: - Private Properties
     
-    @Published private var _progress: SPProgress
+    @Published private var _progress: SPProgressProtocol
     private var cancellables = Set<AnyCancellable>()
     
     // MARK: - Public Properties
@@ -23,7 +28,7 @@ public class SPProgressLogic: ObservableObject {
     
     // MARK: - Initializers
     
-    public init(progress: SPProgress) {
+    public init(progress: SPProgressProtocol) {
         self._progress = progress
         let cancellable = modulatedPublisher(interval: 1)
             .sink(receiveValue: { _ in
