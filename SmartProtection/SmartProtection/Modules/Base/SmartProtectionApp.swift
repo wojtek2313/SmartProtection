@@ -10,12 +10,11 @@ import SwiftUI
 @main
 struct SmartProtectionApp: App {
     let persistenceController = PersistenceController.shared
-    @StateObject var welcomeLogic = WelcomeLogic(welcome: Welcome(currentView: .register(type: .personalData)))
+    var appFlowCoordinator = AppFlowCoordinator()
 
     var body: some Scene {
         WindowGroup {
-//            WelcomeView(welcome: welcomeLogic)
-            TabBarView(tabBarLogic: TabBarLogic(tabBar: TabBar(selectedViewType: .jobTracker)))
+            appFlowCoordinator.startAppFlow
         }
     }
 }

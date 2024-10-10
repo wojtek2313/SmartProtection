@@ -7,7 +7,12 @@
 
 import Foundation
 
-public struct SPProgress {
+public protocol SPProgressProtocol {
+    var progress: Float { get }
+    var time: String { get }
+}
+
+public struct SPProgress: SPProgressProtocol {
     // MARK: - Private Properties
     
     private var numberOfTotalDailyWorkHours: Int

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SmartProtection
+@testable import SmartProtection
 
 class TabBarMock: TabBarProtocol {
     // MARK: - Private Properties

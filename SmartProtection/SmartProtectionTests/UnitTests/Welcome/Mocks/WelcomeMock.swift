@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SmartProtection
+@testable import SmartProtection
 import SmartProtectionUI
 
 struct WelcomeMock: WelcomeProtocol {

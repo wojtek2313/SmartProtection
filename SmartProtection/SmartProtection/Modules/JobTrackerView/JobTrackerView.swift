@@ -9,13 +9,19 @@ import SwiftUI
 import SmartProtectionUI
 
 struct JobTrackerView: View {
+    // MARK: - Private Properties
+    
+    private var dependencyFactory: DependenciesFacotry
+    
     // MARK: - Public Properties
     
     @State var constructionName: String = "Motława"
     
     // MARK: - Initializers
     
-    init() {}
+    public init(dependencyFactory: DependenciesFacotry) {
+        self.dependencyFactory = dependencyFactory
+    }
     
     // MARK: - UI
     
@@ -48,7 +54,8 @@ struct JobTrackerView: View {
     
     private var timerSection: some View {
         Section {
-            SPProgressView(logic: SPProgressLogic(progress: SPProgress(numberOfTotalDailyWorkHours: 8, timer: .init(startHour: Date()))))
+            let logic = dependencyFactory.createProgress(numberOfTotalDailyWorkHours: 8, startHour: Date())
+            SPProgressView(logic: logic)
                 .padding()
         } header: {
             createHeader(at: .timer)
@@ -57,7 +64,8 @@ struct JobTrackerView: View {
     
     private var bhpSection: some View {
         Section {
-            SPBHPView(logic: SPBHPLogic(spbhp: SPBHP(items: [SPBHP.Item(name: "kask", isWerable: false)])))
+            let logic = dependencyFactory.createBHPLogic(items: [SPBHP.Item(name: "kask", isWerable: false)])
+            SPBHPView(logic: logic)
         } header: {
             createHeader(at: .bhp)
         }

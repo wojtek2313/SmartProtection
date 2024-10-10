@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import SmartProtection
+@testable import SmartProtection
 
 final class WelcomeTests: XCTestCase {
     // MARK: - Private Properties
