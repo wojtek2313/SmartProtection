@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import SmartProtection
+@testable import SmartProtection
 
 final class TabBarLogicTests: XCTestCase {
     // MARK: - Private Properties

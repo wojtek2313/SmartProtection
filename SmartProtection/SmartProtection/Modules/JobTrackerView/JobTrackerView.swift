@@ -64,7 +64,8 @@ struct JobTrackerView: View {
     
     private var bhpSection: some View {
         Section {
-            SPBHPView(logic: SPBHPLogic(spbhp: SPBHP(items: [SPBHP.Item(name: "kask", isWerable: false)])))
+            let logic = dependencyFactory.createBHPLogic(items: [SPBHP.Item(name: "kask", isWerable: false)])
+            SPBHPView(logic: logic)
         } header: {
             createHeader(at: .bhp)
         }

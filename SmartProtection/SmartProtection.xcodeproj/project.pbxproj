@@ -15,6 +15,7 @@
 		C204E4EA2C591A5E0003DD6B /* SPBHPLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4E92C591A5E0003DD6B /* SPBHPLogic.swift */; };
 		C204E4ED2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4EC2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift */; };
 		C2185DD52C54D94400B072A5 /* JobTrackerHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */; };
+		C21D20482CB8225B00BA356F /* DependenciesFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D20472CB8225B00BA356F /* DependenciesFactoryTests.swift */; };
 		C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */; };
 		C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F7B112C44240E00881083 /* WelcomeView.swift */; };
 		C21F7B142C44241000881083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21F7B132C44241000881083 /* Assets.xcassets */; };
@@ -116,6 +117,7 @@
 		C204E4E92C591A5E0003DD6B /* SPBHPLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBHPLogic.swift; sourceTree = "<group>"; };
 		C204E4EC2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBHPViewSnapshotTests.swift; sourceTree = "<group>"; };
 		C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTrackerHeaderType.swift; sourceTree = "<group>"; };
+		C21D20472CB8225B00BA356F /* DependenciesFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesFactoryTests.swift; sourceTree = "<group>"; };
 		C21F7B0C2C44240E00881083 /* SmartProtection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartProtection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21F7B0F2C44240E00881083 /* SmartProtectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProtectionApp.swift; sourceTree = "<group>"; };
 		C21F7B112C44240E00881083 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -245,6 +247,22 @@
 				C2B027072C5A4F9500579414 /* SPBHPTests.swift */,
 			);
 			path = SPBHPView;
+			sourceTree = "<group>";
+		};
+		C21D20452CB821F200BA356F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C21D20462CB8220500BA356F /* DependenciesFactory */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C21D20462CB8220500BA356F /* DependenciesFactory */ = {
+			isa = PBXGroup;
+			children = (
+				C21D20472CB8225B00BA356F /* DependenciesFactoryTests.swift */,
+			);
+			path = DependenciesFactory;
 			sourceTree = "<group>";
 		};
 		C21F7B032C44240E00881083 = {
@@ -385,6 +403,7 @@
 		C242CB932C4A660B009E67CA /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				C21D20452CB821F200BA356F /* Coordinators */,
 				C242CB8C2C4953BE009E67CA /* Welcome */,
 			);
 			path = UnitTests;
@@ -807,6 +826,7 @@
 				C204E4E32C590AEA0003DD6B /* SPConstructionMenuSnapshotTests.swift in Sources */,
 				C2B5EAE72C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift in Sources */,
 				C2B5EAE42C54AAB10068AFB0 /* TabBarTests.swift in Sources */,
+				C21D20482CB8225B00BA356F /* DependenciesFactoryTests.swift in Sources */,
 				C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */,
 				C293AE742C4A98BA00965B3F /* SPTextFieldTypeTests.swift in Sources */,
 				C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */,

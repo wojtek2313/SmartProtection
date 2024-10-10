@@ -25,11 +25,16 @@ final class DependenciesFacotry {
         return tabBarLogic
     }
     
-    func createProgress(numberOfTotalDailyWorkHours: Int, startHour: Date) -> SPProgressLogic
-    {
+    func createProgress(numberOfTotalDailyWorkHours: Int, startHour: Date) -> SPProgressLogic {
         let timer = SPProgress.Timer(startHour: startHour)
         let progress = SPProgress(numberOfTotalDailyWorkHours: numberOfTotalDailyWorkHours, timer: timer)
         let progressLogic = SPProgressLogic(progress: progress)
         return progressLogic
+    }
+    
+    func createBHPLogic(items: [SPBHP.Item]) -> SPBHPLogic {
+        let bhpModel = SPBHP(items: items)
+        let logic = SPBHPLogic(spbhp: bhpModel)
+        return logic
     }
 }
