@@ -20,7 +20,6 @@ class TabBarMock: TabBarProtocol {
     }
     
     public var jobTrackerActionHandled = false
-    public var sosActionHandled = false
     public var settingsActionHandled = false
     
     public var onSOSItemPressed: (() -> Void)?
@@ -36,11 +35,6 @@ class TabBarMock: TabBarProtocol {
     public  func jobTrackerActionHandler() {
         self._selectedViewType = .jobTracker
         jobTrackerActionHandled = true
-    }
-    
-    public func sosActionHandler() {
-        sosActionHandled = true
-        onSOSItemPressed?()
     }
     
     public func settingsActionHandler() {

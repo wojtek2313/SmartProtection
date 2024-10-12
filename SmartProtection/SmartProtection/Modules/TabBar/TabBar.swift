@@ -5,14 +5,13 @@
 //  Created by Wojciech Kulas on 25/07/2024.
 //
 
+import Combine
 import Foundation
 
 public protocol TabBarProtocol {
     var selectedViewType: TabBar.SelectedViewType { get }
-    var onSOSItemPressed: (() -> Void)? { get set }
     
     mutating func jobTrackerActionHandler()
-    mutating func sosActionHandler()
     mutating func settingsActionHandler()
 }
 
@@ -20,14 +19,13 @@ public struct TabBar: TabBarProtocol {
     // MARK: - Private Properties
     
     private var _selectedViewType: SelectedViewType
+    private var _sosShouldPresent = CurrentValueSubject<Bool, Never>(false)
     
     // MARK: - Public Properties
     
     public var selectedViewType: SelectedViewType {
         _selectedViewType
     }
-    
-    public var onSOSItemPressed: (() -> Void)?
     
     // MARK: - Initializers
     
@@ -39,10 +37,6 @@ public struct TabBar: TabBarProtocol {
     
     public mutating func jobTrackerActionHandler() {
         _selectedViewType = .jobTracker
-    }
-    
-    public mutating func sosActionHandler() {
-        onSOSItemPressed?()
     }
     
     public mutating func settingsActionHandler() {

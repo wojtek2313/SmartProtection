@@ -7,14 +7,37 @@
 
 import SwiftUI
 
-struct SPFittedSheetModifier: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct Dummy: Identifiable {
+    let id = "Dummy"
 }
 
-struct SPFittedSheetModifier_Previews: PreviewProvider {
-    static var previews: some View {
-        SPFittedSheetModifier()
+public struct SPFittedSheetModifier<Item: Identifiable, ItemContent: View>: ViewModifier {
+    // MARK: - Public Properties
+    
+    @Binding var item: Item?
+    let onDismiss: () -> Void
+    let itemContent: (Item) -> ItemContent
+    
+    // MARK: - Private Properties
+    
+    @State private var height: CGFloat = .zero
+    @State private var keyboardHeight: CGFloat = 0
+    
+    // MARK: - UI
+    
+    public func body(content: Content) -> some View {
+        content
+            .sheet(item: $item, onDismiss: onDismiss) { item in
+                ScrollViewReader { proxy in
+                    ScrollView {
+                        itemContent(item)
+                            .storeHeigh(in: $height)
+                            .environment(\.scrollViewProxy, proxy)
+                    }
+                }
+                .presentationDetents([.height(height - keyboardHeight)])
+                .presentationDragIndicator(.hidden)
+                .keyboardHeight($keyboardHeight)
+            }
     }
 }

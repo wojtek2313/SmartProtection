@@ -46,34 +46,10 @@ final class TabBarTests: XCTestCase {
         XCTAssertEqual(sut?.selectedViewType, .settings)
     }
     
-    /// When On Init Is Job Tracker And SOS Action Happened
-    func testSelectedViewTypeWhenOnInitIsJobTrackerAndSOSActionHappened() {
-        sut = .init(selectedViewType: .jobTracker)
-        sut?.sosActionHandler()
-        XCTAssertEqual(sut?.selectedViewType, .jobTracker)
-    }
-    
-    /// When On Init Is Settings And SOS Action Happened
-    func testSelectedViewTypeWhenOnInitIsSettingsAndSOSActionHappened() {
-        sut = .init(selectedViewType: .settings)
-        sut?.sosActionHandler()
-        XCTAssertEqual(sut?.selectedViewType, .settings)
-    }
-    
     /// When On Init Is Settings And Job Tracker Action Happened
     func testSelectedViewTypeWhenOnInitIsSettingsAndJobTrackerActionHappened() {
         sut = .init(selectedViewType: .settings)
         sut?.jobTrackerActionHandler()
         XCTAssertEqual(sut?.selectedViewType, .jobTracker)
-    }
-    
-    /// On SOS Item Pressed
-    func testOnSOSItemPressed() {
-        sut = .init(selectedViewType: .jobTracker)
-        sut?.onSOSItemPressed = { [weak self] in
-            self?.sosActionHasBeenHappened = true
-        }
-        sut?.sosActionHandler()
-        XCTAssertTrue(sosActionHasBeenHappened)
     }
 }

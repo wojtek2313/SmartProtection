@@ -5,6 +5,7 @@
 //  Created by Wojciech Kulas on 24/07/2024.
 //
 
+import Combine
 import SwiftUI
 import SmartProtectionUI
 
@@ -12,6 +13,8 @@ struct TabBarView<Logic: TabBarLogicProtocol>: View {
     // MARK: - Private Properties
     
     @ObservedObject private var tabBarLogic: Logic
+    @State private var displaySOSSheet: Bool = false
+    
     private var dependencyFactory: DependenciesFacotry
     
     // MARK: - Initializers
@@ -19,7 +22,6 @@ struct TabBarView<Logic: TabBarLogicProtocol>: View {
     init(tabBarLogic: Logic, dependencyFactory: DependenciesFacotry = .shared) {
         self.tabBarLogic = tabBarLogic
         self.dependencyFactory = dependencyFactory
-        bindSOSItemButton()
     }
     
     // MARK: - UI
@@ -31,6 +33,12 @@ struct TabBarView<Logic: TabBarLogicProtocol>: View {
                     contentView
                     navigationBar(proxy: proxy)
                 }
+            }
+            .fittedSheet(isPresented: $displaySOSSheet) {
+                SOSView(
+                    isPresented: $displaySOSSheet,
+                    dependencyFactory: dependencyFactory
+                )
             }
             .navigationTitle("NAVIGATION_STACK_MAIN".localized)
         }
@@ -49,19 +57,11 @@ struct TabBarView<Logic: TabBarLogicProtocol>: View {
         .safeAreaInset(edge: .bottom) {
             SPTabView(
                 jobTrackerActionHandler: tabBarLogic.jobTrackerActionHandler,
-                sosActionHandler: tabBarLogic.sosActionHandler,
+                sosActionHandler: { displaySOSSheet.toggle() },
                 settingsActionHandler: tabBarLogic.settingsActionHandler,
                 proxy: proxy
             )
             .background(.white)
-        }
-    }
-    
-    // MARK: - Private Methods
-    
-    private func bindSOSItemButton() {
-        tabBarLogic.injectSOSAction {
-            print("SOS")
         }
     }
 }
