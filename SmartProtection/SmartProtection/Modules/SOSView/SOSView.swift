@@ -90,7 +90,7 @@ struct SOSView: View {
                        alignment: .center)
                 .foregroundColor(.red)
         }
-        .padding()
+        .padding(.trailing)
     }
     
     private var goToSOSFormButton: some View {

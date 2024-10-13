@@ -33,7 +33,7 @@
 "SP_BUTTON_RESET_PASSWORD" = "Zresetuj hasło";
 "SP_BUTTON_SET_NEW_PASSWORD" = "Ustaw nowe hasło";
 "SP_BUTTON_DOCUMENTS" = "Dokumenty";
-"SP_BUTTON_SOS_FORM" = "Formularz";
+"SP_BUTTON_SOS_FORM" = "ZGŁOSZENIE";
 
 /// SPHeaderIcon
 "SP_HEADER_ICON_TITLE" = "SmartProtection";
@@ -75,4 +75,4 @@
 
 /// SOS VIEW
 "SOS_MAIN_TITLE" = "SOS";
-"SOS_SUBTITLE" = "Wypełnij formularz lub wciśnij ikonę słuchawki, by szybko wezwać pomoc!";
+"SOS_SUBTITLE" = "Wypełnij ZGŁOSZENIE SOS lub wciśnij ikonę słuchawki, by szybko wezwać pomoc!";

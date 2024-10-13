@@ -104,4 +104,10 @@ final class SPButtonTests: XCTestCase {
         enabled = false
         assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
     }
+    
+    func testSPButtonWhenOnSOSFormType() {
+        type = .sosForm
+        enabled = true
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
+    }
 }
