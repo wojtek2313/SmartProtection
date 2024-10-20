@@ -12,19 +12,45 @@ struct SOSView: View {
     // MARK: - Private Properties
     
     private var dependencyFactory: DependenciesFacotry
+    private let sosFormFactory: SOSFormFactoryProtocol
+    
+    private let proxy: GeometryProxy
+    
     @Binding private var isPresented: Bool
+    @State private var isFormDisplayed = false
     
     // MARK: - Initializers
     
-    init(isPresented: Binding<Bool>, dependencyFactory: DependenciesFacotry) {
+    init(
+        isPresented: Binding<Bool>,
+        proxy: GeometryProxy,
+        dependencyFactory: DependenciesFacotry,
+        sosFormFactory: SOSFormFactoryProtocol = SOSFormFactory()
+    ) {
         self.dependencyFactory = dependencyFactory
+        self.proxy = proxy
         self._isPresented = isPresented
+        self.sosFormFactory = sosFormFactory
     }
     
     // MARK: - UI
     
+    @ViewBuilder
     var body: some View {
-        VStack() {
+        if isFormDisplayed {
+            sosFormView
+                .frame(height: proxy.size.height)
+        } else {
+            sosInitView
+        }
+    }
+    
+    private var sosFormView: some View {
+        sosFormFactory.createSOSForm(isPresented: $isPresented, dependencyFactory: dependencyFactory)
+    }
+    
+    private var sosInitView: some View {
+        VStack {
             header
             sosButtonsStack
         }
@@ -100,7 +126,9 @@ struct SOSView: View {
             titleFont: .largeTitle,
             cornerRadius: Constants.Button.cornerRadius,
             isFlat: true
-        ) {}
+        ) {
+            isFormDisplayed = true
+        }
     }
     
     // MARK: - Constants

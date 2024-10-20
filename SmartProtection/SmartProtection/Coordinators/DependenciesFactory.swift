@@ -37,4 +37,10 @@ final class DependenciesFacotry {
         let logic = SPBHPLogic(spbhp: bhpModel)
         return logic
     }
+    
+    func createFirsAidLogic() -> FirstAidLogic {
+        let firstAid = FirstAid(sample: FirstAid.SAMPLE())
+        let logic: FirstAidLogic = FirstAidLogic(firstAid: firstAid)
+        return logic
+    }
 }

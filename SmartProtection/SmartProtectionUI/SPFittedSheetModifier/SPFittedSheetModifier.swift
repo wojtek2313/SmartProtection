@@ -35,7 +35,7 @@ public struct SPFittedSheetModifier<Item: Identifiable, ItemContent: View>: View
                             .environment(\.scrollViewProxy, proxy)
                     }
                 }
-                .presentationDetents([.height(height - keyboardHeight)])
+                .presentationDetents([.height(height + keyboardHeight)])
                 .presentationDragIndicator(.hidden)
                 .keyboardHeight($keyboardHeight)
             }

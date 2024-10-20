@@ -66,4 +66,11 @@ final class SPTextFieldTypeTests: XCTestCase {
         XCTAssertEqual(type.placeholder, "SP_TEXT_FIELD_NEW_PASSWORD_PLACEHOLDER".localized)
         XCTAssertEqual(type.inputHideable, true)
     }
+    
+    func testSPTextFieldTypeAtWhatHasHappen() {
+        let type = SPTextFieldType.whatHasHappend
+        XCTAssertEqual(type.title, "SP_TEXT_FIELD_WHAT_HAS_HAPPEND".localized)
+        XCTAssertEqual(type.placeholder, "SP_TEXT_FIELD_WHAT_HAS_HAPPEND".localized)
+        XCTAssertEqual(type.inputHideable, false)
+    }
 }
