@@ -8,6 +8,12 @@
 
 /// Components
 
+/// Basics
+"SP_YES" = "Tak";
+"SP_NO" = "Nie";
+"SP_OTHERS" = "Inne";
+"SP_DONT_KNOW" = "Nie wiem";
+
 /// SPTextField
 "SP_TEXT_FIELD_LOGIN" = "Login";
 "SP_TEXT_FIELD_LOGIN_PLACEHOLDER" = "Wpisz login (e-mail)";
@@ -25,6 +31,8 @@
 "SP_TEXT_FIELD_NEW_PASSWORD_PLACEHOLDER" = "Ustaw nowe hasło";
 "SP_TEXT_FIELD_NEW_LOGIN" = "Nowy login";
 "SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER" = "Ustaw nowy login (e-mail)";
+"SP_TEXT_FIELD_WHAT_HAS_HAPPEND" = "Co się stało?";
+"SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER" = "Wypadek ...";
 
 /// SPButton
 "SP_BUTTON_LOG_IN" = "Zaloguj";
@@ -76,3 +84,29 @@
 /// SOS VIEW
 "SOS_MAIN_TITLE" = "SOS";
 "SOS_SUBTITLE" = "Wypełnij ZGŁOSZENIE SOS lub wciśnij ikonę słuchawki, by szybko wezwać pomoc!";
+
+/// SOS INTRODUCTION FORM
+"SOS_INTRODUCTION_FORM_TITLE" = "Zgłoszenie pomocy";
+"SOS_INTRODUCTION_FORM_SUBTITLE" = "Wypełnij zgłoszenie w celu dostarczenia jak największej ilości danych przy wzywaniu pomocy.";
+"SOS_INTRODUCTION_FORM_PROPERTY" = "USZKODZENIE MIENIA";
+"SOS_INTRODUCTION_FORM_HUMAN" = "POSZKODOWANA OSOBA";
+
+/// SOS FIRST AID FORM
+"SOS_FIRST_AID_FORM_TITLE" = "Zgłoszenie pierwszej pomocy.";
+"SOS_FIRST_AID_FORM_SUBTITLE" = "Wypełnij zgłoszenie by dostarczyć konieczne dane, w celu udzielenia pomocy poszkodowanemu.";
+"SOS_FIRST_AID_FORM_IS_CONSCIOUS_QUESTION" = "1) Czy poszkodowany jest przytomny?";
+"SOS_FIRST_AID_FORM_WHAT_HAPPEND_QUESTION" = "2) Co się stało?";
+"SOS_FIRST_AID_FORM_KIND_OF_SYMPTOMS" = "3) Symptomy.";
+"SOS_FIRST_AID_FORM_LAST_LUNCH" = "4) Czy poszkodowany w przeciągu ostatniej godziny sporzywał jakiś pokarm?";
+"SOS_FIRST_AID_FORM_IS_SOBER" = "5) Czy poszkodowany jest trzeźwy?";
+"SOS_FIRST_AID_FALLDOWN" = "Upadek z wysokości.";
+"SOS_FIRST_AID_EQUIPMENT" = "Wypadek spowodowany przez narzędzia lub maszyny.";
+"SOS_FIRST_AID_ELECTRICITY" =  "Porażenie prądem.";
+"SOS_FIRST_AID_CHEMICALS" = "Kontakt z niebezpiecznymi substancjami chemicznymi.";
+"SOS_FIRST_AID_FRACTURES" = "Złamania.";
+"SOS_FIRST_AID_HEADACHE" = "Ból głowy.";
+"SOS_FIRST_AID_STOMACHACHE" = "Ból brzucha.";
+"SOS_FIRST_AID_VOMITS" = "Wymioty.";
+"SOS_FIRST_AID_SLURRED_SPEECH" = "Bełkotanie / Nie wyraźna mowa.";
+"SOS_FIRST_AID_GETTING_LOST" = "Zagubienie.";
+

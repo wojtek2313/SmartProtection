@@ -54,6 +54,7 @@ public struct Welcome: WelcomeProtocol {
         case .mobile: user.mobile = newValue
         case .newPassword: user.password = newValue
         case .newLogin: user.mail = newValue
+        default: break
         }
     }
     

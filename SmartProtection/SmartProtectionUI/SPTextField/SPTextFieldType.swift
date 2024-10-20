@@ -16,6 +16,7 @@ public enum SPTextFieldType: String {
     case mobile
     case newPassword
     case newLogin
+    case whatHasHappend
     
     public var title: String {
         switch self {
@@ -35,6 +36,8 @@ public enum SPTextFieldType: String {
             return "SP_TEXT_FIELD_NEW_PASSWORD".localized
         case .newLogin:
             return "SP_TEXT_FIELD_NEW_LOGIN".localized
+        case .whatHasHappend:
+            return "SP_TEXT_FIELD_WHAT_HAS_HAPPEND".localized
         }
     }
     
@@ -55,6 +58,8 @@ public enum SPTextFieldType: String {
         case .newPassword:
             return "SP_TEXT_FIELD_NEW_PASSWORD_PLACEHOLDER".localized
         case .newLogin:
+            return "SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER".localized
+        case .whatHasHappend:
             return "SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER".localized
         }
     }

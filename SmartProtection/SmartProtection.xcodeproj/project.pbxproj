@@ -55,6 +55,11 @@
 		C254D49A2C51670000335C62 /* SPTabViewContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254D4992C51670000335C62 /* SPTabViewContentType.swift */; };
 		C254D49C2C51A41300335C62 /* SPTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254D49B2C51A41300335C62 /* SPTabButton.swift */; };
 		C254D49F2C51A59900335C62 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254D49E2C51A59900335C62 /* TabBarView.swift */; };
+		C27CCD2F2CC2AFF700E345E4 /* SPRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CCD2E2CC2AFF700E345E4 /* SPRadioButton.swift */; };
+		C27CCD312CC2B11600E345E4 /* SPRadioButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CCD302CC2B11600E345E4 /* SPRadioButtonItem.swift */; };
+		C27CCD332CC2B5AA00E345E4 /* SPRadioStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CCD322CC2B5AA00E345E4 /* SPRadioStack.swift */; };
+		C27CCD352CC2B95C00E345E4 /* ConsciousItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CCD342CC2B95C00E345E4 /* ConsciousItem.swift */; };
+		C27CCD382CC2BE9A00E345E4 /* ReasonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CCD372CC2BE9A00E345E4 /* ReasonItem.swift */; };
 		C28907802C4905E4007D0F0F /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289077F2C4905E4007D0F0F /* UserDto.swift */; };
 		C293AE6D2C4A7B8500965B3F /* SPButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE6C2C4A7B8500965B3F /* SPButtonTests.swift */; };
 		C293AE6F2C4A890E00965B3F /* SPButtonTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AE6E2C4A890E00965B3F /* SPButtonTypeTests.swift */; };
@@ -76,12 +81,27 @@
 		C2C4A5282C45330300FD3BCF /* SPHeaderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */; };
 		C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5292C453D1900FD3BCF /* WelcomeViewType.swift */; };
 		C2C4A5312C4569FB00FD3BCF /* WelcomeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4A5302C4569FB00FD3BCF /* WelcomeLogic.swift */; };
+		C2C7D05F2CBECD5600984A4D /* SOSFormFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C7D05E2CBECD5600984A4D /* SOSFormFactory.swift */; };
+		C2D2EBAF2CC5133500B75BF0 /* SymptomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2EBAE2CC5133500B75BF0 /* SymptomItem.swift */; };
+		C2D2EBB12CC5221600B75BF0 /* LunchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2EBB02CC5221600B75BF0 /* LunchItem.swift */; };
+		C2D2EBB32CC527DA00B75BF0 /* SoberItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2EBB22CC527DA00B75BF0 /* SoberItem.swift */; };
+		C2E058182CC145C0009A8CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E058172CC145C0009A8CB7 /* AppDelegate.swift */; };
+		C2E0581B2CC14741009A8CB7 /* UISetUpApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E0581A2CC14741009A8CB7 /* UISetUpApplicationDelegate.swift */; };
+		C2E058202CC16C31009A8CB7 /* FirstAidLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E0581F2CC16C31009A8CB7 /* FirstAidLogic.swift */; };
+		C2E058222CC16CA8009A8CB7 /* FirstAid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E058212CC16CA8009A8CB7 /* FirstAid.swift */; };
 		C2E46A8E2C555FC300895AF3 /* SPCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A8D2C555FC300895AF3 /* SPCardView.swift */; };
 		C2E46A912C5582C300895AF3 /* SPCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */; };
 		C2E46A942C56268A00895AF3 /* SPProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E46A932C56268A00895AF3 /* SPProgressView.swift */; };
 		C2EE52002C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE51FF2C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift */; };
 		C2EE52022C57C2F600C2C8BC /* SPProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE52012C57C2F600C2C8BC /* SPProgressTests.swift */; };
 		C2EE52042C57CCAC00C2C8BC /* SPProgressLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE52032C57CCAC00C2C8BC /* SPProgressLogicTests.swift */; };
+		C2F14F8C2CBC189A007851FA /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F14F8B2CBC189A007851FA /* RouterView.swift */; };
+		C2F14F8E2CBC1917007851FA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F14F8D2CBC1917007851FA /* Router.swift */; };
+		C2F14F902CBC19C2007851FA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F14F8F2CBC19C2007851FA /* Route.swift */; };
+		C2F14F9B2CBC269F007851FA /* SOSIntroductionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F14F9A2CBC269F007851FA /* SOSIntroductionForm.swift */; };
+		C2F14F9D2CBC26B7007851FA /* SOSPropertyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F14F9C2CBC26B7007851FA /* SOSPropertyForm.swift */; };
+		C2F14F9F2CBC26CB007851FA /* SOSFirstAidForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F14F9E2CBC26CB007851FA /* SOSFirstAidForm.swift */; };
+		C2F14FA22CBC2DD6007851FA /* SOSForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F14FA12CBC2DD6007851FA /* SOSForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +183,11 @@
 		C254D4992C51670000335C62 /* SPTabViewContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabViewContentType.swift; sourceTree = "<group>"; };
 		C254D49B2C51A41300335C62 /* SPTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabButton.swift; sourceTree = "<group>"; };
 		C254D49E2C51A59900335C62 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C27CCD2E2CC2AFF700E345E4 /* SPRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRadioButton.swift; sourceTree = "<group>"; };
+		C27CCD302CC2B11600E345E4 /* SPRadioButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRadioButtonItem.swift; sourceTree = "<group>"; };
+		C27CCD322CC2B5AA00E345E4 /* SPRadioStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRadioStack.swift; sourceTree = "<group>"; };
+		C27CCD342CC2B95C00E345E4 /* ConsciousItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsciousItem.swift; sourceTree = "<group>"; };
+		C27CCD372CC2BE9A00E345E4 /* ReasonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonItem.swift; sourceTree = "<group>"; };
 		C289077F2C4905E4007D0F0F /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
 		C293AE6C2C4A7B8500965B3F /* SPButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonTests.swift; sourceTree = "<group>"; };
 		C293AE6E2C4A890E00965B3F /* SPButtonTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonTypeTests.swift; sourceTree = "<group>"; };
@@ -184,12 +209,27 @@
 		C2C4A5272C45330300FD3BCF /* SPHeaderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHeaderIcon.swift; sourceTree = "<group>"; };
 		C2C4A5292C453D1900FD3BCF /* WelcomeViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewType.swift; sourceTree = "<group>"; };
 		C2C4A5302C4569FB00FD3BCF /* WelcomeLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLogic.swift; sourceTree = "<group>"; };
+		C2C7D05E2CBECD5600984A4D /* SOSFormFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSFormFactory.swift; sourceTree = "<group>"; };
+		C2D2EBAE2CC5133500B75BF0 /* SymptomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomItem.swift; sourceTree = "<group>"; };
+		C2D2EBB02CC5221600B75BF0 /* LunchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchItem.swift; sourceTree = "<group>"; };
+		C2D2EBB22CC527DA00B75BF0 /* SoberItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoberItem.swift; sourceTree = "<group>"; };
+		C2E058172CC145C0009A8CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2E0581A2CC14741009A8CB7 /* UISetUpApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetUpApplicationDelegate.swift; sourceTree = "<group>"; };
+		C2E0581F2CC16C31009A8CB7 /* FirstAidLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidLogic.swift; sourceTree = "<group>"; };
+		C2E058212CC16CA8009A8CB7 /* FirstAid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAid.swift; sourceTree = "<group>"; };
 		C2E46A8D2C555FC300895AF3 /* SPCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCardView.swift; sourceTree = "<group>"; };
 		C2E46A902C5582C300895AF3 /* SPCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCardViewTests.swift; sourceTree = "<group>"; };
 		C2E46A932C56268A00895AF3 /* SPProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressView.swift; sourceTree = "<group>"; };
 		C2EE51FF2C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressViewSnapshotTests.swift; sourceTree = "<group>"; };
 		C2EE52012C57C2F600C2C8BC /* SPProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressTests.swift; sourceTree = "<group>"; };
 		C2EE52032C57CCAC00C2C8BC /* SPProgressLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPProgressLogicTests.swift; sourceTree = "<group>"; };
+		C2F14F8B2CBC189A007851FA /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		C2F14F8D2CBC1917007851FA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C2F14F8F2CBC19C2007851FA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		C2F14F9A2CBC269F007851FA /* SOSIntroductionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSIntroductionForm.swift; sourceTree = "<group>"; };
+		C2F14F9C2CBC26B7007851FA /* SOSPropertyForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPropertyForm.swift; sourceTree = "<group>"; };
+		C2F14F9E2CBC26CB007851FA /* SOSFirstAidForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSFirstAidForm.swift; sourceTree = "<group>"; };
+		C2F14FA12CBC2DD6007851FA /* SOSForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +382,8 @@
 		C21F7B0E2C44240E00881083 /* SmartProtection */ = {
 			isa = PBXGroup;
 			children = (
+				C2E058162CC1457C009A8CB7 /* AppDelegate */,
+				C2F14F8A2CBC1808007851FA /* Routing */,
 				C22715BF2C5D0AE50077DD9B /* Coordinators */,
 				C289077E2C4905D4007D0F0F /* Models */,
 				C2C4A52B2C45675500FD3BCF /* Resources */,
@@ -364,6 +406,7 @@
 		C21F7B282C44270100881083 /* SmartProtectionUI */ = {
 			isa = PBXGroup;
 			children = (
+				C27CCD2D2CC2AFC800E345E4 /* SPRadioButton */,
 				C21D20572CB846DB00BA356F /* KeyboardProvider */,
 				C21D20542CB844BF00BA356F /* ScrollViewProxyKey */,
 				C21D204F2CB8427800BA356F /* SizePreferenceKey */,
@@ -530,6 +573,28 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		C27CCD2D2CC2AFC800E345E4 /* SPRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				C27CCD2E2CC2AFF700E345E4 /* SPRadioButton.swift */,
+				C27CCD302CC2B11600E345E4 /* SPRadioButtonItem.swift */,
+				C27CCD322CC2B5AA00E345E4 /* SPRadioStack.swift */,
+			);
+			path = SPRadioButton;
+			sourceTree = "<group>";
+		};
+		C27CCD362CC2BE0D00E345E4 /* RadioItems */ = {
+			isa = PBXGroup;
+			children = (
+				C27CCD342CC2B95C00E345E4 /* ConsciousItem.swift */,
+				C27CCD372CC2BE9A00E345E4 /* ReasonItem.swift */,
+				C2D2EBAE2CC5133500B75BF0 /* SymptomItem.swift */,
+				C2D2EBB02CC5221600B75BF0 /* LunchItem.swift */,
+				C2D2EBB22CC527DA00B75BF0 /* SoberItem.swift */,
+			);
+			path = RadioItems;
+			sourceTree = "<group>";
+		};
 		C289077E2C4905D4007D0F0F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,7 +667,7 @@
 		C2C4A52C2C45678400FD3BCF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C21D205A2CB84D4900BA356F /* SOSView */,
+				C2F14F962CBC2506007851FA /* SOS */,
 				C254D49D2C51A58200335C62 /* TabBar */,
 				C2C4A52D2C4567A700FD3BCF /* Base */,
 				C204E4DF2C5900020003DD6B /* DocumentsView */,
@@ -640,6 +705,31 @@
 			path = Persistence;
 			sourceTree = "<group>";
 		};
+		C2C7D05D2CBECD1900984A4D /* SOSFormFactory */ = {
+			isa = PBXGroup;
+			children = (
+				C2C7D05E2CBECD5600984A4D /* SOSFormFactory.swift */,
+			);
+			path = SOSFormFactory;
+			sourceTree = "<group>";
+		};
+		C2E058162CC1457C009A8CB7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C2E058192CC14717009A8CB7 /* AppDelegates */,
+				C2E058172CC145C0009A8CB7 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C2E058192CC14717009A8CB7 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				C2E0581A2CC14741009A8CB7 /* UISetUpApplicationDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
 		C2E46A8C2C555F9600895AF3 /* SPCardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,6 +764,64 @@
 				C2EE52032C57CCAC00C2C8BC /* SPProgressLogicTests.swift */,
 			);
 			path = SPProgressView;
+			sourceTree = "<group>";
+		};
+		C2F14F8A2CBC1808007851FA /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				C2F14F8B2CBC189A007851FA /* RouterView.swift */,
+				C2F14F8D2CBC1917007851FA /* Router.swift */,
+				C2F14F8F2CBC19C2007851FA /* Route.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		C2F14F962CBC2506007851FA /* SOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2C7D05D2CBECD1900984A4D /* SOSFormFactory */,
+				C2F14FA02CBC2DC0007851FA /* SOSForm */,
+				C2F14F992CBC253A007851FA /* SOSFirstAidForm */,
+				C2F14F982CBC252D007851FA /* SOSPropertyForm */,
+				C2F14F972CBC251B007851FA /* SOSIntroductionForm */,
+				C21D205A2CB84D4900BA356F /* SOSView */,
+			);
+			path = SOS;
+			sourceTree = "<group>";
+		};
+		C2F14F972CBC251B007851FA /* SOSIntroductionForm */ = {
+			isa = PBXGroup;
+			children = (
+				C2F14F9A2CBC269F007851FA /* SOSIntroductionForm.swift */,
+			);
+			path = SOSIntroductionForm;
+			sourceTree = "<group>";
+		};
+		C2F14F982CBC252D007851FA /* SOSPropertyForm */ = {
+			isa = PBXGroup;
+			children = (
+				C2F14F9C2CBC26B7007851FA /* SOSPropertyForm.swift */,
+			);
+			path = SOSPropertyForm;
+			sourceTree = "<group>";
+		};
+		C2F14F992CBC253A007851FA /* SOSFirstAidForm */ = {
+			isa = PBXGroup;
+			children = (
+				C27CCD362CC2BE0D00E345E4 /* RadioItems */,
+				C2F14F9E2CBC26CB007851FA /* SOSFirstAidForm.swift */,
+				C2E0581F2CC16C31009A8CB7 /* FirstAidLogic.swift */,
+				C2E058212CC16CA8009A8CB7 /* FirstAid.swift */,
+			);
+			path = SOSFirstAidForm;
+			sourceTree = "<group>";
+		};
+		C2F14FA02CBC2DC0007851FA /* SOSForm */ = {
+			isa = PBXGroup;
+			children = (
+				C2F14FA12CBC2DD6007851FA /* SOSForm.swift */,
+			);
+			path = SOSForm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -828,8 +976,19 @@
 			files = (
 				C21D205C2CB84D6900BA356F /* SOSView.swift in Sources */,
 				C2C4A5312C4569FB00FD3BCF /* WelcomeLogic.swift in Sources */,
+				C27CCD382CC2BE9A00E345E4 /* ReasonItem.swift in Sources */,
 				C22E5F922C47CDB800C892A4 /* Welcome.swift in Sources */,
+				C2F14F9B2CBC269F007851FA /* SOSIntroductionForm.swift in Sources */,
+				C2F14FA22CBC2DD6007851FA /* SOSForm.swift in Sources */,
+				C27CCD352CC2B95C00E345E4 /* ConsciousItem.swift in Sources */,
+				C2F14F8C2CBC189A007851FA /* RouterView.swift in Sources */,
+				C2F14F9D2CBC26B7007851FA /* SOSPropertyForm.swift in Sources */,
+				C2E058202CC16C31009A8CB7 /* FirstAidLogic.swift in Sources */,
+				C2D2EBB32CC527DA00B75BF0 /* SoberItem.swift in Sources */,
 				C254D49F2C51A59900335C62 /* TabBarView.swift in Sources */,
+				C2D2EBB12CC5221600B75BF0 /* LunchItem.swift in Sources */,
+				C2D2EBAF2CC5133500B75BF0 /* SymptomItem.swift in Sources */,
+				C2C7D05F2CBECD5600984A4D /* SOSFormFactory.swift in Sources */,
 				C22715C12C5D0B030077DD9B /* DependenciesFactory.swift in Sources */,
 				C29703FC2C52B48A000959FB /* TabBar.swift in Sources */,
 				C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */,
@@ -837,13 +996,19 @@
 				C204E4E12C59003F0003DD6B /* DocumentsView.swift in Sources */,
 				C21F7B192C44241100881083 /* Persistence.swift in Sources */,
 				C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */,
+				C2F14F902CBC19C2007851FA /* Route.swift in Sources */,
+				C2F14F8E2CBC1917007851FA /* Router.swift in Sources */,
+				C2E0581B2CC14741009A8CB7 /* UISetUpApplicationDelegate.swift in Sources */,
 				C22715C32C5D10830077DD9B /* AppFlowCoordinator.swift in Sources */,
 				C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */,
 				C21F7B1C2C44241100881083 /* SmartProtection.xcdatamodeld in Sources */,
+				C2E058222CC16CA8009A8CB7 /* FirstAid.swift in Sources */,
+				C2E058182CC145C0009A8CB7 /* AppDelegate.swift in Sources */,
 				C254D4952C5163E700335C62 /* JobTrackerView.swift in Sources */,
 				C28907802C4905E4007D0F0F /* UserDto.swift in Sources */,
 				C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */,
 				C29703FA2C52B177000959FB /* SettingsView.swift in Sources */,
+				C2F14F9F2CBC26CB007851FA /* SOSFirstAidForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,6 +1040,9 @@
 				C2C4A5262C452EA700FD3BCF /* SPHeaderIconType.swift in Sources */,
 				C21D204B2CB83F9400BA356F /* SPFittedSheetModifier.swift in Sources */,
 				C254D4982C51648100335C62 /* SPTabView.swift in Sources */,
+				C27CCD2F2CC2AFF700E345E4 /* SPRadioButton.swift in Sources */,
+				C27CCD332CC2B5AA00E345E4 /* SPRadioStack.swift in Sources */,
+				C27CCD312CC2B11600E345E4 /* SPRadioButtonItem.swift in Sources */,
 				C204E4EA2C591A5E0003DD6B /* SPBHPLogic.swift in Sources */,
 				C254D49C2C51A41300335C62 /* SPTabButton.swift in Sources */,
 				C2E46A8E2C555FC300895AF3 /* SPCardView.swift in Sources */,

@@ -27,20 +27,21 @@ struct TabBarView<Logic: TabBarLogicProtocol>: View {
     // MARK: - UI
     
     var body: some View {
-        NavigationStack {
-            GeometryReader { proxy in
+        GeometryReader { proxy in
+            NavigationStack {
                 ZStack {
                     contentView
                     navigationBar(proxy: proxy)
                 }
+                .fittedSheet(isPresented: $displaySOSSheet) {
+                    SOSView(
+                        isPresented: $displaySOSSheet,
+                        proxy: proxy,
+                        dependencyFactory: dependencyFactory
+                    )
+                }
+                .navigationTitle("NAVIGATION_STACK_MAIN".localized)
             }
-            .fittedSheet(isPresented: $displaySOSSheet) {
-                SOSView(
-                    isPresented: $displaySOSSheet,
-                    dependencyFactory: dependencyFactory
-                )
-            }
-            .navigationTitle("NAVIGATION_STACK_MAIN".localized)
         }
     }
     
