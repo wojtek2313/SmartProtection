@@ -47,4 +47,10 @@ final class SPButtonTypeTests: XCTestCase {
         XCTAssertEqual(type.title, "SP_BUTTON_DOCUMENTS".localized)
         XCTAssertEqual(type.color, .spBlue)
     }
+    
+    func testSPButtonTypeWhenSetToSOSForm() {
+        let type = SPButtonType.sosForm
+        XCTAssertEqual(type.title, "SP_BUTTON_SOS_FORM".localized)
+        XCTAssertEqual(type.color, .red)
+    }
 }

@@ -53,6 +53,7 @@ struct WelcomeMock: WelcomeProtocol {
         case .mobile: user.mobile = newValue
         case .newPassword: user.password = newValue
         case .newLogin: user.mail = newValue
+        case .whatHasHappend: break
         }
     }
     

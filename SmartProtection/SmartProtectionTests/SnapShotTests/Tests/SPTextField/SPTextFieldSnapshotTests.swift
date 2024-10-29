@@ -73,4 +73,9 @@ final class SPTextFieldSnapshotTests: XCTestCase {
         type = .newLogin
         assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
     }
+    
+    func testSPTextFieldOnTypeWhatHasHappend() {
+        type = .whatHasHappend
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
+    }
 }

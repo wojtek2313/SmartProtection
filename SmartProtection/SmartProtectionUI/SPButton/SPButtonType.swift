@@ -15,6 +15,7 @@ public enum SPButtonType {
     case register
     case newPassword
     case documents
+    case sosForm
     
     public var title: String {
         switch self {
@@ -30,10 +31,17 @@ public enum SPButtonType {
             return "SP_BUTTON_SET_NEW_PASSWORD".localized
         case .documents:
             return "SP_BUTTON_DOCUMENTS".localized
+        case .sosForm:
+            return "SP_BUTTON_SOS_FORM".localized
         }
     }
     
     public var color: Color {
-        .spBlue
+        switch self {
+        case .login, .next, .reset, .register, .newPassword, .documents:
+            return .spBlue
+        case .sosForm:
+            return .red
+        }
     }
 }

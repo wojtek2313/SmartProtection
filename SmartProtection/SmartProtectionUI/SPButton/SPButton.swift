@@ -13,8 +13,10 @@ public struct SPButton: View {
     private let type: SPButtonType
     private let enabled: Bool
     private let action: () -> Void
-    private var height: CGFloat?
-    private var titleFont: Font?
+    private let height: CGFloat?
+    private let cornerRadius: CGFloat?
+    private let isFlat: Bool
+    private let titleFont: Font?
     
     // MARK: - Initializers
     
@@ -23,12 +25,16 @@ public struct SPButton: View {
         enabled: Bool = true,
         height: CGFloat? = nil,
         titleFont: Font? = nil,
+        cornerRadius: CGFloat? = nil,
+        isFlat: Bool = false,
         action: @escaping () -> Void
     ) {
         self.type = type
         self.enabled = enabled
         self.height = height
         self.titleFont = titleFont
+        self.cornerRadius = cornerRadius
+        self.isFlat = isFlat
         self.action = action
     }
     
@@ -47,14 +53,14 @@ public struct SPButton: View {
     }
     
     private var buttonContent: some View {
-        RoundedRectangle(cornerRadius: Constants.cornerRadius)
+        RoundedRectangle(cornerRadius: cornerRadius ?? Constants.cornerRadius)
             .foregroundColor(enabled ? type.color : .gray)
             .frame(height: height ?? Constants.height)
             .overlay {
                 title
             }
             .shadow(
-                color: .black,
+                color: isFlat ? .clear : .black,
                 radius: Constants.Shadow.radius,
                 x: Constants.Shadow.xPosition,
                 y: Constants.Shadow.yPosition
