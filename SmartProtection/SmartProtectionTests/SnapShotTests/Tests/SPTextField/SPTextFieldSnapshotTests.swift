@@ -78,4 +78,24 @@ final class SPTextFieldSnapshotTests: XCTestCase {
         type = .whatHasHappend
         assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
     }
+    
+    func testSPTextFieldOnTypeWhatItemUnderFired() {
+        type = .whatItemUnderFire
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
+    }
+    
+    func testSPTextFieldOnTypeWhatHasBeenRobbed() {
+        type = .whatHasBeenRobbed
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
+    }
+    
+    func testSPTextFieldOnTypeWhatIsUnderCollision() {
+        type = .whatIsUnderCollision
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
+    }
+    
+    func testSPTextFieldOnTypeWhichMachineIsDamagged() {
+        type = .whichMachineIsUnderDamaged
+        assertSnapshot(of: view, as: .image(size: view.intrinsicContentSize))
+    }
 }

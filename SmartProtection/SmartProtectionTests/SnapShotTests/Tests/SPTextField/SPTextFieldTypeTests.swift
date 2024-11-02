@@ -73,4 +73,32 @@ final class SPTextFieldTypeTests: XCTestCase {
         XCTAssertEqual(type.placeholder, "SP_TEXT_FIELD_WHAT_HAS_HAPPEND".localized)
         XCTAssertEqual(type.inputHideable, false)
     }
+    
+    func testSPTextFieldTypeAtWhatItemUnderFire() {
+        let type = SPTextFieldType.whatItemUnderFire
+        XCTAssertEqual(type.title, "SP_TEXT_FIELD_WHAT_IS_UNDER_FIRE".localized)
+        XCTAssertEqual(type.placeholder, "SP_TEXT_FIELD_WHAT_IS_UNDER_FIRE_PLACEHOLDER".localized)
+        XCTAssertEqual(type.inputHideable, false)
+    }
+    
+    func testSPTextFieldTypeAtWhatHasBeenRobbed() {
+        let type = SPTextFieldType.whatHasBeenRobbed
+        XCTAssertEqual(type.title, "SP_TEXT_FIELD_WHAT_HAS_BEEN_ROBBED".localized)
+        XCTAssertEqual(type.placeholder, "SP_TEXT_FIELD_WHAT_HAS_BEEN_ROBBED".localized)
+        XCTAssertEqual(type.inputHideable, false)
+    }
+    
+    func testSPTextFieldTypeAtWhatIsUnderCollision() {
+        let type = SPTextFieldType.whatIsUnderCollision
+        XCTAssertEqual(type.title, "SP_TEXT_FIELD_WHAT_IS_UNDER_COLLISION".localized)
+        XCTAssertEqual(type.placeholder, "SP_TEXT_FIELD_COLLISION_PLACEHOLDER".localized)
+        XCTAssertEqual(type.inputHideable, false)
+    }
+    
+    func testSPTextFieldTypeAtWhichMachineIsDamagged() {
+        let type = SPTextFieldType.whichMachineIsUnderDamaged
+        XCTAssertEqual(type.title, "SP_TEXT_FIELD_WHICH_MACHINE_IS_DAMAGED".localized)
+        XCTAssertEqual(type.placeholder, "SP_TEXT_FIELD_WHAT_IS_UNDER_FIRE_PLACEHOLDER".localized)
+        XCTAssertEqual(type.inputHideable, false)
+    }
 }

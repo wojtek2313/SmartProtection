@@ -50,6 +50,16 @@ final class DependenciesFactoryTests: XCTestCase {
         XCTAssertTrue(bhp is SPBHPLogic)
     }
     
+    func testCreateFirstAidLogicWhenCalledShouldReturnFirstAidLogicModel() {
+        let firstAID = sut.createFirsAidLogic()
+        XCTAssertTrue(firstAID is FirstAidLogic)
+    }
+    
+    func testCreateSOSPropertyLogicWhenCalledShouldReturnSOSPropertyLogicModel() {
+        let sosProperty = sut.createSOSPropertyLogic()
+        XCTAssertTrue(sosProperty is SOSPropertyLogic)
+    }
+    
     // MARK: - Constants
     
     private enum Constants {
