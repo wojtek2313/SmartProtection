@@ -43,4 +43,10 @@ final class DependenciesFacotry {
         let logic: FirstAidLogic = FirstAidLogic(firstAid: firstAid)
         return logic
     }
+    
+    func createSOSPropertyLogic() -> SOSPropertyLogic {
+        let sosProperty = SOSProperty()
+        let logic = SOSPropertyLogic(sosProperty: sosProperty)
+        return logic
+    }
 }

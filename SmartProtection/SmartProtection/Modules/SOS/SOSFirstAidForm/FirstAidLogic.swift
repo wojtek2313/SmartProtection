@@ -16,6 +16,7 @@ public class FirstAidLogic: ObservableObject {
     @Published public var selectedLastLunch: LunchItem?
     @Published public var selectedSoberItem: SoberItem?
     @Published public var isLoading: Bool = false
+    @Published public var closeModal: Bool = false
     
     public var sample: FirstAid.SAMPLE {
         firstAid.sample
@@ -58,6 +59,7 @@ public class FirstAidLogic: ObservableObject {
         Task { @MainActor in
             try await Task.sleep(nanoseconds: 2_000_000_000)
             isLoading = false
+            closeModal = true
         }
     }
 }

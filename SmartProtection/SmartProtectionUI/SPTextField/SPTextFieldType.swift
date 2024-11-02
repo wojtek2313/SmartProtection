@@ -17,6 +17,10 @@ public enum SPTextFieldType: String {
     case newPassword
     case newLogin
     case whatHasHappend
+    case whatItemUnderFire
+    case whatHasBeenRobbed
+    case whatIsUnderCollision
+    case whichMachineIsUnderDamaged
     
     public var title: String {
         switch self {
@@ -38,6 +42,14 @@ public enum SPTextFieldType: String {
             return "SP_TEXT_FIELD_NEW_LOGIN".localized
         case .whatHasHappend:
             return "SP_TEXT_FIELD_WHAT_HAS_HAPPEND".localized
+        case .whatItemUnderFire:
+            return "SP_TEXT_FIELD_WHAT_IS_UNDER_FIRE".localized
+        case .whatHasBeenRobbed:
+            return "SP_TEXT_FIELD_WHAT_HAS_BEEN_ROBBED".localized
+        case .whatIsUnderCollision:
+            return "SP_TEXT_FIELD_WHAT_IS_UNDER_COLLISION".localized
+        case .whichMachineIsUnderDamaged:
+            return "SP_TEXT_FIELD_WHICH_MACHINE_IS_DAMAGED".localized
         }
     }
     
@@ -61,6 +73,14 @@ public enum SPTextFieldType: String {
             return "SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER".localized
         case .whatHasHappend:
             return "SP_TEXT_FIELD_WHAT_HAS_HAPPEND".localized
+        case .whatItemUnderFire:
+            return "SP_TEXT_FIELD_WHAT_IS_UNDER_FIRE_PLACEHOLDER".localized
+        case .whatHasBeenRobbed:
+            return "SP_TEXT_FIELD_WHAT_HAS_BEEN_ROBBED".localized
+        case .whatIsUnderCollision:
+            return "SP_TEXT_FIELD_COLLISION_PLACEHOLDER".localized
+        case .whichMachineIsUnderDamaged:
+            return "SP_TEXT_FIELD_WHAT_IS_UNDER_FIRE_PLACEHOLDER".localized
         }
     }
     

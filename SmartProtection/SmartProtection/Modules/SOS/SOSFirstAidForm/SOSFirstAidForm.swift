@@ -19,11 +19,16 @@ struct SOSFirstAidForm: View {
     @StateObject private var logic: FirstAidLogic
     @State private var keyboardHeight: CGFloat = 0
     @State private var scrollToId: Int = 0
+    @Binding private var isPresented: Bool
     
     // MARK: - Initializers
     
-    init(dependencyFactory: DependenciesFacotry) {
+    init(
+        dependencyFactory: DependenciesFacotry,
+        isPresented: Binding<Bool>
+    ) {
         _logic = StateObject(wrappedValue: dependencyFactory.createFirsAidLogic())
+        _isPresented = isPresented
     }
     
     // MARK: - UI
@@ -43,6 +48,9 @@ struct SOSFirstAidForm: View {
                     withAnimation {
                         proxy.scrollTo(value, anchor: .center)
                     }
+                }
+                .onChange(of: logic.closeModal) { isClosed in
+                    isPresented = !isClosed
                 }
             }
         }

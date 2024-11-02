@@ -15,6 +15,11 @@
 		C204E4EA2C591A5E0003DD6B /* SPBHPLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4E92C591A5E0003DD6B /* SPBHPLogic.swift */; };
 		C204E4ED2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204E4EC2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift */; };
 		C2185DD52C54D94400B072A5 /* JobTrackerHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */; };
+		C219FEF72CD40356009A7209 /* SOSPropertyLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219FEF62CD40356009A7209 /* SOSPropertyLogic.swift */; };
+		C219FEF92CD40404009A7209 /* SOSProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219FEF82CD40404009A7209 /* SOSProperty.swift */; };
+		C219FEFC2CD40CC7009A7209 /* WhatHasHappendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219FEFB2CD40CC7009A7209 /* WhatHasHappendItem.swift */; };
+		C219FEFE2CD42A23009A7209 /* UnderFireItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219FEFD2CD42A23009A7209 /* UnderFireItem.swift */; };
+		C219FF002CD42F03009A7209 /* ExchangeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219FEFF2CD42F03009A7209 /* ExchangeItem.swift */; };
 		C21D20482CB8225B00BA356F /* DependenciesFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D20472CB8225B00BA356F /* DependenciesFactoryTests.swift */; };
 		C21D204B2CB83F9400BA356F /* SPFittedSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D204A2CB83F9400BA356F /* SPFittedSheetModifier.swift */; };
 		C21D204E2CB841E900BA356F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D204D2CB841E900BA356F /* View+Ext.swift */; };
@@ -151,6 +156,11 @@
 		C204E4E92C591A5E0003DD6B /* SPBHPLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBHPLogic.swift; sourceTree = "<group>"; };
 		C204E4EC2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBHPViewSnapshotTests.swift; sourceTree = "<group>"; };
 		C2185DD42C54D94400B072A5 /* JobTrackerHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTrackerHeaderType.swift; sourceTree = "<group>"; };
+		C219FEF62CD40356009A7209 /* SOSPropertyLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPropertyLogic.swift; sourceTree = "<group>"; };
+		C219FEF82CD40404009A7209 /* SOSProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSProperty.swift; sourceTree = "<group>"; };
+		C219FEFB2CD40CC7009A7209 /* WhatHasHappendItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatHasHappendItem.swift; sourceTree = "<group>"; };
+		C219FEFD2CD42A23009A7209 /* UnderFireItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderFireItem.swift; sourceTree = "<group>"; };
+		C219FEFF2CD42F03009A7209 /* ExchangeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeItem.swift; sourceTree = "<group>"; };
 		C21D20472CB8225B00BA356F /* DependenciesFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesFactoryTests.swift; sourceTree = "<group>"; };
 		C21D204A2CB83F9400BA356F /* SPFittedSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPFittedSheetModifier.swift; sourceTree = "<group>"; };
 		C21D204D2CB841E900BA356F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
@@ -315,6 +325,16 @@
 				C2B027072C5A4F9500579414 /* SPBHPTests.swift */,
 			);
 			path = SPBHPView;
+			sourceTree = "<group>";
+		};
+		C219FEFA2CD40C79009A7209 /* RadioItems */ = {
+			isa = PBXGroup;
+			children = (
+				C219FEFB2CD40CC7009A7209 /* WhatHasHappendItem.swift */,
+				C219FEFD2CD42A23009A7209 /* UnderFireItem.swift */,
+				C219FEFF2CD42F03009A7209 /* ExchangeItem.swift */,
+			);
+			path = RadioItems;
 			sourceTree = "<group>";
 		};
 		C21D20452CB821F200BA356F /* Coordinators */ = {
@@ -836,7 +856,10 @@
 		C2F14F982CBC252D007851FA /* SOSPropertyForm */ = {
 			isa = PBXGroup;
 			children = (
+				C219FEFA2CD40C79009A7209 /* RadioItems */,
 				C2F14F9C2CBC26B7007851FA /* SOSPropertyForm.swift */,
+				C219FEF62CD40356009A7209 /* SOSPropertyLogic.swift */,
+				C219FEF82CD40404009A7209 /* SOSProperty.swift */,
 			);
 			path = SOSPropertyForm;
 			sourceTree = "<group>";
@@ -1017,12 +1040,14 @@
 				C21D205C2CB84D6900BA356F /* SOSView.swift in Sources */,
 				C2C4A5312C4569FB00FD3BCF /* WelcomeLogic.swift in Sources */,
 				C27CCD382CC2BE9A00E345E4 /* ReasonItem.swift in Sources */,
+				C219FEFE2CD42A23009A7209 /* UnderFireItem.swift in Sources */,
 				C22E5F922C47CDB800C892A4 /* Welcome.swift in Sources */,
 				C2F14F9B2CBC269F007851FA /* SOSIntroductionForm.swift in Sources */,
 				C2F14FA22CBC2DD6007851FA /* SOSForm.swift in Sources */,
 				C27CCD352CC2B95C00E345E4 /* ConsciousItem.swift in Sources */,
 				C2F14F8C2CBC189A007851FA /* RouterView.swift in Sources */,
 				C2F14F9D2CBC26B7007851FA /* SOSPropertyForm.swift in Sources */,
+				C219FEF92CD40404009A7209 /* SOSProperty.swift in Sources */,
 				C2E058202CC16C31009A8CB7 /* FirstAidLogic.swift in Sources */,
 				C2D2EBB32CC527DA00B75BF0 /* SoberItem.swift in Sources */,
 				C254D49F2C51A59900335C62 /* TabBarView.swift in Sources */,
@@ -1043,11 +1068,14 @@
 				C2C4A52A2C453D1900FD3BCF /* WelcomeViewType.swift in Sources */,
 				C21F7B1C2C44241100881083 /* SmartProtection.xcdatamodeld in Sources */,
 				C2E058222CC16CA8009A8CB7 /* FirstAid.swift in Sources */,
+				C219FF002CD42F03009A7209 /* ExchangeItem.swift in Sources */,
 				C2E058182CC145C0009A8CB7 /* AppDelegate.swift in Sources */,
 				C254D4952C5163E700335C62 /* JobTrackerView.swift in Sources */,
 				C28907802C4905E4007D0F0F /* UserDto.swift in Sources */,
 				C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */,
+				C219FEF72CD40356009A7209 /* SOSPropertyLogic.swift in Sources */,
 				C29703FA2C52B177000959FB /* SettingsView.swift in Sources */,
+				C219FEFC2CD40CC7009A7209 /* WhatHasHappendItem.swift in Sources */,
 				C2F14F9F2CBC26CB007851FA /* SOSFirstAidForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

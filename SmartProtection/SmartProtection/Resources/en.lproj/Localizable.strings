@@ -34,6 +34,12 @@
 "SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER" = "Ustaw nowy login (e-mail)";
 "SP_TEXT_FIELD_WHAT_HAS_HAPPEND" = "Co się stało?";
 "SP_TEXT_FIELD_NEW_LOGIN_PLACEHOLDER" = "Wypadek ...";
+"SP_TEXT_FIELD_WHAT_IS_UNDER_FIRE" = "Co się pali?";
+"SP_TEXT_FIELD_WHAT_IS_UNDER_FIRE_PLACEHOLDER" = "Obiekt ...";
+"SP_TEXT_FIELD_WHAT_HAS_BEEN_ROBBED" = "Co zostało skradzione?";
+"SP_TEXT_FIELD_WHAT_IS_UNDER_COLLISION" = "Wpisz numer rejestracyjny pojazdu który uległ kolizji";
+"SP_TEXT_FIELD_COLLISION_PLACEHOLDER" = "XYZ...";
+"SP_TEXT_FIELD_WHICH_MACHINE_IS_DAMAGED" = "Napisz jaka maszyna została zniszczona?";
 
 /// SPButton
 "SP_BUTTON_LOG_IN" = "Zaloguj";
@@ -111,3 +117,18 @@
 "SOS_FIRST_AID_SLURRED_SPEECH" = "Bełkotanie / Nie wyraźna mowa.";
 "SOS_FIRST_AID_GETTING_LOST" = "Zagubienie.";
 
+/// SOS PROPERTY FORM
+"SOS_PROPERTY_FORM_TITLE" = "Zgłoszenie uszkodzenia mienia.";
+"SOS_PROPERTY_FORM_SUBTITLE" = "Wypełnij zgłoszenie by dostarczyć konieczne dane, w celu wezwania pomocy lub poinformowaniu o szkodzie.";
+"SOS_PROPERTY_FORM_WHAT_HAPPEND_QUESTION" = "Co się stało?";
+"SOS_PROPERTY_FORM_WHAT_IS_UNDER_THE_FIRE" = "Co się pali?";
+"SOS_PROPERTY_WHAT_HAS_BEEN_ROBBED" = "Co zostało skradzione?";
+"SOS_PROPERTY_FORM_NEEDED_EXCHANGE" = "Czy wpływa to na dalszą budowę, czy jest potrzeba na wymiane danego sprzętu?";
+"SOS_PROPERTY_FORM_WHAT_IS_UNDER_COLISION" = "Jaki pojazd uległ kolizji?";
+"SOS_PROPERTY_FORM_FIRE" = "Wybuch pożaru.";
+"SOS_PROPERTY_FORM_ROBERRY" = "Kradzież.";
+"SOS_PROPERTY_FORM_COLLISION" = "Zderzenie / uszkodzenie pojazdu.";
+"SOS_PROPERTY_MACHINE_DAMAGE" = "Uszkodzenie / zniszczenie maszyny.";
+"SOS_PROPERTY_MACHINE_UNDER_THE_FIRE" = "Maszyna / urządzenia elektryczne.";
+"SOS_PROPERTY_BUILDING_UNDER_THE_FIRE" = "Podpalenie miejsca budowy / podpalenie mienia";
+"SOS_PROPERTY_WHICH_MACHINE_HAS_BEEN_DAMAGED" = "Jaka maszyna została zniszczona?";

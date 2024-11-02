@@ -36,11 +36,17 @@ public class Router: ObservableObject {
     @ViewBuilder func view(for route: Route) -> some View {
         switch route {
         case .sosFirstAidForm:
-            SOSFirstAidForm(dependencyFactory: dependencyFactory)
+            SOSFirstAidForm(
+                dependencyFactory: dependencyFactory,
+                isPresented: $isPresented
+            )
         case .sosIntroductionForm:
             SOSIntroductionForm(isPresented: $isPresented)
         case .sosPropertyForm:
-            SOSPropertyForm()
+            SOSPropertyForm(
+                dependencyFactory: dependencyFactory,
+                isPresented: $isPresented
+            )
         }
     }
     
