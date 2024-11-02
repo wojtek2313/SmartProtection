@@ -95,6 +95,9 @@
 		C2D2EBAF2CC5133500B75BF0 /* SymptomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2EBAE2CC5133500B75BF0 /* SymptomItem.swift */; };
 		C2D2EBB12CC5221600B75BF0 /* LunchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2EBB02CC5221600B75BF0 /* LunchItem.swift */; };
 		C2D2EBB32CC527DA00B75BF0 /* SoberItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2EBB22CC527DA00B75BF0 /* SoberItem.swift */; };
+		C2E014C52CD65BF000C13D85 /* SOSFormFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E014C42CD65BF000C13D85 /* SOSFormFactoryTest.swift */; };
+		C2E014C82CD65E9C00C13D85 /* SOSFirstAidLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E014C72CD65E9C00C13D85 /* SOSFirstAidLogicTests.swift */; };
+		C2E014CB2CD6634600C13D85 /* SOSPropertyLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E014CA2CD6634600C13D85 /* SOSPropertyLogicTests.swift */; };
 		C2E058182CC145C0009A8CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E058172CC145C0009A8CB7 /* AppDelegate.swift */; };
 		C2E0581B2CC14741009A8CB7 /* UISetUpApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E0581A2CC14741009A8CB7 /* UISetUpApplicationDelegate.swift */; };
 		C2E058202CC16C31009A8CB7 /* FirstAidLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E0581F2CC16C31009A8CB7 /* FirstAidLogic.swift */; };
@@ -235,6 +238,9 @@
 		C2D2EBAE2CC5133500B75BF0 /* SymptomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomItem.swift; sourceTree = "<group>"; };
 		C2D2EBB02CC5221600B75BF0 /* LunchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchItem.swift; sourceTree = "<group>"; };
 		C2D2EBB22CC527DA00B75BF0 /* SoberItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoberItem.swift; sourceTree = "<group>"; };
+		C2E014C42CD65BF000C13D85 /* SOSFormFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSFormFactoryTest.swift; sourceTree = "<group>"; };
+		C2E014C72CD65E9C00C13D85 /* SOSFirstAidLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSFirstAidLogicTests.swift; sourceTree = "<group>"; };
+		C2E014CA2CD6634600C13D85 /* SOSPropertyLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPropertyLogicTests.swift; sourceTree = "<group>"; };
 		C2E058172CC145C0009A8CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E0581A2CC14741009A8CB7 /* UISetUpApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetUpApplicationDelegate.swift; sourceTree = "<group>"; };
 		C2E0581F2CC16C31009A8CB7 /* FirstAidLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidLogic.swift; sourceTree = "<group>"; };
@@ -550,10 +556,8 @@
 		C242CB922C4A6370009E67CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C2B5EAE32C54AAB10068AFB0 /* TabBarTests.swift */,
-				C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */,
-				C242CB8A2C494B92009E67CA /* WelcomeTests.swift */,
-				C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */,
+				C2E014C12CD6591000C13D85 /* Welcome */,
+				C2E014C02CD6590100C13D85 /* TabBar */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -561,6 +565,7 @@
 		C242CB932C4A660B009E67CA /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				C2E014C22CD65B8200C13D85 /* SOS */,
 				C21D20452CB821F200BA356F /* Coordinators */,
 				C242CB8C2C4953BE009E67CA /* Welcome */,
 			);
@@ -767,6 +772,58 @@
 				C2C7D05E2CBECD5600984A4D /* SOSFormFactory.swift */,
 			);
 			path = SOSFormFactory;
+			sourceTree = "<group>";
+		};
+		C2E014C02CD6590100C13D85 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C2B5EAE32C54AAB10068AFB0 /* TabBarTests.swift */,
+				C2B5EADF2C540D710068AFB0 /* TabBarLogicTests.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C2E014C12CD6591000C13D85 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */,
+				C242CB8A2C494B92009E67CA /* WelcomeTests.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		C2E014C22CD65B8200C13D85 /* SOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2E014C32CD65BCC00C13D85 /* SOSFormFactory */,
+				C2E014C62CD65E7A00C13D85 /* SOSFirstAidLogic */,
+				C2E014C92CD662A300C13D85 /* SOSPropertyLogic */,
+			);
+			path = SOS;
+			sourceTree = "<group>";
+		};
+		C2E014C32CD65BCC00C13D85 /* SOSFormFactory */ = {
+			isa = PBXGroup;
+			children = (
+				C2E014C42CD65BF000C13D85 /* SOSFormFactoryTest.swift */,
+			);
+			path = SOSFormFactory;
+			sourceTree = "<group>";
+		};
+		C2E014C62CD65E7A00C13D85 /* SOSFirstAidLogic */ = {
+			isa = PBXGroup;
+			children = (
+				C2E014C72CD65E9C00C13D85 /* SOSFirstAidLogicTests.swift */,
+			);
+			path = SOSFirstAidLogic;
+			sourceTree = "<group>";
+		};
+		C2E014C92CD662A300C13D85 /* SOSPropertyLogic */ = {
+			isa = PBXGroup;
+			children = (
+				C2E014CA2CD6634600C13D85 /* SOSPropertyLogicTests.swift */,
+			);
+			path = SOSPropertyLogic;
 			sourceTree = "<group>";
 		};
 		C2E058162CC1457C009A8CB7 /* AppDelegate */ = {
@@ -1123,6 +1180,7 @@
 			files = (
 				C293AE722C4A8C8A00965B3F /* SPTextFieldSnapshotTests.swift in Sources */,
 				C2B5EAE92C54B77C0068AFB0 /* SPTabViewSnapshotTests.swift in Sources */,
+				C2E014C82CD65E9C00C13D85 /* SOSFirstAidLogicTests.swift in Sources */,
 				C2B027082C5A4F9500579414 /* SPBHPTests.swift in Sources */,
 				C2EE52042C57CCAC00C2C8BC /* SPProgressLogicTests.swift in Sources */,
 				C242CB902C4A3CD3009E67CA /* WelcomeMock.swift in Sources */,
@@ -1130,6 +1188,7 @@
 				C204E4E32C590AEA0003DD6B /* SPConstructionMenuSnapshotTests.swift in Sources */,
 				C278D7D12CD15B86006A7DC5 /* LunchItemTests.swift in Sources */,
 				C228B4B12CCBF4CC00D8474D /* ConsciousItemTests.swift in Sources */,
+				C2E014CB2CD6634600C13D85 /* SOSPropertyLogicTests.swift in Sources */,
 				C278D7D52CD163DA006A7DC5 /* SPRadioStackTests.swift in Sources */,
 				C2B5EAE72C54B3A40068AFB0 /* SPTabViewContentTypeTests.swift in Sources */,
 				C2B5EAE42C54AAB10068AFB0 /* TabBarTests.swift in Sources */,
@@ -1141,6 +1200,7 @@
 				C2E46A912C5582C300895AF3 /* SPCardViewTests.swift in Sources */,
 				C2ECA6EE2CD152A100675688 /* SymptomItemTests.swift in Sources */,
 				C278D7D32CD15CCC006A7DC5 /* SoberItemTests.swift in Sources */,
+				C2E014C52CD65BF000C13D85 /* SOSFormFactoryTest.swift in Sources */,
 				C2EE52002C579AB200C2C8BC /* SPProgressViewSnapshotTests.swift in Sources */,
 				C204E4ED2C5924D30003DD6B /* SPBHPViewSnapshotTests.swift in Sources */,
 				C228B4B42CCBF6D100D8474D /* ReasonItemTests.swift in Sources */,
