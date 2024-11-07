@@ -50,6 +50,10 @@
 		C228B4B12CCBF4CC00D8474D /* ConsciousItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C228B4B02CCBF4CC00D8474D /* ConsciousItemTests.swift */; };
 		C228B4B42CCBF6D100D8474D /* ReasonItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C228B4B32CCBF6D100D8474D /* ReasonItemTests.swift */; };
 		C22E5F922C47CDB800C892A4 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22E5F912C47CDB800C892A4 /* Welcome.swift */; };
+		C24265DB2CDD4EDD00A5BCE6 /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = C24265DA2CDD4EDD00A5BCE6 /* CardStack */; };
+		C24265DD2CDD4EF900A5BCE6 /* TODOTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24265DC2CDD4EF900A5BCE6 /* TODOTaskView.swift */; };
+		C24265DF2CDD502F00A5BCE6 /* TodoTaskLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24265DE2CDD502F00A5BCE6 /* TodoTaskLogic.swift */; };
+		C24265E12CDD507200A5BCE6 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24265E02CDD507200A5BCE6 /* TaskModel.swift */; };
 		C242CB8B2C494B92009E67CA /* WelcomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8A2C494B92009E67CA /* WelcomeTests.swift */; };
 		C242CB8E2C4A3B71009E67CA /* WelcomeLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */; };
 		C242CB902C4A3CD3009E67CA /* WelcomeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242CB8F2C4A3CD3009E67CA /* WelcomeMock.swift */; };
@@ -194,6 +198,9 @@
 		C228B4B02CCBF4CC00D8474D /* ConsciousItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsciousItemTests.swift; sourceTree = "<group>"; };
 		C228B4B32CCBF6D100D8474D /* ReasonItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonItemTests.swift; sourceTree = "<group>"; };
 		C22E5F912C47CDB800C892A4 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		C24265DC2CDD4EF900A5BCE6 /* TODOTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOTaskView.swift; sourceTree = "<group>"; };
+		C24265DE2CDD502F00A5BCE6 /* TodoTaskLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskLogic.swift; sourceTree = "<group>"; };
+		C24265E02CDD507200A5BCE6 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		C242CB812C494AD0009E67CA /* SmartProtectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartProtectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C242CB8A2C494B92009E67CA /* WelcomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTests.swift; sourceTree = "<group>"; };
 		C242CB8D2C4A3B71009E67CA /* WelcomeLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLogicTests.swift; sourceTree = "<group>"; };
@@ -268,6 +275,7 @@
 			files = (
 				C21F7B2F2C44270100881083 /* SmartProtectionUI.framework in Frameworks */,
 				C2E2A2862CCBD7EF002DEDFA /* LoadingButton in Frameworks */,
+				C24265DB2CDD4EDD00A5BCE6 /* CardStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +534,16 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
+		C24265D82CDD4D2500A5BCE6 /* TodoTasksView */ = {
+			isa = PBXGroup;
+			children = (
+				C24265DC2CDD4EF900A5BCE6 /* TODOTaskView.swift */,
+				C24265DE2CDD502F00A5BCE6 /* TodoTaskLogic.swift */,
+				C24265E02CDD507200A5BCE6 /* TaskModel.swift */,
+			);
+			path = TodoTasksView;
+			sourceTree = "<group>";
+		};
 		C242CB822C494AD0009E67CA /* SmartProtectionTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -728,6 +746,7 @@
 		C2C4A52C2C45678400FD3BCF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C24265D82CDD4D2500A5BCE6 /* TodoTasksView */,
 				C2F14F962CBC2506007851FA /* SOS */,
 				C254D49D2C51A58200335C62 /* TabBar */,
 				C2C4A52D2C4567A700FD3BCF /* Base */,
@@ -971,6 +990,7 @@
 			name = SmartProtection;
 			packageProductDependencies = (
 				C2E2A2852CCBD7EF002DEDFA /* LoadingButton */,
+				C24265DA2CDD4EDD00A5BCE6 /* CardStack */,
 			);
 			productName = SmartProtection;
 			productReference = C21F7B0C2C44240E00881083 /* SmartProtection.app */;
@@ -1050,6 +1070,7 @@
 			packageReferences = (
 				C242CB952C4A693F009E67CA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				C2E2A2842CCBD7EE002DEDFA /* XCRemoteSwiftPackageReference "LoadingButton" */,
+				C24265D92CDD4EDD00A5BCE6 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
 			);
 			productRefGroup = C21F7B0D2C44240E00881083 /* Products */;
 			projectDirPath = "";
@@ -1115,6 +1136,7 @@
 				C29703FC2C52B48A000959FB /* TabBar.swift in Sources */,
 				C29703FE2C52B52C000959FB /* TabBarLogic.swift in Sources */,
 				C2185DD52C54D94400B072A5 /* JobTrackerHeaderType.swift in Sources */,
+				C24265DF2CDD502F00A5BCE6 /* TodoTaskLogic.swift in Sources */,
 				C204E4E12C59003F0003DD6B /* DocumentsView.swift in Sources */,
 				C21F7B192C44241100881083 /* Persistence.swift in Sources */,
 				C21F7B122C44240E00881083 /* WelcomeView.swift in Sources */,
@@ -1126,12 +1148,14 @@
 				C21F7B1C2C44241100881083 /* SmartProtection.xcdatamodeld in Sources */,
 				C2E058222CC16CA8009A8CB7 /* FirstAid.swift in Sources */,
 				C219FF002CD42F03009A7209 /* ExchangeItem.swift in Sources */,
+				C24265DD2CDD4EF900A5BCE6 /* TODOTaskView.swift in Sources */,
 				C2E058182CC145C0009A8CB7 /* AppDelegate.swift in Sources */,
 				C254D4952C5163E700335C62 /* JobTrackerView.swift in Sources */,
 				C28907802C4905E4007D0F0F /* UserDto.swift in Sources */,
 				C21F7B102C44240E00881083 /* SmartProtectionApp.swift in Sources */,
 				C219FEF72CD40356009A7209 /* SOSPropertyLogic.swift in Sources */,
 				C29703FA2C52B177000959FB /* SettingsView.swift in Sources */,
+				C24265E12CDD507200A5BCE6 /* TaskModel.swift in Sources */,
 				C219FEFC2CD40CC7009A7209 /* WhatHasHappendItem.swift in Sources */,
 				C2F14F9F2CBC26CB007851FA /* SOSFirstAidForm.swift in Sources */,
 			);
@@ -1559,6 +1583,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C24265D92CDD4EDD00A5BCE6 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dadalar/SwiftUI-CardStackView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
 		C242CB952C4A693F009E67CA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
@@ -1578,6 +1610,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C24265DA2CDD4EDD00A5BCE6 /* CardStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C24265D92CDD4EDD00A5BCE6 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */;
+			productName = CardStack;
+		};
 		C242CB962C4A693F009E67CA /* InlineSnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C242CB952C4A693F009E67CA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;

@@ -84,6 +84,12 @@
 "JOB_TRACKER_DOCUMENTS" = "Dokumenty:";
 "JOB_TRACEKR_CONSTRUCTION_ID_SUBTITLE" = "Naciśnij i przytrzymaj by zanonimizować kartę.";
 "JOB_TRACKER_DOCUMENTS_SUBTITLE" = "Sprawdź oraz podpisz listę wymaganych dokumentów na tą budowę:";
+"JOB_TRACKER_CURRENT_TASK" = "Twoje aktualne obowiązki";
+"JOB_TRACKER_CURRENT_TASK_SUBTITLE" = "Zadanie w trakcie realizacji (przeciągnij w prawo, by zakończyć i przejść do następnego).";
+
+/// Task
+"TASK_DURING_REALIZATION" = "W trakcie realizacji: ";
+"TASK_NUMBER" = "Zadanie numer: ";
 
 /// NAVIGATION STACK
 "NAVIGATION_STACK_MAIN" = "SmartProtection";

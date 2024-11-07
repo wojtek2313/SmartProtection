@@ -27,11 +27,14 @@ struct JobTrackerView: View {
     
     var body: some View {
         ScrollView {
-            SPConstructionMenu(constructionName: "Budowa")
-            idCardSection
-            timerSection
-            bhpSection
-            documentsSection
+            VStack {
+                SPConstructionMenu(constructionName: "Budowa")
+                idCardSection
+                todoTaskSection
+                timerSection
+                bhpSection
+                documentsSection
+            }
         }
         .scrollIndicators(.hidden)
     }
@@ -52,11 +55,20 @@ struct JobTrackerView: View {
         }
     }
     
+    private var todoTaskSection: some View {
+        Section {
+            TODOTaskView()
+                .padding(.bottom)
+        } header: {
+            createHeader(at: .task)
+        }
+    }
+    
     private var timerSection: some View {
         Section {
             let logic = dependencyFactory.createProgress(numberOfTotalDailyWorkHours: 8, startHour: Date())
             SPProgressView(logic: logic)
-                .padding()
+                .padding([.bottom, .horizontal])
         } header: {
             createHeader(at: .timer)
         }
@@ -108,10 +120,12 @@ struct JobTrackerView: View {
             }
             .foregroundColor(.black)
             
-            Text(type.subtitle)
-                .font(.subheadline)
-                .foregroundColor(.black)
-                .padding(.bottom)
+            if !type.subtitle.isEmpty {
+                Text(type.subtitle)
+                    .font(.subheadline)
+                    .foregroundColor(.black)
+                    .padding(.bottom)
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()

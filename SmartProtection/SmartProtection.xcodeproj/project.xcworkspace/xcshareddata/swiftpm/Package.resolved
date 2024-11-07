@@ -26,6 +26,15 @@
         "revision" : "4c6cc0a3b9e8f14b3ae2307c5ccae4de6167ac2c",
         "version" : "600.0.0-prerelease-2024-06-12"
       }
+    },
+    {
+      "identity" : "swiftui-cardstackview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dadalar/SwiftUI-CardStackView",
+      "state" : {
+        "revision" : "9b45ef54b9e7bfbee46fe4a5982ecf449ac2b47c",
+        "version" : "0.0.6"
+      }
     }
   ],
   "version" : 2

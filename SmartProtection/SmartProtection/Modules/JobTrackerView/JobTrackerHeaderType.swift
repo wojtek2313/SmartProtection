@@ -12,6 +12,7 @@ public enum JobTrackerHeaderType {
     case timer
     case bhp
     case documents
+    case task
     
     public var title: String {
         switch self {
@@ -19,6 +20,7 @@ public enum JobTrackerHeaderType {
         case .timer: return "JOB_TRACKER_TIME_OF_WORK".localized
         case .bhp: return "JOB_TRACKER_BHP".localized
         case .documents: return "JOB_TRACKER_DOCUMENTS".localized
+        case .task: return "JOB_TRACKER_CURRENT_TASK".localized
         }
     }
     
@@ -27,6 +29,7 @@ public enum JobTrackerHeaderType {
         case .constructionCard: return "JOB_TRACEKR_CONSTRUCTION_ID_SUBTITLE".localized
         case .timer, .bhp: return ""
         case .documents: return "JOB_TRACKER_DOCUMENTS_SUBTITLE".localized
+        case .task: return "JOB_TRACKER_CURRENT_TASK_SUBTITLE".localized
         }
     }
 }
